@@ -1,0 +1,1493 @@
+[2022-08-05 12:24 America/Chicago] HTTP request of validation request:POST /cgi-bin/webscr HTTP/1.1
+Host: www.sandbox.paypal.com
+Accept: */*
+Connection: Close
+Content-Length: 1375
+Content-Type: application/x-www-form-urlencoded
+
+ for IPN payload: cmd=_notify-validate&mc_gross=340.00&protection_eligibility=Eligible&address_status=confirmed&item_number1=10&item_number2=11&payer_id=QMPKYU56FKZBN&item_number3=17&address_street=1+Main+St&item_number4=1022&payment_date=10%3A24%3A36+Aug+05%2C+2022+PDT&item_number5=1023&payment_status=Completed&charset=UTF-8&address_zip=95131&first_name=John&mc_fee=12.36&address_country_code=US&address_name=John+Doe&notify_version=3.9&custom=silis&payer_status=verified&business=sb-ccmwb18068883%40business.example.com&address_country=United+States&num_cart_items=5&address_city=San+Jose&verify_sign=AjY0YZZ6HXCnJOjAQTwGWP6Y0ZhYA3A55nWSloPq2HSa-4n5S78UYuKa&payer_email=sb-2xny319845158%40personal.example.com&txn_id=84031096P0055771N&payment_type=instant&last_name=Doe&address_state=CA&item_name1=%245+Donator+Scroll&receiver_email=sb-ccmwb18068883%40business.example.com&item_name2=%2410+Scroll&payment_fee=12.36&item_name3=%2450+Donator+Scroll&item_name4=%2475+Donator+Scroll&shipping_discount=0.00&item_name5=%24100+Scroll&quantity1=1&insurance_amount=0.00&quantity2=1&receiver_id=WAW9ZR4W4F5B2&quantity3=3&txn_type=cart&quantity4=1&discount=0.00&quantity5=1&mc_gross_1=5.00&mc_currency=USD&mc_gross_2=10.00&mc_gross_3=150.00&residence_country=US&test_ipn=1&mc_gross_4=75.00&shipping_method=Default&mc_gross_5=100.00&transaction_subject=&payment_gross=340.00&ipn_track_id=65fa12710ea6b
+[2022-08-05 12:24 America/Chicago] HTTP response of validation request: HTTP/1.1 200 OK
+Connection: close
+Content-Length: 8
+Content-Type: text/html; charset=utf-8
+Cache-Control: max-age=0, no-cache, no-store, must-revalidate
+Content-Security-Policy: default-src 'self' https://*.paypal.com https://*.paypalobjects.com 'unsafe-inline'; style-src 'self' https://*.paypal.com https://*.paypalobjects.com 'unsafe-inline'; script-src 'nonce-SlOaTUKP199sa2dzKjf1hmIRxKVxXp0vn4pekrRMAxLHXcNf' 'self' 'unsafe-inline' https://*.paypal.com https://*.paypalobjects.com; img-src 'self' https: data:; object-src 'none'; font-src 'self' https://*.paypal.com https://*.paypalobjects.com; frame-src 'self' https://*.paypalobjects.com https://*.paypal.com https://*.qualtrics.com; connect-src 'self' 'unsafe-inline' https://*.paypal.com https://*.paypalobjects.com https://*.qualtrics.com; form-action 'self' https://*.paypal.com; base-uri 'self' https://*.paypal.com; block-all-mixed-content;
+Etag: W/"8-WXvD6WBsMSDy5c0v7r4OHopk5Ys"
+Paypal-Debug-Id: f2a521ccc277c
+Set-Cookie: LANG=en_US%3BUS; Max-Age=31556; Domain=.paypal.com; Path=/; Expires=Sat, 06 Aug 2022 02:10:40 GMT; HttpOnly; Secure
+Set-Cookie: enforce_policy=ccpa; Max-Age=31536000; Domain=.paypal.com; Path=/; Expires=Sat, 05 Aug 2023 17:24:44 GMT; Secure
+Set-Cookie: x-pp-s=eyJ0IjoiMTY1OTcyMDI4NDY3NiIsImwiOiIwIiwibSI6IjAifQ; Domain=.paypal.com; Path=/; HttpOnly; Secure
+Set-Cookie: tsrce=merchantnotifnodeweb; Domain=.paypal.com; Path=/; Expires=Mon, 08 Aug 2022 17:24:44 GMT; HttpOnly; Secure; SameSite=None
+Set-Cookie: nsid=s%3ABRmroGJED2BkaC6W9Lpu37Eyfby0sRZ3.rQepoHjWufMtVbZEtqUEjSQdH4%2FRDvNle32kGT6sXv0; Path=/; HttpOnly; Secure
+Set-Cookie: ts=vreXpYrS%3D1754414684%26vteXpYrS%3D1659722084%26vr%3D6f09b9ef1820a6022c83696dee0c0df5%26vt%3D6f09b9ef1820a6022c83696dee0c0df4%26vtyp%3Dnew; Path=/; Domain=paypal.com; Expires=Mon, 04 Aug 2025 17:24:44 GMT; HttpOnly; Secure
+Set-Cookie: ts_c=vr%3D6f09b9ef1820a6022c83696dee0c0df5%26vt%3D6f09b9ef1820a6022c83696dee0c0df4; Path=/; Domain=paypal.com; Expires=Mon, 04 Aug 2025 17:24:44 GMT; Secure
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+X-Xss-Protection: 1; mode=block
+Accept-Ranges: bytes
+Via: 1.1 varnish, 1.1 varnish
+Date: Fri, 05 Aug 2022 17:24:44 GMT
+Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
+X-Served-By: cache-chi-kigq8000088-CHI, cache-den8234-DEN
+X-Cache: MISS, MISS
+X-Cache-Hits: 0, 0
+X-Timer: S1659720285.593670,VS0,VE134
+Vary: Accept-Encoding
+Set-Cookie: x-cdn=fastly:DEN; Domain=paypal.com; Path=/; Secure
+
+VERIFIED
+[2022-08-05 12:24 America/Chicago] Verified IPN: cmd=_notify-validate&mc_gross=340.00&protection_eligibility=Eligible&address_status=confirmed&item_number1=10&item_number2=11&payer_id=QMPKYU56FKZBN&item_number3=17&address_street=1+Main+St&item_number4=1022&payment_date=10%3A24%3A36+Aug+05%2C+2022+PDT&item_number5=1023&payment_status=Completed&charset=UTF-8&address_zip=95131&first_name=John&mc_fee=12.36&address_country_code=US&address_name=John+Doe&notify_version=3.9&custom=silis&payer_status=verified&business=sb-ccmwb18068883%40business.example.com&address_country=United+States&num_cart_items=5&address_city=San+Jose&verify_sign=AjY0YZZ6HXCnJOjAQTwGWP6Y0ZhYA3A55nWSloPq2HSa-4n5S78UYuKa&payer_email=sb-2xny319845158%40personal.example.com&txn_id=84031096P0055771N&payment_type=instant&last_name=Doe&address_state=CA&item_name1=%245+Donator+Scroll&receiver_email=sb-ccmwb18068883%40business.example.com&item_name2=%2410+Scroll&payment_fee=12.36&item_name3=%2450+Donator+Scroll&item_name4=%2475+Donator+Scroll&shipping_discount=0.00&item_name5=%24100+Scroll&quantity1=1&insurance_amount=0.00&quantity2=1&receiver_id=WAW9ZR4W4F5B2&quantity3=3&txn_type=cart&quantity4=1&discount=0.00&quantity5=1&mc_gross_1=5.00&mc_currency=USD&mc_gross_2=10.00&mc_gross_3=150.00&residence_country=US&test_ipn=1&mc_gross_4=75.00&shipping_method=Default&mc_gross_5=100.00&transaction_subject=&payment_gross=340.00&ipn_track_id=65fa12710ea6b 
+[2022-08-05 12:31 America/Chicago] HTTP request of validation request:POST /cgi-bin/webscr HTTP/1.1
+Host: www.paypal.com
+Accept: */*
+Connection: Close
+Content-Length: 1030
+Content-Type: application/x-www-form-urlencoded
+
+ for IPN payload: cmd=_notify-validate&mc_gross=1.00&protection_eligibility=Eligible&address_status=confirmed&item_number1=10&payer_id=FB25NVJ3HSXSY&address_street=1712+N+8th+Street&payment_date=10%3A31%3A17+Aug+05%2C+2022+PDT&payment_status=Completed&charset=UTF-8&address_zip=62702&first_name=Austin&mc_fee=0.52&address_country_code=US&address_name=Austin+Linne&notify_version=3.9&custom=Primal&payer_status=verified&business=primalosps%40gmail.com&address_country=United+States&num_cart_items=1&address_city=SPRINGFIELD&verify_sign=A2Sm5D6StJOZalqD26yhSpf8xtQhAK.EMgLGfUTSEsmm9LVn4bIF9LZj&payer_email=austin.linne%40ymail.com&txn_id=21N684579X190561P&payment_type=instant&last_name=Linne&item_name1=%245+Donator+Scroll&address_state=IL&receiver_email=primalosps%40gmail.com&payment_fee=0.52&shipping_discount=0.00&quantity1=2&insurance_amount=0.00&receiver_id=ZSR3U3D55F3AU&txn_type=cart&discount=0.00&mc_gross_1=1.00&mc_currency=USD&residence_country=US&shipping_method=Default&transaction_subject=&payment_gross=1.00&ipn_track_id=f452628a7f54a
+[2022-08-05 12:31 America/Chicago] HTTP response of validation request: HTTP/1.1 200 OK
+Connection: close
+Content-Length: 8
+Cache-Control: max-age=0, no-cache, no-store, must-revalidate
+Content-Security-Policy: default-src 'self' https://*.paypal.com https://*.paypalobjects.com 'unsafe-inline'; style-src 'self' https://*.paypal.com https://*.paypalobjects.com 'unsafe-inline'; script-src 'nonce-rAgBwouYvlgLxiEw3Fxbt6RtUK9gb5ZZod/ccVTV4Puo+GnY' 'self' 'unsafe-inline' https://*.paypal.com https://*.paypalobjects.com; img-src 'self' https: data:; object-src 'none'; font-src 'self' https://*.paypal.com https://*.paypalobjects.com; frame-src 'self' https://*.paypalobjects.com https://*.paypal.com https://*.qualtrics.com; connect-src 'self' 'unsafe-inline' https://*.paypal.com https://*.paypalobjects.com https://*.qualtrics.com; form-action 'self' https://*.paypal.com; base-uri 'self' https://*.paypal.com; block-all-mixed-content;; report-uri https://www.paypal.com/csplog/api/log/csp
+Content-Type: text/html; charset=utf-8
+Etag: W/"8-WXvD6WBsMSDy5c0v7r4OHopk5Ys"
+Paypal-Debug-Id: f294904df0643
+Set-Cookie: LANG=en_US%3BUS; Max-Age=31556; Domain=.paypal.com; Path=/; Expires=Sat, 06 Aug 2022 02:17:19 GMT; HttpOnly; Secure
+Set-Cookie: enforce_policy=ccpa; Max-Age=31536000; Domain=.paypal.com; Path=/; Expires=Sat, 05 Aug 2023 17:31:23 GMT; Secure
+Set-Cookie: x-pp-s=eyJ0IjoiMTY1OTcyMDY4MzYzMiIsImwiOiIwIiwibSI6IjAifQ; Domain=.paypal.com; Path=/; HttpOnly; Secure
+Set-Cookie: tsrce=merchantnotifnodeweb; Domain=.paypal.com; Path=/; Expires=Mon, 08 Aug 2022 17:31:23 GMT; HttpOnly; Secure; SameSite=None
+Set-Cookie: nsid=s%3A6bt5Orpri2MzEsLuoXTOM_b7UGg4dVYb.Nqzys0%2FDf42jYoC4%2BVYiqF9ObOQBa8kmVruUs5cNmxQ; Path=/; HttpOnly; Secure
+Set-Cookie: ts=vreXpYrS%3D1754415083%26vteXpYrS%3D1659722483%26vr%3D6f0fd0541820ad0486930a5bff5222ab%26vt%3D6f0fd0541820ad0486930a5bff5222aa%26vtyp%3Dnew; Path=/; Domain=paypal.com; Expires=Mon, 04 Aug 2025 17:31:23 GMT; HttpOnly; Secure
+Set-Cookie: ts_c=vr%3D6f0fd0541820ad0486930a5bff5222ab%26vt%3D6f0fd0541820ad0486930a5bff5222aa; Path=/; Domain=paypal.com; Expires=Mon, 04 Aug 2025 17:31:23 GMT; Secure
+Traceparent: 00-0000000000000000000f294904df0643-588acbd8ba802982-01
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+X-Xss-Protection: 1; mode=block
+DC: ccg11-origin-www-1.paypal.com
+Accept-Ranges: bytes
+Via: 1.1 varnish, 1.1 varnish
+Date: Fri, 05 Aug 2022 17:31:23 GMT
+Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
+X-Served-By: cache-iad-kcgs7200164-IAD, cache-den8276-DEN
+X-Cache: MISS, MISS
+X-Cache-Hits: 0, 0
+X-Timer: S1659720684.547006,VS0,VE143
+Vary: Accept-Encoding
+Server-Timing: content-encoding;desc="",x-cdn;desc="fastly"
+
+VERIFIED
+[2022-08-05 12:31 America/Chicago] Verified IPN: cmd=_notify-validate&mc_gross=1.00&protection_eligibility=Eligible&address_status=confirmed&item_number1=10&payer_id=FB25NVJ3HSXSY&address_street=1712+N+8th+Street&payment_date=10%3A31%3A17+Aug+05%2C+2022+PDT&payment_status=Completed&charset=UTF-8&address_zip=62702&first_name=Austin&mc_fee=0.52&address_country_code=US&address_name=Austin+Linne&notify_version=3.9&custom=Primal&payer_status=verified&business=primalosps%40gmail.com&address_country=United+States&num_cart_items=1&address_city=SPRINGFIELD&verify_sign=A2Sm5D6StJOZalqD26yhSpf8xtQhAK.EMgLGfUTSEsmm9LVn4bIF9LZj&payer_email=austin.linne%40ymail.com&txn_id=21N684579X190561P&payment_type=instant&last_name=Linne&item_name1=%245+Donator+Scroll&address_state=IL&receiver_email=primalosps%40gmail.com&payment_fee=0.52&shipping_discount=0.00&quantity1=2&insurance_amount=0.00&receiver_id=ZSR3U3D55F3AU&txn_type=cart&discount=0.00&mc_gross_1=1.00&mc_currency=USD&residence_country=US&shipping_method=Default&transaction_subject=&payment_gross=1.00&ipn_track_id=f452628a7f54a 
+[2022-08-13 08:25 America/Chicago] HTTP request of validation request:POST /cgi-bin/webscr HTTP/1.1
+Host: www.paypal.com
+Accept: */*
+Connection: Close
+Content-Length: 1190
+Content-Type: application/x-www-form-urlencoded
+
+ for IPN payload: cmd=_notify-validate&mc_gross=225.00&protection_eligibility=Eligible&address_status=confirmed&item_number1=1023&item_number2=1022&payer_id=FMDDBBDGSTH24&item_number3=17&address_street=8+Edgecroft+Cres&payment_date=06%3A25%3A23+Aug+13%2C+2022+PDT&payment_status=Completed&charset=UTF-8&address_zip=L8J+3Y6&first_name=Bronson&mc_fee=11.72&address_country_code=CA&address_name=Bronson+Lendvoy&notify_version=3.9&custom=Bronson&payer_status=verified&business=primalosps%40gmail.com&address_country=Canada&num_cart_items=3&address_city=Hamilton&verify_sign=AyVuUcpetZUWCXV.EHq.qRhxEb6.AFfDuCjQKf2zLRulmBj7KN8cPqHd&payer_email=ricochet_103%40hotmail.com&txn_id=9SC22286KC6756115&payment_type=instant&last_name=Lendvoy&address_state=ON&item_name1=%24100+Scroll&receiver_email=primalosps%40gmail.com&item_name2=%2475+Donator+Scroll&payment_fee=11.72&item_name3=%2450+Donator+Scroll&shipping_discount=0.00&quantity1=1&insurance_amount=0.00&quantity2=1&receiver_id=ZSR3U3D55F3AU&quantity3=1&txn_type=cart&discount=0.00&mc_gross_1=100.00&mc_currency=USD&mc_gross_2=75.00&mc_gross_3=50.00&residence_country=CA&shipping_method=Default&transaction_subject=&payment_gross=225.00&ipn_track_id=f71091707841f
+[2022-08-13 08:25 America/Chicago] HTTP response of validation request: HTTP/1.1 200 OK
+Cache-Control: max-age=0, no-cache, no-store, must-revalidate
+Content-Security-Policy: default-src 'self' https://*.paypal.com https://*.paypalobjects.com 'unsafe-inline'; style-src 'self' https://*.paypal.com https://*.paypalobjects.com 'unsafe-inline'; script-src 'nonce-1nfvscfZwvonTYflJifmUGiNFznUQwS7r3Pdzo9Uyk+4rH3r' 'self' 'unsafe-inline' https://*.paypal.com https://*.paypalobjects.com; img-src 'self' https: data:; object-src 'none'; font-src 'self' https://*.paypal.com https://*.paypalobjects.com; frame-src 'self' https://*.paypalobjects.com https://*.paypal.com https://*.qualtrics.com; connect-src 'self' 'unsafe-inline' https://*.paypal.com https://*.paypalobjects.com https://*.qualtrics.com; form-action 'self' https://*.paypal.com; base-uri 'self' https://*.paypal.com; block-all-mixed-content;; report-uri https://www.paypal.com/csplog/api/log/csp
+Content-Type: text/html; charset=utf-8
+ETag: W/"8-WXvD6WBsMSDy5c0v7r4OHopk5Ys"
+Paypal-Debug-Id: a1eb850462982
+Traceparent: 00-0000000000000000000a1eb850462982-9eb0d604835ec11d-01
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+X-Xss-Protection: 1; mode=block
+DC: ccg11-origin-www-1.paypal.com
+X-Akamai-Transformed: 9 8 0 pmb=mRUM,1
+Date: Sat, 13 Aug 2022 13:25:30 GMT
+Content-Length: 8
+Connection: close
+Set-Cookie: LANG=en_US%3BUS; Max-Age=31556; Domain=.paypal.com; Path=/; Expires=Sat, 13 Aug 2022 22:11:26 GMT; HttpOnly; Secure
+Set-Cookie: enforce_policy=ccpa; Max-Age=31536000; Domain=.paypal.com; Path=/; Expires=Sun, 13 Aug 2023 13:25:30 GMT; Secure
+Set-Cookie: x-pp-s=eyJ0IjoiMTY2MDM5NzEzMDM2NSIsImwiOiIwIiwibSI6IjAifQ; Domain=.paypal.com; Path=/; HttpOnly; Secure
+Set-Cookie: tsrce=merchantnotifnodeweb; Domain=.paypal.com; Path=/; Expires=Tue, 16 Aug 2022 13:25:30 GMT; HttpOnly; Secure; SameSite=None
+Set-Cookie: nsid=s%3AUq_a6i9nyq1_4hRTpeHEOUK4AoKYtST0.WTWzLla3N2UZ0t4sWsg8TaI53ixUrOzMrOW3MKtLeVk; Path=/; HttpOnly; Secure
+Set-Cookie: ts=vreXpYrS%3D1755091530%26vteXpYrS%3D1660398930%26vr%3D976192551820a2d1f2abb87affb131cc%26vt%3D976192551820a2d1f2abb87affb131cb%26vtyp%3Dnew; Path=/; Domain=paypal.com; Expires=Tue, 12 Aug 2025 13:25:30 GMT; HttpOnly; Secure
+Set-Cookie: ts_c=vr%3D976192551820a2d1f2abb87affb131cc%26vt%3D976192551820a2d1f2abb87affb131cb; Path=/; Domain=paypal.com; Expires=Tue, 12 Aug 2025 13:25:30 GMT; Secure
+Server-Timing: edge; dur=51
+Server-Timing: origin; dur=135
+Server-Timing: cdn-cache; desc=MISS
+Server-Timing: content-encoding;desc="",x-cdn;desc="akamai"
+Strict-Transport-Security: max-age=63072000
+
+VERIFIED
+[2022-08-13 08:25 America/Chicago] Verified IPN: cmd=_notify-validate&mc_gross=225.00&protection_eligibility=Eligible&address_status=confirmed&item_number1=1023&item_number2=1022&payer_id=FMDDBBDGSTH24&item_number3=17&address_street=8+Edgecroft+Cres&payment_date=06%3A25%3A23+Aug+13%2C+2022+PDT&payment_status=Completed&charset=UTF-8&address_zip=L8J+3Y6&first_name=Bronson&mc_fee=11.72&address_country_code=CA&address_name=Bronson+Lendvoy&notify_version=3.9&custom=Bronson&payer_status=verified&business=primalosps%40gmail.com&address_country=Canada&num_cart_items=3&address_city=Hamilton&verify_sign=AyVuUcpetZUWCXV.EHq.qRhxEb6.AFfDuCjQKf2zLRulmBj7KN8cPqHd&payer_email=ricochet_103%40hotmail.com&txn_id=9SC22286KC6756115&payment_type=instant&last_name=Lendvoy&address_state=ON&item_name1=%24100+Scroll&receiver_email=primalosps%40gmail.com&item_name2=%2475+Donator+Scroll&payment_fee=11.72&item_name3=%2450+Donator+Scroll&shipping_discount=0.00&quantity1=1&insurance_amount=0.00&quantity2=1&receiver_id=ZSR3U3D55F3AU&quantity3=1&txn_type=cart&discount=0.00&mc_gross_1=100.00&mc_currency=USD&mc_gross_2=75.00&mc_gross_3=50.00&residence_country=CA&shipping_method=Default&transaction_subject=&payment_gross=225.00&ipn_track_id=f71091707841f 
+[2022-08-13 08:58 America/Chicago] HTTP request of validation request:POST /cgi-bin/webscr HTTP/1.1
+Host: www.paypal.com
+Accept: */*
+Connection: Close
+Content-Length: 1042
+Content-Type: application/x-www-form-urlencoded
+
+ for IPN payload: cmd=_notify-validate&mc_gross=10.00&protection_eligibility=Eligible&address_status=confirmed&item_number1=11&payer_id=FJRHTDGPF68ZY&address_street=5+Willow+Walk%0D%0Achickerell&payment_date=06%3A58%3A20+Aug+13%2C+2022+PDT&payment_status=Completed&charset=UTF-8&address_zip=DT3+4GE&first_name=Max&mc_fee=0.99&address_country_code=GB&address_name=Max+Drummond&notify_version=3.9&custom=evo&payer_status=verified&business=primalosps%40gmail.com&address_country=United+Kingdom&num_cart_items=1&address_city=Weymouth&verify_sign=AZydzCsKo3EvIyytkAn76kfDYsuuA4hHpIH-Ci7uFblwotKw8mSuY066&payer_email=maxdrummond%40hotmail.co.uk&txn_id=5KX8031034783400V&payment_type=instant&last_name=Drummond&item_name1=%2410+Scroll&address_state=DORSET&receiver_email=primalosps%40gmail.com&payment_fee=0.99&shipping_discount=0.00&quantity1=1&insurance_amount=0.00&receiver_id=ZSR3U3D55F3AU&txn_type=cart&discount=0.00&mc_gross_1=10.00&mc_currency=USD&residence_country=GB&shipping_method=Default&transaction_subject=&payment_gross=10.00&ipn_track_id=f815860421964
+[2022-08-13 08:58 America/Chicago] HTTP response of validation request: HTTP/1.1 200 OK
+Connection: close
+Content-Length: 8
+Cache-Control: max-age=0, no-cache, no-store, must-revalidate
+Content-Security-Policy: default-src 'self' https://*.paypal.com https://*.paypalobjects.com 'unsafe-inline'; style-src 'self' https://*.paypal.com https://*.paypalobjects.com 'unsafe-inline'; script-src 'nonce-aU0y6s3d9zgvjSKNPvFIXKCk82+Z6QIPLFvoyrDTlHgw/JgD' 'self' 'unsafe-inline' https://*.paypal.com https://*.paypalobjects.com; img-src 'self' https: data:; object-src 'none'; font-src 'self' https://*.paypal.com https://*.paypalobjects.com; frame-src 'self' https://*.paypalobjects.com https://*.paypal.com https://*.qualtrics.com; connect-src 'self' 'unsafe-inline' https://*.paypal.com https://*.paypalobjects.com https://*.qualtrics.com; form-action 'self' https://*.paypal.com; base-uri 'self' https://*.paypal.com; block-all-mixed-content;; report-uri https://www.paypal.com/csplog/api/log/csp
+Content-Type: text/html; charset=utf-8
+Etag: W/"8-WXvD6WBsMSDy5c0v7r4OHopk5Ys"
+Paypal-Debug-Id: f46622293923e
+Set-Cookie: LANG=en_US%3BUS; Max-Age=31556; Domain=.paypal.com; Path=/; Expires=Sat, 13 Aug 2022 22:44:24 GMT; HttpOnly; Secure
+Set-Cookie: enforce_policy=ccpa; Max-Age=31536000; Domain=.paypal.com; Path=/; Expires=Sun, 13 Aug 2023 13:58:28 GMT; Secure
+Set-Cookie: x-pp-s=eyJ0IjoiMTY2MDM5OTEwODMzNyIsImwiOiIwIiwibSI6IjAifQ; Domain=.paypal.com; Path=/; HttpOnly; Secure
+Set-Cookie: tsrce=merchantnotifnodeweb; Domain=.paypal.com; Path=/; Expires=Tue, 16 Aug 2022 13:58:28 GMT; HttpOnly; Secure; SameSite=None
+Set-Cookie: nsid=s%3AFqL0bY0FLt5exnJmsT9XCDDiN_wA45oq.sE31NUTvCMcU%2FuZQrsh0GNVT3drMFkVTZDIA0Agkzh0; Path=/; HttpOnly; Secure
+Set-Cookie: ts=vreXpYrS%3D1755093508%26vteXpYrS%3D1660400908%26vr%3D977fc0c71820ad046938337cff97fc96%26vt%3D977fc0c71820ad046938337cff97fc95%26vtyp%3Dnew; Path=/; Domain=paypal.com; Expires=Tue, 12 Aug 2025 13:58:28 GMT; HttpOnly; Secure
+Set-Cookie: ts_c=vr%3D977fc0c71820ad046938337cff97fc96%26vt%3D977fc0c71820ad046938337cff97fc95; Path=/; Domain=paypal.com; Expires=Tue, 12 Aug 2025 13:58:28 GMT; Secure
+Traceparent: 00-0000000000000000000f46622293923e-9a79db081f30cdbb-01
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+X-Xss-Protection: 1; mode=block
+DC: ccg11-origin-www-1.paypal.com
+Accept-Ranges: bytes
+Via: 1.1 varnish, 1.1 varnish
+Date: Sat, 13 Aug 2022 13:58:28 GMT
+Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
+X-Served-By: cache-iad-kjyo7100030-IAD, cache-den8256-DEN
+X-Cache: MISS, MISS
+X-Cache-Hits: 0, 0
+X-Timer: S1660399108.236725,VS0,VE164
+Vary: Accept-Encoding
+Server-Timing: content-encoding;desc="",x-cdn;desc="fastly"
+
+VERIFIED
+[2022-08-13 08:58 America/Chicago] Verified IPN: cmd=_notify-validate&mc_gross=10.00&protection_eligibility=Eligible&address_status=confirmed&item_number1=11&payer_id=FJRHTDGPF68ZY&address_street=5+Willow+Walk%0D%0Achickerell&payment_date=06%3A58%3A20+Aug+13%2C+2022+PDT&payment_status=Completed&charset=UTF-8&address_zip=DT3+4GE&first_name=Max&mc_fee=0.99&address_country_code=GB&address_name=Max+Drummond&notify_version=3.9&custom=evo&payer_status=verified&business=primalosps%40gmail.com&address_country=United+Kingdom&num_cart_items=1&address_city=Weymouth&verify_sign=AZydzCsKo3EvIyytkAn76kfDYsuuA4hHpIH-Ci7uFblwotKw8mSuY066&payer_email=maxdrummond%40hotmail.co.uk&txn_id=5KX8031034783400V&payment_type=instant&last_name=Drummond&item_name1=%2410+Scroll&address_state=DORSET&receiver_email=primalosps%40gmail.com&payment_fee=0.99&shipping_discount=0.00&quantity1=1&insurance_amount=0.00&receiver_id=ZSR3U3D55F3AU&txn_type=cart&discount=0.00&mc_gross_1=10.00&mc_currency=USD&residence_country=GB&shipping_method=Default&transaction_subject=&payment_gross=10.00&ipn_track_id=f815860421964 
+[2022-08-13 10:19 America/Chicago] HTTP request of validation request:POST /cgi-bin/webscr HTTP/1.1
+Host: www.paypal.com
+Accept: */*
+Connection: Close
+Content-Length: 1060
+Content-Type: application/x-www-form-urlencoded
+
+ for IPN payload: cmd=_notify-validate&mc_gross=20.00&protection_eligibility=Eligible&address_status=confirmed&item_number1=11&payer_id=MJTGDCQ88L2NA&address_street=1+BOURCHIER+ST&payment_date=08%3A19%3A28+Aug+13%2C+2022+PDT&payment_status=Completed&charset=UTF-8&address_zip=3046&first_name=Farid&mc_fee=1.49&address_country_code=AU&address_name=Farid+Aghabayov&notify_version=3.9&custom=bing+bong&payer_status=verified&business=primalosps%40gmail.com&address_country=Australia&num_cart_items=1&address_city=GLENROY&verify_sign=A-2h85cKXlOxrfF309NFUlgExkcfA2zE5J-ZyHHB50POcA89wzA9Ek2t&payer_email=faridhodge1994%40gmail.com&txn_id=9MN69301SS9253914&payment_type=instant&payer_business_name=SackForAttack&last_name=Aghabayov&address_state=VIC&item_name1=%2410+Scroll&receiver_email=primalosps%40gmail.com&payment_fee=1.49&shipping_discount=0.00&quantity1=2&insurance_amount=0.00&receiver_id=ZSR3U3D55F3AU&txn_type=cart&discount=0.00&mc_gross_1=20.00&mc_currency=USD&residence_country=AU&shipping_method=Default&transaction_subject=&payment_gross=20.00&ipn_track_id=a4dc9bd8d3efb
+[2022-08-13 10:19 America/Chicago] HTTP response of validation request: HTTP/1.1 200 OK
+Connection: close
+Content-Length: 8
+Cache-Control: max-age=0, no-cache, no-store, must-revalidate
+Content-Security-Policy: default-src 'self' https://*.paypal.com https://*.paypalobjects.com 'unsafe-inline'; style-src 'self' https://*.paypal.com https://*.paypalobjects.com 'unsafe-inline'; script-src 'nonce-o2686r+o9Ryp5x/Wh+EMjuK4xGaMzPqMpt1qrKUc4VfOy2n1' 'self' 'unsafe-inline' https://*.paypal.com https://*.paypalobjects.com; img-src 'self' https: data:; object-src 'none'; font-src 'self' https://*.paypal.com https://*.paypalobjects.com; frame-src 'self' https://*.paypalobjects.com https://*.paypal.com https://*.qualtrics.com; connect-src 'self' 'unsafe-inline' https://*.paypal.com https://*.paypalobjects.com https://*.qualtrics.com; form-action 'self' https://*.paypal.com; base-uri 'self' https://*.paypal.com; block-all-mixed-content;; report-uri https://www.paypal.com/csplog/api/log/csp
+Content-Type: text/html; charset=utf-8
+Etag: W/"8-WXvD6WBsMSDy5c0v7r4OHopk5Ys"
+Paypal-Debug-Id: f52154932a7f6
+Set-Cookie: LANG=en_US%3BUS; Max-Age=31556; Domain=.paypal.com; Path=/; Expires=Sun, 14 Aug 2022 00:05:33 GMT; HttpOnly; Secure
+Set-Cookie: enforce_policy=ccpa; Max-Age=31536000; Domain=.paypal.com; Path=/; Expires=Sun, 13 Aug 2023 15:19:37 GMT; Secure
+Set-Cookie: x-pp-s=eyJ0IjoiMTY2MDQwMzk3NzEyOCIsImwiOiIwIiwibSI6IjAifQ; Domain=.paypal.com; Path=/; HttpOnly; Secure
+Set-Cookie: tsrce=merchantnotifnodeweb; Domain=.paypal.com; Path=/; Expires=Tue, 16 Aug 2022 15:19:37 GMT; HttpOnly; Secure; SameSite=None
+Set-Cookie: nsid=s%3AWuu_UbGaWwU6n7hJYAiUP-Nn7GsGope9.rFalvts44wTw2wNjgdxS2Dn%2Fmgk3LnMkXt6f%2Fi1Xg9A; Path=/; HttpOnly; Secure
+Set-Cookie: ts=vreXpYrS%3D1755098377%26vteXpYrS%3D1660405777%26vr%3D97ca0b8c1820ad00585fedb9ff94cf0b%26vt%3D97ca0b8c1820ad00585fedb9ff94cf0a%26vtyp%3Dnew; Path=/; Domain=paypal.com; Expires=Tue, 12 Aug 2025 15:19:37 GMT; HttpOnly; Secure
+Set-Cookie: ts_c=vr%3D97ca0b8c1820ad00585fedb9ff94cf0b%26vt%3D97ca0b8c1820ad00585fedb9ff94cf0a; Path=/; Domain=paypal.com; Expires=Tue, 12 Aug 2025 15:19:37 GMT; Secure
+Traceparent: 00-0000000000000000000f52154932a7f6-34ab170d4402ebc4-01
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+X-Xss-Protection: 1; mode=block
+DC: ccg11-origin-www-1.paypal.com
+Accept-Ranges: bytes
+Via: 1.1 varnish, 1.1 varnish
+Date: Sat, 13 Aug 2022 15:19:37 GMT
+Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
+X-Served-By: cache-iad-kjyo7100138-IAD, cache-den8259-DEN
+X-Cache: MISS, MISS
+X-Cache-Hits: 0, 0
+X-Timer: S1660403977.039831,VS0,VE144
+Vary: Accept-Encoding
+Server-Timing: content-encoding;desc="",x-cdn;desc="fastly"
+
+VERIFIED
+[2022-08-13 10:19 America/Chicago] Verified IPN: cmd=_notify-validate&mc_gross=20.00&protection_eligibility=Eligible&address_status=confirmed&item_number1=11&payer_id=MJTGDCQ88L2NA&address_street=1+BOURCHIER+ST&payment_date=08%3A19%3A28+Aug+13%2C+2022+PDT&payment_status=Completed&charset=UTF-8&address_zip=3046&first_name=Farid&mc_fee=1.49&address_country_code=AU&address_name=Farid+Aghabayov&notify_version=3.9&custom=bing+bong&payer_status=verified&business=primalosps%40gmail.com&address_country=Australia&num_cart_items=1&address_city=GLENROY&verify_sign=A-2h85cKXlOxrfF309NFUlgExkcfA2zE5J-ZyHHB50POcA89wzA9Ek2t&payer_email=faridhodge1994%40gmail.com&txn_id=9MN69301SS9253914&payment_type=instant&payer_business_name=SackForAttack&last_name=Aghabayov&address_state=VIC&item_name1=%2410+Scroll&receiver_email=primalosps%40gmail.com&payment_fee=1.49&shipping_discount=0.00&quantity1=2&insurance_amount=0.00&receiver_id=ZSR3U3D55F3AU&txn_type=cart&discount=0.00&mc_gross_1=20.00&mc_currency=USD&residence_country=AU&shipping_method=Default&transaction_subject=&payment_gross=20.00&ipn_track_id=a4dc9bd8d3efb 
+[2022-08-13 10:25 America/Chicago] HTTP request of validation request:POST /cgi-bin/webscr HTTP/1.1
+Host: www.paypal.com
+Accept: */*
+Connection: Close
+Content-Length: 1053
+Content-Type: application/x-www-form-urlencoded
+
+ for IPN payload: cmd=_notify-validate&mc_gross=20.00&protection_eligibility=Eligible&address_status=confirmed&item_number1=11&payer_id=MAZK5S53UEGW2&address_street=580+rudd+spees+road&payment_date=08%3A25%3A40+Aug+13%2C+2022+PDT&payment_status=Completed&charset=UTF-8&address_zip=42058&first_name=kobe&mc_fee=1.19&address_country_code=US&address_name=kobe+riley&notify_version=3.9&custom=Riley&payer_status=unverified&business=primalosps%40gmail.com&address_country=United+States&num_cart_items=1&address_city=ledbetter&verify_sign=ArDeC-FUgFX.vn-tYz-6Xk3bV02vArHSMs6TXHrotvJgzoeiG3AFVY2o&payer_email=koberiley89%40gmail.com&txn_id=0TF73456M1351243X&payment_type=instant&last_name=riley&address_state=KY&item_name1=%2410+Scroll&receiver_email=primalosps%40gmail.com&payment_fee=1.19&shipping_discount=0.00&quantity1=2&insurance_amount=0.00&receiver_id=ZSR3U3D55F3AU&txn_type=cart&discount=0.00&mc_gross_1=20.00&mc_currency=USD&residence_country=US&receipt_id=0267-7267-0621-1446&shipping_method=Default&transaction_subject=&payment_gross=20.00&ipn_track_id=f25289527d8d0
+[2022-08-13 10:25 America/Chicago] HTTP response of validation request: HTTP/1.1 200 OK
+Cache-Control: max-age=0, no-cache, no-store, must-revalidate
+Content-Security-Policy: default-src 'self' https://*.paypal.com https://*.paypalobjects.com 'unsafe-inline'; style-src 'self' https://*.paypal.com https://*.paypalobjects.com 'unsafe-inline'; script-src 'nonce-Hsy9H1I8FMamoArZ+RDEyRhKY7oUru724U8suxFLGtv9gVHO' 'self' 'unsafe-inline' https://*.paypal.com https://*.paypalobjects.com; img-src 'self' https: data:; object-src 'none'; font-src 'self' https://*.paypal.com https://*.paypalobjects.com; frame-src 'self' https://*.paypalobjects.com https://*.paypal.com https://*.qualtrics.com; connect-src 'self' 'unsafe-inline' https://*.paypal.com https://*.paypalobjects.com https://*.qualtrics.com; form-action 'self' https://*.paypal.com; base-uri 'self' https://*.paypal.com; block-all-mixed-content;; report-uri https://www.paypal.com/csplog/api/log/csp
+Content-Type: text/html; charset=utf-8
+ETag: W/"8-WXvD6WBsMSDy5c0v7r4OHopk5Ys"
+Paypal-Debug-Id: a6cbacf0d67a6
+Traceparent: 00-0000000000000000000a6cbacf0d67a6-5587ad662efd8353-01
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+X-Xss-Protection: 1; mode=block
+DC: ccg11-origin-www-1.paypal.com
+X-Akamai-Transformed: 9 8 0 pmb=mRUM,1
+Date: Sat, 13 Aug 2022 15:25:48 GMT
+Content-Length: 8
+Connection: close
+Set-Cookie: LANG=en_US%3BUS; Max-Age=31556; Domain=.paypal.com; Path=/; Expires=Sun, 14 Aug 2022 00:11:44 GMT; HttpOnly; Secure
+Set-Cookie: enforce_policy=ccpa; Max-Age=31536000; Domain=.paypal.com; Path=/; Expires=Sun, 13 Aug 2023 15:25:48 GMT; Secure
+Set-Cookie: x-pp-s=eyJ0IjoiMTY2MDQwNDM0ODYyNCIsImwiOiIwIiwibSI6IjAifQ; Domain=.paypal.com; Path=/; HttpOnly; Secure
+Set-Cookie: tsrce=merchantnotifnodeweb; Domain=.paypal.com; Path=/; Expires=Tue, 16 Aug 2022 15:25:48 GMT; HttpOnly; Secure; SameSite=None
+Set-Cookie: nsid=s%3A0e3qdqz5WbAKWb1Ks1sv0ro_tTHWJQq_.YQTg9%2BRCLgKFHpO8I4S0oLD3ntSaZjfGvQJqr1vbNqk; Path=/; HttpOnly; Secure
+Set-Cookie: ts=vreXpYrS%3D1755098748%26vteXpYrS%3D1660406148%26vr%3D97cfb6bd1820ad00732616e7ff94ae18%26vt%3D97cfb6bd1820ad00732616e7ff94ae17%26vtyp%3Dnew; Path=/; Domain=paypal.com; Expires=Tue, 12 Aug 2025 15:25:48 GMT; HttpOnly; Secure
+Set-Cookie: ts_c=vr%3D97cfb6bd1820ad00732616e7ff94ae18%26vt%3D97cfb6bd1820ad00732616e7ff94ae17; Path=/; Domain=paypal.com; Expires=Tue, 12 Aug 2025 15:25:48 GMT; Secure
+Server-Timing: edge; dur=25
+Server-Timing: origin; dur=132
+Server-Timing: cdn-cache; desc=MISS
+Server-Timing: content-encoding;desc="",x-cdn;desc="akamai"
+Strict-Transport-Security: max-age=63072000
+
+VERIFIED
+[2022-08-13 10:25 America/Chicago] Verified IPN: cmd=_notify-validate&mc_gross=20.00&protection_eligibility=Eligible&address_status=confirmed&item_number1=11&payer_id=MAZK5S53UEGW2&address_street=580+rudd+spees+road&payment_date=08%3A25%3A40+Aug+13%2C+2022+PDT&payment_status=Completed&charset=UTF-8&address_zip=42058&first_name=kobe&mc_fee=1.19&address_country_code=US&address_name=kobe+riley&notify_version=3.9&custom=Riley&payer_status=unverified&business=primalosps%40gmail.com&address_country=United+States&num_cart_items=1&address_city=ledbetter&verify_sign=ArDeC-FUgFX.vn-tYz-6Xk3bV02vArHSMs6TXHrotvJgzoeiG3AFVY2o&payer_email=koberiley89%40gmail.com&txn_id=0TF73456M1351243X&payment_type=instant&last_name=riley&address_state=KY&item_name1=%2410+Scroll&receiver_email=primalosps%40gmail.com&payment_fee=1.19&shipping_discount=0.00&quantity1=2&insurance_amount=0.00&receiver_id=ZSR3U3D55F3AU&txn_type=cart&discount=0.00&mc_gross_1=20.00&mc_currency=USD&residence_country=US&receipt_id=0267-7267-0621-1446&shipping_method=Default&transaction_subject=&payment_gross=20.00&ipn_track_id=f25289527d8d0 
+[2022-08-13 10:49 America/Chicago] HTTP request of validation request:POST /cgi-bin/webscr HTTP/1.1
+Host: www.sandbox.paypal.com
+Accept: */*
+Connection: Close
+Content-Length: 1076
+Content-Type: application/x-www-form-urlencoded
+
+ for IPN payload: cmd=_notify-validate&mc_gross=75.00&protection_eligibility=Eligible&address_status=confirmed&item_number1=1022&payer_id=X44TPQPKDLWLN&address_street=1+Main+St&payment_date=08%3A49%3A24+Aug+13%2C+2022+PDT&payment_status=Completed&charset=UTF-8&address_zip=95131&first_name=John&mc_fee=3.11&address_country_code=US&address_name=John+Doe&notify_version=3.9&custom=123&payer_status=verified&business=sb-439fbc18073957%40business.example.com&address_country=United+States&num_cart_items=1&address_city=San+Jose&verify_sign=A7EOiWuwJKN6CT1LjpoOH6M8hi0kA7QtLEzQ7.QTNQorhsry7L8Q3tMN&payer_email=sb-pvg9r19571555%40personal.example.com&txn_id=0FJ76697B6635994E&payment_type=instant&last_name=Doe&item_name1=%2475+Donator+Scroll&address_state=CA&receiver_email=sb-439fbc18073957%40business.example.com&payment_fee=3.11&shipping_discount=0.00&quantity1=1&insurance_amount=0.00&receiver_id=VFJDYXB3NHGWJ&txn_type=cart&discount=0.00&mc_gross_1=75.00&mc_currency=USD&residence_country=US&test_ipn=1&shipping_method=Default&transaction_subject=&payment_gross=75.00&ipn_track_id=9e4b323d1b792
+[2022-08-13 10:49 America/Chicago] HTTP response of validation request: HTTP/1.1 200 OK
+Connection: close
+Content-Length: 8
+Content-Type: text/html; charset=utf-8
+Cache-Control: max-age=0, no-cache, no-store, must-revalidate
+Content-Security-Policy: default-src 'self' https://*.paypal.com https://*.paypalobjects.com 'unsafe-inline'; style-src 'self' https://*.paypal.com https://*.paypalobjects.com 'unsafe-inline'; script-src 'nonce-IJz0ZxUI6PxA4Iqwsgc83dN0FHiQPHNyFaFyuMFLP3pICc8t' 'self' 'unsafe-inline' https://*.paypal.com https://*.paypalobjects.com; img-src 'self' https: data:; object-src 'none'; font-src 'self' https://*.paypal.com https://*.paypalobjects.com; frame-src 'self' https://*.paypalobjects.com https://*.paypal.com https://*.qualtrics.com; connect-src 'self' 'unsafe-inline' https://*.paypal.com https://*.paypalobjects.com https://*.qualtrics.com; form-action 'self' https://*.paypal.com; base-uri 'self' https://*.paypal.com; block-all-mixed-content;
+Etag: W/"8-WXvD6WBsMSDy5c0v7r4OHopk5Ys"
+Paypal-Debug-Id: fa3b35bfd8234
+Set-Cookie: LANG=en_US%3BUS; Max-Age=31556; Domain=.paypal.com; Path=/; Expires=Sun, 14 Aug 2022 00:35:27 GMT; HttpOnly; Secure
+Set-Cookie: enforce_policy=ccpa; Max-Age=31536000; Domain=.paypal.com; Path=/; Expires=Sun, 13 Aug 2023 15:49:31 GMT; Secure
+Set-Cookie: x-pp-s=eyJ0IjoiMTY2MDQwNTc3MTUwMiIsImwiOiIwIiwibSI6IjAifQ; Domain=.paypal.com; Path=/; HttpOnly; Secure
+Set-Cookie: tsrce=merchantnotifnodeweb; Domain=.paypal.com; Path=/; Expires=Tue, 16 Aug 2022 15:49:31 GMT; HttpOnly; Secure; SameSite=None
+Set-Cookie: nsid=s%3AfNpt260ZRM0BbsM3FOlwzVgs7m6BETbm.bVcvoZ%2BRXgyiRvDcHkv1DjXUigJq70mOhOLW%2BOPc9Ck; Path=/; HttpOnly; Secure
+Set-Cookie: ts=vreXpYrS%3D1755100171%26vteXpYrS%3D1660407571%26vr%3D97e56cd51820a602125b1f52ff125610%26vt%3D97e56cd51820a602125b1f52ff12560f%26vtyp%3Dnew; Path=/; Domain=paypal.com; Expires=Tue, 12 Aug 2025 15:49:31 GMT; HttpOnly; Secure
+Set-Cookie: ts_c=vr%3D97e56cd51820a602125b1f52ff125610%26vt%3D97e56cd51820a602125b1f52ff12560f; Path=/; Domain=paypal.com; Expires=Tue, 12 Aug 2025 15:49:31 GMT; Secure
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+X-Xss-Protection: 1; mode=block
+Accept-Ranges: bytes
+Via: 1.1 varnish, 1.1 varnish
+Date: Sat, 13 Aug 2022 15:49:31 GMT
+Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
+X-Served-By: cache-chi-kigq8000045-CHI, cache-den8248-DEN
+X-Cache: MISS, MISS
+X-Cache-Hits: 0, 0
+X-Timer: S1660405771.439624,VS0,VE98
+Vary: Accept-Encoding
+Set-Cookie: x-cdn=fastly:DEN; Domain=paypal.com; Path=/; Secure
+
+VERIFIED
+[2022-08-13 10:49 America/Chicago] Verified IPN: cmd=_notify-validate&mc_gross=75.00&protection_eligibility=Eligible&address_status=confirmed&item_number1=1022&payer_id=X44TPQPKDLWLN&address_street=1+Main+St&payment_date=08%3A49%3A24+Aug+13%2C+2022+PDT&payment_status=Completed&charset=UTF-8&address_zip=95131&first_name=John&mc_fee=3.11&address_country_code=US&address_name=John+Doe&notify_version=3.9&custom=123&payer_status=verified&business=sb-439fbc18073957%40business.example.com&address_country=United+States&num_cart_items=1&address_city=San+Jose&verify_sign=A7EOiWuwJKN6CT1LjpoOH6M8hi0kA7QtLEzQ7.QTNQorhsry7L8Q3tMN&payer_email=sb-pvg9r19571555%40personal.example.com&txn_id=0FJ76697B6635994E&payment_type=instant&last_name=Doe&item_name1=%2475+Donator+Scroll&address_state=CA&receiver_email=sb-439fbc18073957%40business.example.com&payment_fee=3.11&shipping_discount=0.00&quantity1=1&insurance_amount=0.00&receiver_id=VFJDYXB3NHGWJ&txn_type=cart&discount=0.00&mc_gross_1=75.00&mc_currency=USD&residence_country=US&test_ipn=1&shipping_method=Default&transaction_subject=&payment_gross=75.00&ipn_track_id=9e4b323d1b792 
+[2022-08-13 10:50 America/Chicago] HTTP request of validation request:POST /cgi-bin/webscr HTTP/1.1
+Host: www.sandbox.paypal.com
+Accept: */*
+Connection: Close
+Content-Length: 1076
+Content-Type: application/x-www-form-urlencoded
+
+ for IPN payload: cmd=_notify-validate&mc_gross=75.00&protection_eligibility=Eligible&address_status=confirmed&item_number1=1022&payer_id=X44TPQPKDLWLN&address_street=1+Main+St&payment_date=08%3A50%3A19+Aug+13%2C+2022+PDT&payment_status=Completed&charset=UTF-8&address_zip=95131&first_name=John&mc_fee=3.11&address_country_code=US&address_name=John+Doe&notify_version=3.9&custom=123&payer_status=verified&business=sb-439fbc18073957%40business.example.com&address_country=United+States&num_cart_items=1&address_city=San+Jose&verify_sign=AAXK.MF54Pl7oncqGlJ9Zw8PymXqAvtSGzIDAlekFZHLI19JYq57lClt&payer_email=sb-pvg9r19571555%40personal.example.com&txn_id=20F74567KD691591S&payment_type=instant&last_name=Doe&item_name1=%2475+Donator+Scroll&address_state=CA&receiver_email=sb-439fbc18073957%40business.example.com&payment_fee=3.11&shipping_discount=0.00&quantity1=1&insurance_amount=0.00&receiver_id=VFJDYXB3NHGWJ&txn_type=cart&discount=0.00&mc_gross_1=75.00&mc_currency=USD&residence_country=US&test_ipn=1&shipping_method=Default&transaction_subject=&payment_gross=75.00&ipn_track_id=66d574f4ef4ab
+[2022-08-13 10:50 America/Chicago] HTTP response of validation request: HTTP/1.1 200 OK
+Connection: close
+Content-Length: 8
+Content-Type: text/html; charset=utf-8
+Cache-Control: max-age=0, no-cache, no-store, must-revalidate
+Content-Security-Policy: default-src 'self' https://*.paypal.com https://*.paypalobjects.com 'unsafe-inline'; style-src 'self' https://*.paypal.com https://*.paypalobjects.com 'unsafe-inline'; script-src 'nonce-/9IQ29OJ63i+A784cUU2CgwBCrDmqDGh8xiizpMrODjxPGGG' 'self' 'unsafe-inline' https://*.paypal.com https://*.paypalobjects.com; img-src 'self' https: data:; object-src 'none'; font-src 'self' https://*.paypal.com https://*.paypalobjects.com; frame-src 'self' https://*.paypalobjects.com https://*.paypal.com https://*.qualtrics.com; connect-src 'self' 'unsafe-inline' https://*.paypal.com https://*.paypalobjects.com https://*.qualtrics.com; form-action 'self' https://*.paypal.com; base-uri 'self' https://*.paypal.com; block-all-mixed-content;
+Etag: W/"8-WXvD6WBsMSDy5c0v7r4OHopk5Ys"
+Paypal-Debug-Id: 79775437648d9
+Set-Cookie: LANG=en_US%3BUS; Max-Age=31556; Domain=.paypal.com; Path=/; Expires=Sun, 14 Aug 2022 00:36:21 GMT; HttpOnly; Secure
+Set-Cookie: enforce_policy=ccpa; Max-Age=31536000; Domain=.paypal.com; Path=/; Expires=Sun, 13 Aug 2023 15:50:25 GMT; Secure
+Set-Cookie: x-pp-s=eyJ0IjoiMTY2MDQwNTgyNTIzOSIsImwiOiIwIiwibSI6IjAifQ; Domain=.paypal.com; Path=/; HttpOnly; Secure
+Set-Cookie: tsrce=merchantnotifnodeweb; Domain=.paypal.com; Path=/; Expires=Tue, 16 Aug 2022 15:50:25 GMT; HttpOnly; Secure; SameSite=None
+Set-Cookie: nsid=s%3AnjqXEbr1S6BvS7Wqn01H7TfcSmNUatzY.VfG0qbWXA96l5rxrBY3ujqyuY%2BIp8td1oBvWcHZeEn4; Path=/; HttpOnly; Secure
+Set-Cookie: ts=vreXpYrS%3D1755100225%26vteXpYrS%3D1660407625%26vr%3D97e63ec31820a602060fa7cdff14da1c%26vt%3D97e63ec31820a602060fa7cdff14da1b%26vtyp%3Dnew; Path=/; Domain=paypal.com; Expires=Tue, 12 Aug 2025 15:50:25 GMT; HttpOnly; Secure
+Set-Cookie: ts_c=vr%3D97e63ec31820a602060fa7cdff14da1c%26vt%3D97e63ec31820a602060fa7cdff14da1b; Path=/; Domain=paypal.com; Expires=Tue, 12 Aug 2025 15:50:25 GMT; Secure
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+X-Xss-Protection: 1; mode=block
+Accept-Ranges: bytes
+Via: 1.1 varnish, 1.1 varnish
+Date: Sat, 13 Aug 2022 15:50:25 GMT
+Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
+X-Served-By: cache-chi-kigq8000112-CHI, cache-den8262-DEN
+X-Cache: MISS, MISS
+X-Cache-Hits: 0, 0
+X-Timer: S1660405825.183143,VS0,VE94
+Vary: Accept-Encoding
+Set-Cookie: x-cdn=fastly:DEN; Domain=paypal.com; Path=/; Secure
+
+VERIFIED
+[2022-08-13 10:50 America/Chicago] Verified IPN: cmd=_notify-validate&mc_gross=75.00&protection_eligibility=Eligible&address_status=confirmed&item_number1=1022&payer_id=X44TPQPKDLWLN&address_street=1+Main+St&payment_date=08%3A50%3A19+Aug+13%2C+2022+PDT&payment_status=Completed&charset=UTF-8&address_zip=95131&first_name=John&mc_fee=3.11&address_country_code=US&address_name=John+Doe&notify_version=3.9&custom=123&payer_status=verified&business=sb-439fbc18073957%40business.example.com&address_country=United+States&num_cart_items=1&address_city=San+Jose&verify_sign=AAXK.MF54Pl7oncqGlJ9Zw8PymXqAvtSGzIDAlekFZHLI19JYq57lClt&payer_email=sb-pvg9r19571555%40personal.example.com&txn_id=20F74567KD691591S&payment_type=instant&last_name=Doe&item_name1=%2475+Donator+Scroll&address_state=CA&receiver_email=sb-439fbc18073957%40business.example.com&payment_fee=3.11&shipping_discount=0.00&quantity1=1&insurance_amount=0.00&receiver_id=VFJDYXB3NHGWJ&txn_type=cart&discount=0.00&mc_gross_1=75.00&mc_currency=USD&residence_country=US&test_ipn=1&shipping_method=Default&transaction_subject=&payment_gross=75.00&ipn_track_id=66d574f4ef4ab 
+[2022-08-13 10:55 America/Chicago] HTTP request of validation request:POST /cgi-bin/webscr HTTP/1.1
+Host: www.sandbox.paypal.com
+Accept: */*
+Connection: Close
+Content-Length: 1076
+Content-Type: application/x-www-form-urlencoded
+
+ for IPN payload: cmd=_notify-validate&mc_gross=75.00&protection_eligibility=Eligible&address_status=confirmed&item_number1=1022&payer_id=X44TPQPKDLWLN&address_street=1+Main+St&payment_date=08%3A55%3A39+Aug+13%2C+2022+PDT&payment_status=Completed&charset=UTF-8&address_zip=95131&first_name=John&mc_fee=3.11&address_country_code=US&address_name=John+Doe&notify_version=3.9&custom=123&payer_status=verified&business=sb-439fbc18073957%40business.example.com&address_country=United+States&num_cart_items=1&address_city=San+Jose&verify_sign=AhOv-Gpl56O-pxGiZcqqRULOVMHIAgSt1NnVgsCu3mj0STkHDS95GC0-&payer_email=sb-pvg9r19571555%40personal.example.com&txn_id=0VL23844GX7775107&payment_type=instant&last_name=Doe&item_name1=%2475+Donator+Scroll&address_state=CA&receiver_email=sb-439fbc18073957%40business.example.com&payment_fee=3.11&shipping_discount=0.00&quantity1=1&insurance_amount=0.00&receiver_id=VFJDYXB3NHGWJ&txn_type=cart&discount=0.00&mc_gross_1=75.00&mc_currency=USD&residence_country=US&test_ipn=1&shipping_method=Default&transaction_subject=&payment_gross=75.00&ipn_track_id=a8dd2db800a41
+[2022-08-13 10:55 America/Chicago] HTTP response of validation request: HTTP/1.1 200 OK
+Connection: close
+Content-Length: 8
+Content-Type: text/html; charset=utf-8
+Cache-Control: max-age=0, no-cache, no-store, must-revalidate
+Content-Security-Policy: default-src 'self' https://*.paypal.com https://*.paypalobjects.com 'unsafe-inline'; style-src 'self' https://*.paypal.com https://*.paypalobjects.com 'unsafe-inline'; script-src 'nonce-oPas+QW3Qyv/BM8UBfx9O3ZXCXtaD7PgdLztnVPKxUo1lM0R' 'self' 'unsafe-inline' https://*.paypal.com https://*.paypalobjects.com; img-src 'self' https: data:; object-src 'none'; font-src 'self' https://*.paypal.com https://*.paypalobjects.com; frame-src 'self' https://*.paypalobjects.com https://*.paypal.com https://*.qualtrics.com; connect-src 'self' 'unsafe-inline' https://*.paypal.com https://*.paypalobjects.com https://*.qualtrics.com; form-action 'self' https://*.paypal.com; base-uri 'self' https://*.paypal.com; block-all-mixed-content;
+Etag: W/"8-WXvD6WBsMSDy5c0v7r4OHopk5Ys"
+Paypal-Debug-Id: b0912ca65c2d5
+Set-Cookie: LANG=en_US%3BUS; Max-Age=31556; Domain=.paypal.com; Path=/; Expires=Sun, 14 Aug 2022 00:41:50 GMT; HttpOnly; Secure
+Set-Cookie: enforce_policy=ccpa; Max-Age=31536000; Domain=.paypal.com; Path=/; Expires=Sun, 13 Aug 2023 15:55:54 GMT; Secure
+Set-Cookie: x-pp-s=eyJ0IjoiMTY2MDQwNjE1NDYwMSIsImwiOiIwIiwibSI6IjAifQ; Domain=.paypal.com; Path=/; HttpOnly; Secure
+Set-Cookie: tsrce=merchantnotifnodeweb; Domain=.paypal.com; Path=/; Expires=Tue, 16 Aug 2022 15:55:54 GMT; HttpOnly; Secure; SameSite=None
+Set-Cookie: nsid=s%3ARzdSf6x8WJXCe6Gm6C7kyoTzdPHRTJaa.uKYaXNLCgaehEvAyQujccyr8SjHgmxUcqsnIReD%2BArI; Path=/; HttpOnly; Secure
+Set-Cookie: ts=vreXpYrS%3D1755100554%26vteXpYrS%3D1660407954%26vr%3D97eb45511820a6022c607c8fff11cd08%26vt%3D97eb45511820a6022c607c8fff11cd07%26vtyp%3Dnew; Path=/; Domain=paypal.com; Expires=Tue, 12 Aug 2025 15:55:54 GMT; HttpOnly; Secure
+Set-Cookie: ts_c=vr%3D97eb45511820a6022c607c8fff11cd08%26vt%3D97eb45511820a6022c607c8fff11cd07; Path=/; Domain=paypal.com; Expires=Tue, 12 Aug 2025 15:55:54 GMT; Secure
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+X-Xss-Protection: 1; mode=block
+Accept-Ranges: bytes
+Via: 1.1 varnish, 1.1 varnish
+Date: Sat, 13 Aug 2022 15:55:54 GMT
+Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
+X-Served-By: cache-chi-klot8100027-CHI, cache-den8271-DEN
+X-Cache: MISS, MISS
+X-Cache-Hits: 0, 0
+X-Timer: S1660406155.541659,VS0,VE96
+Vary: Accept-Encoding
+Set-Cookie: x-cdn=fastly:DEN; Domain=paypal.com; Path=/; Secure
+
+VERIFIED
+0[2022-08-13 10:55 America/Chicago] Verified IPN: cmd=_notify-validate&mc_gross=75.00&protection_eligibility=Eligible&address_status=confirmed&item_number1=1022&payer_id=X44TPQPKDLWLN&address_street=1+Main+St&payment_date=08%3A55%3A39+Aug+13%2C+2022+PDT&payment_status=Completed&charset=UTF-8&address_zip=95131&first_name=John&mc_fee=3.11&address_country_code=US&address_name=John+Doe&notify_version=3.9&custom=123&payer_status=verified&business=sb-439fbc18073957%40business.example.com&address_country=United+States&num_cart_items=1&address_city=San+Jose&verify_sign=AhOv-Gpl56O-pxGiZcqqRULOVMHIAgSt1NnVgsCu3mj0STkHDS95GC0-&payer_email=sb-pvg9r19571555%40personal.example.com&txn_id=0VL23844GX7775107&payment_type=instant&last_name=Doe&item_name1=%2475+Donator+Scroll&address_state=CA&receiver_email=sb-439fbc18073957%40business.example.com&payment_fee=3.11&shipping_discount=0.00&quantity1=1&insurance_amount=0.00&receiver_id=VFJDYXB3NHGWJ&txn_type=cart&discount=0.00&mc_gross_1=75.00&mc_currency=USD&residence_country=US&test_ipn=1&shipping_method=Default&transaction_subject=&payment_gross=75.00&ipn_track_id=a8dd2db800a41 
+[2022-08-13 10:58 America/Chicago] HTTP request of validation request:POST /cgi-bin/webscr HTTP/1.1
+Host: www.sandbox.paypal.com
+Accept: */*
+Connection: Close
+Content-Length: 1076
+Content-Type: application/x-www-form-urlencoded
+
+ for IPN payload: cmd=_notify-validate&mc_gross=75.00&protection_eligibility=Eligible&address_status=confirmed&item_number1=1022&payer_id=X44TPQPKDLWLN&address_street=1+Main+St&payment_date=08%3A58%3A04+Aug+13%2C+2022+PDT&payment_status=Completed&charset=UTF-8&address_zip=95131&first_name=John&mc_fee=3.11&address_country_code=US&address_name=John+Doe&notify_version=3.9&custom=123&payer_status=verified&business=sb-439fbc18073957%40business.example.com&address_country=United+States&num_cart_items=1&address_city=San+Jose&verify_sign=ASbqdHd6DE048KLWrKOLqCg3beuMAaIBVYKo74RdH7dN56n5aaZkYniC&payer_email=sb-pvg9r19571555%40personal.example.com&txn_id=3FP52081GH577105J&payment_type=instant&last_name=Doe&item_name1=%2475+Donator+Scroll&address_state=CA&receiver_email=sb-439fbc18073957%40business.example.com&payment_fee=3.11&shipping_discount=0.00&quantity1=1&insurance_amount=0.00&receiver_id=VFJDYXB3NHGWJ&txn_type=cart&discount=0.00&mc_gross_1=75.00&mc_currency=USD&residence_country=US&test_ipn=1&shipping_method=Default&transaction_subject=&payment_gross=75.00&ipn_track_id=74bc219218838
+[2022-08-13 10:58 America/Chicago] HTTP response of validation request: HTTP/1.1 200 OK
+Connection: close
+Content-Length: 8
+Content-Type: text/html; charset=utf-8
+Cache-Control: max-age=0, no-cache, no-store, must-revalidate
+Content-Security-Policy: default-src 'self' https://*.paypal.com https://*.paypalobjects.com 'unsafe-inline'; style-src 'self' https://*.paypal.com https://*.paypalobjects.com 'unsafe-inline'; script-src 'nonce-2r4rS8Vv0uVoOnoXHkARK3koDBUvMV+T+xFgV2rfG0SneoGb' 'self' 'unsafe-inline' https://*.paypal.com https://*.paypalobjects.com; img-src 'self' https: data:; object-src 'none'; font-src 'self' https://*.paypal.com https://*.paypalobjects.com; frame-src 'self' https://*.paypalobjects.com https://*.paypal.com https://*.qualtrics.com; connect-src 'self' 'unsafe-inline' https://*.paypal.com https://*.paypalobjects.com https://*.qualtrics.com; form-action 'self' https://*.paypal.com; base-uri 'self' https://*.paypal.com; block-all-mixed-content;
+Etag: W/"8-WXvD6WBsMSDy5c0v7r4OHopk5Ys"
+Paypal-Debug-Id: c0af99d02fcbb
+Set-Cookie: LANG=en_US%3BUS; Max-Age=31556; Domain=.paypal.com; Path=/; Expires=Sun, 14 Aug 2022 00:44:07 GMT; HttpOnly; Secure
+Set-Cookie: enforce_policy=ccpa; Max-Age=31536000; Domain=.paypal.com; Path=/; Expires=Sun, 13 Aug 2023 15:58:11 GMT; Secure
+Set-Cookie: x-pp-s=eyJ0IjoiMTY2MDQwNjI5MTM4MyIsImwiOiIwIiwibSI6IjAifQ; Domain=.paypal.com; Path=/; HttpOnly; Secure
+Set-Cookie: tsrce=merchantnotifnodeweb; Domain=.paypal.com; Path=/; Expires=Tue, 16 Aug 2022 15:58:11 GMT; HttpOnly; Secure; SameSite=None
+Set-Cookie: nsid=s%3AVNNz0u2Inwhd4izPsUeqxMuOU5fBjueR.ly6L6oQ1v2Yy50AHTAA4iqZEleJWV61sMsrJ2wDVUj0; Path=/; HttpOnly; Secure
+Set-Cookie: ts=vreXpYrS%3D1755100691%26vteXpYrS%3D1660408091%26vr%3D97ed5b9d1820a60205f67aa7ff1345b3%26vt%3D97ed5b9d1820a60205f67aa7ff1345b2%26vtyp%3Dnew; Path=/; Domain=paypal.com; Expires=Tue, 12 Aug 2025 15:58:11 GMT; HttpOnly; Secure
+Set-Cookie: ts_c=vr%3D97ed5b9d1820a60205f67aa7ff1345b3%26vt%3D97ed5b9d1820a60205f67aa7ff1345b2; Path=/; Domain=paypal.com; Expires=Tue, 12 Aug 2025 15:58:11 GMT; Secure
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+X-Xss-Protection: 1; mode=block
+Accept-Ranges: bytes
+Via: 1.1 varnish, 1.1 varnish
+Date: Sat, 13 Aug 2022 15:58:11 GMT
+Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
+X-Served-By: cache-chi-kigq8000027-CHI, cache-den8256-DEN
+X-Cache: MISS, MISS
+X-Cache-Hits: 0, 0
+X-Timer: S1660406291.323697,VS0,VE95
+Vary: Accept-Encoding
+Set-Cookie: x-cdn=fastly:DEN; Domain=paypal.com; Path=/; Secure
+
+VERIFIED
+0[2022-08-13 10:58 America/Chicago] Verified IPN: cmd=_notify-validate&mc_gross=75.00&protection_eligibility=Eligible&address_status=confirmed&item_number1=1022&payer_id=X44TPQPKDLWLN&address_street=1+Main+St&payment_date=08%3A58%3A04+Aug+13%2C+2022+PDT&payment_status=Completed&charset=UTF-8&address_zip=95131&first_name=John&mc_fee=3.11&address_country_code=US&address_name=John+Doe&notify_version=3.9&custom=123&payer_status=verified&business=sb-439fbc18073957%40business.example.com&address_country=United+States&num_cart_items=1&address_city=San+Jose&verify_sign=ASbqdHd6DE048KLWrKOLqCg3beuMAaIBVYKo74RdH7dN56n5aaZkYniC&payer_email=sb-pvg9r19571555%40personal.example.com&txn_id=3FP52081GH577105J&payment_type=instant&last_name=Doe&item_name1=%2475+Donator+Scroll&address_state=CA&receiver_email=sb-439fbc18073957%40business.example.com&payment_fee=3.11&shipping_discount=0.00&quantity1=1&insurance_amount=0.00&receiver_id=VFJDYXB3NHGWJ&txn_type=cart&discount=0.00&mc_gross_1=75.00&mc_currency=USD&residence_country=US&test_ipn=1&shipping_method=Default&transaction_subject=&payment_gross=75.00&ipn_track_id=74bc219218838 
+[2022-08-13 11:00 America/Chicago] HTTP request of validation request:POST /cgi-bin/webscr HTTP/1.1
+Host: www.sandbox.paypal.com
+Accept: */*
+Connection: Close
+Content-Length: 1225
+Content-Type: application/x-www-form-urlencoded
+
+ for IPN payload: cmd=_notify-validate&mc_gross=135.00&protection_eligibility=Eligible&address_status=confirmed&item_number1=11&item_number2=17&payer_id=X44TPQPKDLWLN&item_number3=1022&address_street=1+Main+St&payment_date=09%3A00%3A14+Aug+13%2C+2022+PDT&payment_status=Completed&charset=UTF-8&address_zip=95131&first_name=John&mc_fee=5.20&address_country_code=US&address_name=John+Doe&notify_version=3.9&custom=Joey&payer_status=verified&business=sb-439fbc18073957%40business.example.com&address_country=United+States&num_cart_items=3&address_city=San+Jose&verify_sign=AKaD63F-gAIMBgY2fYTLl7tOxSrDAylm6JD1XSpnkNBsXPiX1ymZSOzO&payer_email=sb-pvg9r19571555%40personal.example.com&txn_id=3179562469723092R&payment_type=instant&last_name=Doe&address_state=CA&item_name1=%2410+Scroll&receiver_email=sb-439fbc18073957%40business.example.com&item_name2=%2450+Donator+Scroll&payment_fee=5.20&item_name3=%2475+Donator+Scroll&shipping_discount=0.00&quantity1=1&insurance_amount=0.00&quantity2=1&receiver_id=VFJDYXB3NHGWJ&quantity3=1&txn_type=cart&discount=0.00&mc_gross_1=10.00&mc_currency=USD&mc_gross_2=50.00&mc_gross_3=75.00&residence_country=US&test_ipn=1&shipping_method=Default&transaction_subject=&payment_gross=135.00&ipn_track_id=e25222f79afbc
+[2022-08-13 11:00 America/Chicago] HTTP response of validation request: HTTP/1.1 200 OK
+Connection: close
+Content-Length: 8
+Content-Type: text/html; charset=utf-8
+Cache-Control: max-age=0, no-cache, no-store, must-revalidate
+Content-Security-Policy: default-src 'self' https://*.paypal.com https://*.paypalobjects.com 'unsafe-inline'; style-src 'self' https://*.paypal.com https://*.paypalobjects.com 'unsafe-inline'; script-src 'nonce-mGjG0bOnTKwE935C9edqQttHA4NNfL4Tvd4XBi3YKfkRLSVT' 'self' 'unsafe-inline' https://*.paypal.com https://*.paypalobjects.com; img-src 'self' https: data:; object-src 'none'; font-src 'self' https://*.paypal.com https://*.paypalobjects.com; frame-src 'self' https://*.paypalobjects.com https://*.paypal.com https://*.qualtrics.com; connect-src 'self' 'unsafe-inline' https://*.paypal.com https://*.paypalobjects.com https://*.qualtrics.com; form-action 'self' https://*.paypal.com; base-uri 'self' https://*.paypal.com; block-all-mixed-content;
+Etag: W/"8-WXvD6WBsMSDy5c0v7r4OHopk5Ys"
+Paypal-Debug-Id: c80ad627e6253
+Set-Cookie: LANG=en_US%3BUS; Max-Age=31556; Domain=.paypal.com; Path=/; Expires=Sun, 14 Aug 2022 00:46:20 GMT; HttpOnly; Secure
+Set-Cookie: enforce_policy=ccpa; Max-Age=31536000; Domain=.paypal.com; Path=/; Expires=Sun, 13 Aug 2023 16:00:24 GMT; Secure
+Set-Cookie: x-pp-s=eyJ0IjoiMTY2MDQwNjQyNDU5MyIsImwiOiIwIiwibSI6IjAifQ; Domain=.paypal.com; Path=/; HttpOnly; Secure
+Set-Cookie: tsrce=merchantnotifnodeweb; Domain=.paypal.com; Path=/; Expires=Tue, 16 Aug 2022 16:00:24 GMT; HttpOnly; Secure; SameSite=None
+Set-Cookie: nsid=s%3AIKuIjR9rRZNBvibAihveQKrqsPVTGwHK.KfLBOCypn9yOXbSrFkEkDVG8ylqZiA6Hbi0%2B8bog4%2Bc; Path=/; HttpOnly; Secure
+Set-Cookie: ts=vreXpYrS%3D1755100824%26vteXpYrS%3D1660408224%26vr%3D97ef63f71820a6022c4369c3ff130198%26vt%3D97ef63f71820a6022c4369c3ff130197%26vtyp%3Dnew; Path=/; Domain=paypal.com; Expires=Tue, 12 Aug 2025 16:00:24 GMT; HttpOnly; Secure
+Set-Cookie: ts_c=vr%3D97ef63f71820a6022c4369c3ff130198%26vt%3D97ef63f71820a6022c4369c3ff130197; Path=/; Domain=paypal.com; Expires=Tue, 12 Aug 2025 16:00:24 GMT; Secure
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+X-Xss-Protection: 1; mode=block
+Accept-Ranges: bytes
+Via: 1.1 varnish, 1.1 varnish
+Date: Sat, 13 Aug 2022 16:00:24 GMT
+Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
+X-Served-By: cache-chi-klot8100145-CHI, cache-den8280-DEN
+X-Cache: MISS, MISS
+X-Cache-Hits: 0, 0
+X-Timer: S1660406425.530744,VS0,VE96
+Vary: Accept-Encoding
+Set-Cookie: x-cdn=fastly:DEN; Domain=paypal.com; Path=/; Secure
+
+VERIFIED
+Payment status:  CompletedPayment status:  CompletedPayment status:  Completed[2022-08-13 11:00 America/Chicago] Verified IPN: cmd=_notify-validate&mc_gross=135.00&protection_eligibility=Eligible&address_status=confirmed&item_number1=11&item_number2=17&payer_id=X44TPQPKDLWLN&item_number3=1022&address_street=1+Main+St&payment_date=09%3A00%3A14+Aug+13%2C+2022+PDT&payment_status=Completed&charset=UTF-8&address_zip=95131&first_name=John&mc_fee=5.20&address_country_code=US&address_name=John+Doe&notify_version=3.9&custom=Joey&payer_status=verified&business=sb-439fbc18073957%40business.example.com&address_country=United+States&num_cart_items=3&address_city=San+Jose&verify_sign=AKaD63F-gAIMBgY2fYTLl7tOxSrDAylm6JD1XSpnkNBsXPiX1ymZSOzO&payer_email=sb-pvg9r19571555%40personal.example.com&txn_id=3179562469723092R&payment_type=instant&last_name=Doe&address_state=CA&item_name1=%2410+Scroll&receiver_email=sb-439fbc18073957%40business.example.com&item_name2=%2450+Donator+Scroll&payment_fee=5.20&item_name3=%2475+Donator+Scroll&shipping_discount=0.00&quantity1=1&insurance_amount=0.00&quantity2=1&receiver_id=VFJDYXB3NHGWJ&quantity3=1&txn_type=cart&discount=0.00&mc_gross_1=10.00&mc_currency=USD&mc_gross_2=50.00&mc_gross_3=75.00&residence_country=US&test_ipn=1&shipping_method=Default&transaction_subject=&payment_gross=135.00&ipn_track_id=e25222f79afbc 
+[2022-08-13 11:42 America/Chicago] HTTP request of validation request:POST /cgi-bin/webscr HTTP/1.1
+Host: www.paypal.com
+Accept: */*
+Connection: Close
+Content-Length: 1034
+Content-Type: application/x-www-form-urlencoded
+
+ for IPN payload: cmd=_notify-validate&mc_gross=50.00&protection_eligibility=Eligible&address_status=confirmed&item_number1=17&payer_id=FMDDBBDGSTH24&address_street=8+Edgecroft+Cres&payment_date=09%3A42%3A13+Aug+13%2C+2022+PDT&payment_status=Completed&charset=UTF-8&address_zip=L8J+3Y6&first_name=Bronson&mc_fee=2.99&address_country_code=CA&address_name=Bronson+Lendvoy&notify_version=3.9&custom=Bronson&payer_status=verified&business=primalosps%40gmail.com&address_country=Canada&num_cart_items=1&address_city=Hamilton&verify_sign=Aul5msLn.KzSv-.hliSYXVMZAxYsA97QWJQdlGZlL0EE5MGO7fXCVCKE&payer_email=ricochet_103%40hotmail.com&txn_id=0RL26286GG952282M&payment_type=instant&last_name=Lendvoy&item_name1=%2450+Donator+Scroll&address_state=ON&receiver_email=primalosps%40gmail.com&payment_fee=2.99&shipping_discount=0.00&quantity1=1&insurance_amount=0.00&receiver_id=ZSR3U3D55F3AU&txn_type=cart&discount=0.00&mc_gross_1=50.00&mc_currency=USD&residence_country=CA&shipping_method=Default&transaction_subject=&payment_gross=50.00&ipn_track_id=f48609602009a
+[2022-08-13 11:42 America/Chicago] HTTP response of validation request: HTTP/1.1 200 OK
+Connection: close
+Content-Length: 8
+Cache-Control: max-age=0, no-cache, no-store, must-revalidate
+Content-Security-Policy: default-src 'self' https://*.paypal.com https://*.paypalobjects.com 'unsafe-inline'; style-src 'self' https://*.paypal.com https://*.paypalobjects.com 'unsafe-inline'; script-src 'nonce-OlDPnKHtYPGFeiOuxASMU8J/GH5RXxVcxl/pBrP2bxvU3An5' 'self' 'unsafe-inline' https://*.paypal.com https://*.paypalobjects.com; img-src 'self' https: data:; object-src 'none'; font-src 'self' https://*.paypal.com https://*.paypalobjects.com; frame-src 'self' https://*.paypalobjects.com https://*.paypal.com https://*.qualtrics.com; connect-src 'self' 'unsafe-inline' https://*.paypal.com https://*.paypalobjects.com https://*.qualtrics.com; form-action 'self' https://*.paypal.com; base-uri 'self' https://*.paypal.com; block-all-mixed-content;; report-uri https://www.paypal.com/csplog/api/log/csp
+Content-Type: text/html; charset=utf-8
+Etag: W/"8-WXvD6WBsMSDy5c0v7r4OHopk5Ys"
+Paypal-Debug-Id: f404512a464f5
+Set-Cookie: LANG=en_US%3BUS; Max-Age=31556; Domain=.paypal.com; Path=/; Expires=Sun, 14 Aug 2022 01:28:16 GMT; HttpOnly; Secure
+Set-Cookie: enforce_policy=ccpa; Max-Age=31536000; Domain=.paypal.com; Path=/; Expires=Sun, 13 Aug 2023 16:42:20 GMT; Secure
+Set-Cookie: x-pp-s=eyJ0IjoiMTY2MDQwODk0MDc3OCIsImwiOiIwIiwibSI6IjAifQ; Domain=.paypal.com; Path=/; HttpOnly; Secure
+Set-Cookie: tsrce=merchantnotifnodeweb; Domain=.paypal.com; Path=/; Expires=Tue, 16 Aug 2022 16:42:20 GMT; HttpOnly; Secure; SameSite=None
+Set-Cookie: nsid=s%3AdvYlM6b8yZ3nKD1d5ZuNu0ZM15aghKoc.urKPwkkNoU41df98Cbtf3%2FBl6gwChRaw44nSUodyLgY; Path=/; HttpOnly; Secure
+Set-Cookie: ts=vreXpYrS%3D1755103340%26vteXpYrS%3D1660410740%26vr%3D9815c8961820a78053ad67a4fff7b61b%26vt%3D9815c8961820a78053ad67a4fff7b61a%26vtyp%3Dnew; Path=/; Domain=paypal.com; Expires=Tue, 12 Aug 2025 16:42:20 GMT; HttpOnly; Secure
+Set-Cookie: ts_c=vr%3D9815c8961820a78053ad67a4fff7b61b%26vt%3D9815c8961820a78053ad67a4fff7b61a; Path=/; Domain=paypal.com; Expires=Tue, 12 Aug 2025 16:42:20 GMT; Secure
+Traceparent: 00-0000000000000000000f404512a464f5-0d158bfbc8b0c8cb-01
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+X-Xss-Protection: 1; mode=block
+DC: ccg11-origin-www-1.paypal.com
+Accept-Ranges: bytes
+Via: 1.1 varnish, 1.1 varnish
+Date: Sat, 13 Aug 2022 16:42:20 GMT
+Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
+X-Served-By: cache-iad-kcgs7200039-IAD, cache-den8279-DEN
+X-Cache: MISS, MISS
+X-Cache-Hits: 0, 0
+X-Timer: S1660408941.637438,VS0,VE208
+Vary: Accept-Encoding
+Server-Timing: content-encoding;desc="",x-cdn;desc="fastly"
+
+VERIFIED
+Payment status:  Completed[2022-08-13 11:42 America/Chicago] Verified IPN: cmd=_notify-validate&mc_gross=50.00&protection_eligibility=Eligible&address_status=confirmed&item_number1=17&payer_id=FMDDBBDGSTH24&address_street=8+Edgecroft+Cres&payment_date=09%3A42%3A13+Aug+13%2C+2022+PDT&payment_status=Completed&charset=UTF-8&address_zip=L8J+3Y6&first_name=Bronson&mc_fee=2.99&address_country_code=CA&address_name=Bronson+Lendvoy&notify_version=3.9&custom=Bronson&payer_status=verified&business=primalosps%40gmail.com&address_country=Canada&num_cart_items=1&address_city=Hamilton&verify_sign=Aul5msLn.KzSv-.hliSYXVMZAxYsA97QWJQdlGZlL0EE5MGO7fXCVCKE&payer_email=ricochet_103%40hotmail.com&txn_id=0RL26286GG952282M&payment_type=instant&last_name=Lendvoy&item_name1=%2450+Donator+Scroll&address_state=ON&receiver_email=primalosps%40gmail.com&payment_fee=2.99&shipping_discount=0.00&quantity1=1&insurance_amount=0.00&receiver_id=ZSR3U3D55F3AU&txn_type=cart&discount=0.00&mc_gross_1=50.00&mc_currency=USD&residence_country=CA&shipping_method=Default&transaction_subject=&payment_gross=50.00&ipn_track_id=f48609602009a 
+[2022-08-13 11:43 America/Chicago] HTTP request of validation request:POST /cgi-bin/webscr HTTP/1.1
+Host: www.paypal.com
+Accept: */*
+Connection: Close
+Content-Length: 1035
+Content-Type: application/x-www-form-urlencoded
+
+ for IPN payload: cmd=_notify-validate&mc_gross=50.00&protection_eligibility=Eligible&address_status=confirmed&item_number1=17&payer_id=LH9PQEBPRFTNG&address_street=728+north+Flamingo+drive&payment_date=09%3A43%3A26+Aug+13%2C+2022+PDT&payment_status=Completed&charset=UTF-8&address_zip=32117&first_name=Jacob&mc_fee=2.24&address_country_code=US&address_name=Jacob++Neal&notify_version=3.9&custom=Jacob&payer_status=verified&business=primalosps%40gmail.com&address_country=United+States&num_cart_items=1&address_city=Holly+Hill&verify_sign=ARPQu2A.OrjatTBUhCPx1H0-wCK2ATyhwSuuJ32qncTQ7JCff0NYKerG&payer_email=nealjacob12%40gmail.com&txn_id=5N197957N5039163M&payment_type=instant&last_name=Neal&item_name1=%2450+Donator+Scroll&address_state=FL&receiver_email=primalosps%40gmail.com&payment_fee=2.24&shipping_discount=0.00&quantity1=1&insurance_amount=0.00&receiver_id=ZSR3U3D55F3AU&txn_type=cart&discount=0.00&mc_gross_1=50.00&mc_currency=USD&residence_country=US&shipping_method=Default&transaction_subject=&payment_gross=50.00&ipn_track_id=f223464210587
+[2022-08-13 11:43 America/Chicago] HTTP response of validation request: HTTP/1.1 200 OK
+Connection: close
+Content-Length: 8
+Cache-Control: max-age=0, no-cache, no-store, must-revalidate
+Content-Security-Policy: default-src 'self' https://*.paypal.com https://*.paypalobjects.com 'unsafe-inline'; style-src 'self' https://*.paypal.com https://*.paypalobjects.com 'unsafe-inline'; script-src 'nonce-wkIwXbG1uKLiu0GgnSKnqRoMRUTrXQBf+b8nJq6taY7BkPen' 'self' 'unsafe-inline' https://*.paypal.com https://*.paypalobjects.com; img-src 'self' https: data:; object-src 'none'; font-src 'self' https://*.paypal.com https://*.paypalobjects.com; frame-src 'self' https://*.paypalobjects.com https://*.paypal.com https://*.qualtrics.com; connect-src 'self' 'unsafe-inline' https://*.paypal.com https://*.paypalobjects.com https://*.qualtrics.com; form-action 'self' https://*.paypal.com; base-uri 'self' https://*.paypal.com; block-all-mixed-content;; report-uri https://www.paypal.com/csplog/api/log/csp
+Content-Type: text/html; charset=utf-8
+Etag: W/"8-WXvD6WBsMSDy5c0v7r4OHopk5Ys"
+Paypal-Debug-Id: f604743dcb352
+Set-Cookie: LANG=en_US%3BUS; Max-Age=31556; Domain=.paypal.com; Path=/; Expires=Sun, 14 Aug 2022 01:29:28 GMT; HttpOnly; Secure
+Set-Cookie: enforce_policy=ccpa; Max-Age=31536000; Domain=.paypal.com; Path=/; Expires=Sun, 13 Aug 2023 16:43:32 GMT; Secure
+Set-Cookie: x-pp-s=eyJ0IjoiMTY2MDQwOTAxMjQ4NyIsImwiOiIwIiwibSI6IjAifQ; Domain=.paypal.com; Path=/; HttpOnly; Secure
+Set-Cookie: tsrce=merchantnotifnodeweb; Domain=.paypal.com; Path=/; Expires=Tue, 16 Aug 2022 16:43:32 GMT; HttpOnly; Secure; SameSite=None
+Set-Cookie: nsid=s%3A4M4uEBKeDN5JNOHvfylkLkPb8Ys-LKTv.%2BB%2FrTDO7M6h1PBLcNMdt2MuVlkgpB%2BPT0bjXTyy59dc; Path=/; HttpOnly; Secure
+Set-Cookie: ts=vreXpYrS%3D1755103412%26vteXpYrS%3D1660410812%26vr%3D9816e0f11820a780649c3c86ffaa9be2%26vt%3D9816e0f11820a780649c3c86ffaa9be1%26vtyp%3Dnew; Path=/; Domain=paypal.com; Expires=Tue, 12 Aug 2025 16:43:32 GMT; HttpOnly; Secure
+Set-Cookie: ts_c=vr%3D9816e0f11820a780649c3c86ffaa9be2%26vt%3D9816e0f11820a780649c3c86ffaa9be1; Path=/; Domain=paypal.com; Expires=Tue, 12 Aug 2025 16:43:32 GMT; Secure
+Traceparent: 00-0000000000000000000f604743dcb352-7e3f1ff79c733700-01
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+X-Xss-Protection: 1; mode=block
+DC: ccg11-origin-www-1.paypal.com
+Accept-Ranges: bytes
+Via: 1.1 varnish, 1.1 varnish
+Date: Sat, 13 Aug 2022 16:43:32 GMT
+Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
+X-Served-By: cache-iad-kiad7000162-IAD, cache-den8236-DEN
+X-Cache: MISS, MISS
+X-Cache-Hits: 0, 0
+X-Timer: S1660409012.409118,VS0,VE132
+Vary: Accept-Encoding
+Server-Timing: content-encoding;desc="",x-cdn;desc="fastly"
+
+VERIFIED
+Payment status:  Completed[2022-08-13 11:43 America/Chicago] Verified IPN: cmd=_notify-validate&mc_gross=50.00&protection_eligibility=Eligible&address_status=confirmed&item_number1=17&payer_id=LH9PQEBPRFTNG&address_street=728+north+Flamingo+drive&payment_date=09%3A43%3A26+Aug+13%2C+2022+PDT&payment_status=Completed&charset=UTF-8&address_zip=32117&first_name=Jacob&mc_fee=2.24&address_country_code=US&address_name=Jacob++Neal&notify_version=3.9&custom=Jacob&payer_status=verified&business=primalosps%40gmail.com&address_country=United+States&num_cart_items=1&address_city=Holly+Hill&verify_sign=ARPQu2A.OrjatTBUhCPx1H0-wCK2ATyhwSuuJ32qncTQ7JCff0NYKerG&payer_email=nealjacob12%40gmail.com&txn_id=5N197957N5039163M&payment_type=instant&last_name=Neal&item_name1=%2450+Donator+Scroll&address_state=FL&receiver_email=primalosps%40gmail.com&payment_fee=2.24&shipping_discount=0.00&quantity1=1&insurance_amount=0.00&receiver_id=ZSR3U3D55F3AU&txn_type=cart&discount=0.00&mc_gross_1=50.00&mc_currency=USD&residence_country=US&shipping_method=Default&transaction_subject=&payment_gross=50.00&ipn_track_id=f223464210587 
+[2022-08-13 11:44 America/Chicago] HTTP request of validation request:POST /cgi-bin/webscr HTTP/1.1
+Host: www.paypal.com
+Accept: */*
+Connection: Close
+Content-Length: 1024
+Content-Type: application/x-www-form-urlencoded
+
+ for IPN payload: cmd=_notify-validate&mc_gross=5.00&protection_eligibility=Ineligible&address_status=confirmed&item_number1=10&payer_id=VD4QWQFRDWBFU&address_street=2549+80th+Place&payment_date=09%3A44%3A24+Aug+13%2C+2022+PDT&payment_status=Pending&charset=UTF-8&address_zip=53143&first_name=Nathaniel&address_country_code=US&address_name=Nathaniel+Foster&notify_version=3.9&custom=goop&payer_status=verified&business=primalosps%40gmail.com&address_country=United+States&num_cart_items=1&address_city=Kenosha&verify_sign=A.Kpynyt0zMJ5o15.GONty6uLxuDATFsp2tQuqNjuhfB0wv3B0aVZOU5&payer_email=mrtheiphonekid%40gmail.com&txn_id=85468334UK965884H&payment_type=echeck&last_name=Foster&item_name1=%245+Donator+Scroll&address_state=WI&receiver_email=primalosps%40gmail.com&shipping_discount=0.00&quantity1=1&insurance_amount=0.00&receiver_id=ZSR3U3D55F3AU&pending_reason=echeck&txn_type=cart&discount=0.00&mc_gross_1=5.00&mc_currency=USD&residence_country=US&shipping_method=Default&transaction_subject=&payment_gross=5.00&ipn_track_id=f9181779420f0
+[2022-08-13 11:44 America/Chicago] HTTP response of validation request: HTTP/1.1 200 OK
+Connection: close
+Content-Length: 8
+Cache-Control: max-age=0, no-cache, no-store, must-revalidate
+Content-Security-Policy: default-src 'self' https://*.paypal.com https://*.paypalobjects.com 'unsafe-inline'; style-src 'self' https://*.paypal.com https://*.paypalobjects.com 'unsafe-inline'; script-src 'nonce-TjHgVTIWuxaHLn7k8fTE6plESCttO1Ddb8crsXXGkm61DxtM' 'self' 'unsafe-inline' https://*.paypal.com https://*.paypalobjects.com; img-src 'self' https: data:; object-src 'none'; font-src 'self' https://*.paypal.com https://*.paypalobjects.com; frame-src 'self' https://*.paypalobjects.com https://*.paypal.com https://*.qualtrics.com; connect-src 'self' 'unsafe-inline' https://*.paypal.com https://*.paypalobjects.com https://*.qualtrics.com; form-action 'self' https://*.paypal.com; base-uri 'self' https://*.paypal.com; block-all-mixed-content;; report-uri https://www.paypal.com/csplog/api/log/csp
+Content-Type: text/html; charset=utf-8
+Etag: W/"8-WXvD6WBsMSDy5c0v7r4OHopk5Ys"
+Paypal-Debug-Id: f5255876f2516
+Set-Cookie: LANG=en_US%3BUS; Max-Age=31556; Domain=.paypal.com; Path=/; Expires=Sun, 14 Aug 2022 01:30:28 GMT; HttpOnly; Secure
+Set-Cookie: enforce_policy=ccpa; Max-Age=31536000; Domain=.paypal.com; Path=/; Expires=Sun, 13 Aug 2023 16:44:32 GMT; Secure
+Set-Cookie: x-pp-s=eyJ0IjoiMTY2MDQwOTA3MjE3NCIsImwiOiIwIiwibSI6IjAifQ; Domain=.paypal.com; Path=/; HttpOnly; Secure
+Set-Cookie: tsrce=merchantnotifnodeweb; Domain=.paypal.com; Path=/; Expires=Tue, 16 Aug 2022 16:44:32 GMT; HttpOnly; Secure; SameSite=None
+Set-Cookie: nsid=s%3AoYBO5WEfSo6sSk8MipIKPHcny9exmVKn.XZU%2FONPDZTmqyET0rU6kkIlAigTDa35vzsiKxUDb0AM; Path=/; HttpOnly; Secure
+Set-Cookie: ts=vreXpYrS%3D1755103472%26vteXpYrS%3D1660410872%26vr%3D9817c9e61820a2d0844520a5ffab50c5%26vt%3D9817c9e61820a2d0844520a5ffab50c4%26vtyp%3Dnew; Path=/; Domain=paypal.com; Expires=Tue, 12 Aug 2025 16:44:32 GMT; HttpOnly; Secure
+Set-Cookie: ts_c=vr%3D9817c9e61820a2d0844520a5ffab50c5%26vt%3D9817c9e61820a2d0844520a5ffab50c4; Path=/; Domain=paypal.com; Expires=Tue, 12 Aug 2025 16:44:32 GMT; Secure
+Traceparent: 00-0000000000000000000f5255876f2516-75b63611dbe9bd0d-01
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+X-Xss-Protection: 1; mode=block
+DC: ccg11-origin-www-1.paypal.com
+Accept-Ranges: bytes
+Via: 1.1 varnish, 1.1 varnish
+Date: Sat, 13 Aug 2022 16:44:32 GMT
+Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
+X-Served-By: cache-iad-kcgs7200120-IAD, cache-den8242-DEN
+X-Cache: MISS, MISS
+X-Cache-Hits: 0, 0
+X-Timer: S1660409072.046352,VS0,VE196
+Vary: Accept-Encoding
+Server-Timing: content-encoding;desc="",x-cdn;desc="fastly"
+
+VERIFIED
+Payment status:  Pending[2022-08-13 11:44 America/Chicago] Verified IPN: cmd=_notify-validate&mc_gross=5.00&protection_eligibility=Ineligible&address_status=confirmed&item_number1=10&payer_id=VD4QWQFRDWBFU&address_street=2549+80th+Place&payment_date=09%3A44%3A24+Aug+13%2C+2022+PDT&payment_status=Pending&charset=UTF-8&address_zip=53143&first_name=Nathaniel&address_country_code=US&address_name=Nathaniel+Foster&notify_version=3.9&custom=goop&payer_status=verified&business=primalosps%40gmail.com&address_country=United+States&num_cart_items=1&address_city=Kenosha&verify_sign=A.Kpynyt0zMJ5o15.GONty6uLxuDATFsp2tQuqNjuhfB0wv3B0aVZOU5&payer_email=mrtheiphonekid%40gmail.com&txn_id=85468334UK965884H&payment_type=echeck&last_name=Foster&item_name1=%245+Donator+Scroll&address_state=WI&receiver_email=primalosps%40gmail.com&shipping_discount=0.00&quantity1=1&insurance_amount=0.00&receiver_id=ZSR3U3D55F3AU&pending_reason=echeck&txn_type=cart&discount=0.00&mc_gross_1=5.00&mc_currency=USD&residence_country=US&shipping_method=Default&transaction_subject=&payment_gross=5.00&ipn_track_id=f9181779420f0 
+[2022-08-13 11:45 America/Chicago] HTTP request of validation request:POST /cgi-bin/webscr HTTP/1.1
+Host: www.paypal.com
+Accept: */*
+Connection: Close
+Content-Length: 1021
+Content-Type: application/x-www-form-urlencoded
+
+ for IPN payload: cmd=_notify-validate&mc_gross=10.00&protection_eligibility=Eligible&address_status=confirmed&item_number1=11&payer_id=RQG4FQERGUH6L&address_street=793+Lupine+Ct&payment_date=09%3A45%3A21+Aug+13%2C+2022+PDT&payment_status=Completed&charset=UTF-8&address_zip=55379&first_name=Logan&mc_fee=0.84&address_country_code=US&address_name=Logan+Shafland&notify_version=3.9&custom=Logan&payer_status=unverified&business=primalosps%40gmail.com&address_country=United+States&num_cart_items=1&address_city=Shakopee&verify_sign=A3ZvRt6h92yDknX3q4opF9Gbcu.GAYtm5gG9ESXl1l7.LO3QOnxaCZnL&payer_email=Shaflandl%40gmail.com&txn_id=58U27567V16666638&payment_type=instant&last_name=Shafland&item_name1=%2410+Scroll&address_state=MN&receiver_email=primalosps%40gmail.com&payment_fee=0.84&shipping_discount=0.00&quantity1=1&insurance_amount=0.00&receiver_id=ZSR3U3D55F3AU&txn_type=cart&discount=0.00&mc_gross_1=10.00&mc_currency=USD&residence_country=US&shipping_method=Default&transaction_subject=&payment_gross=10.00&ipn_track_id=f866093017393
+[2022-08-13 11:45 America/Chicago] HTTP response of validation request: HTTP/1.1 200 OK
+Connection: close
+Content-Length: 8
+Cache-Control: max-age=0, no-cache, no-store, must-revalidate
+Content-Security-Policy: default-src 'self' https://*.paypal.com https://*.paypalobjects.com 'unsafe-inline'; style-src 'self' https://*.paypal.com https://*.paypalobjects.com 'unsafe-inline'; script-src 'nonce-dKfa0DkZfoxvhTc++6K3KmSKumpPOIOYlAMeimdp00c0Oz3b' 'self' 'unsafe-inline' https://*.paypal.com https://*.paypalobjects.com; img-src 'self' https: data:; object-src 'none'; font-src 'self' https://*.paypal.com https://*.paypalobjects.com; frame-src 'self' https://*.paypalobjects.com https://*.paypal.com https://*.qualtrics.com; connect-src 'self' 'unsafe-inline' https://*.paypal.com https://*.paypalobjects.com https://*.qualtrics.com; form-action 'self' https://*.paypal.com; base-uri 'self' https://*.paypal.com; block-all-mixed-content;; report-uri https://www.paypal.com/csplog/api/log/csp
+Content-Type: text/html; charset=utf-8
+Etag: W/"8-WXvD6WBsMSDy5c0v7r4OHopk5Ys"
+Paypal-Debug-Id: f823927c9a952
+Set-Cookie: LANG=en_US%3BUS; Max-Age=31556; Domain=.paypal.com; Path=/; Expires=Sun, 14 Aug 2022 01:31:24 GMT; HttpOnly; Secure
+Set-Cookie: enforce_policy=ccpa; Max-Age=31536000; Domain=.paypal.com; Path=/; Expires=Sun, 13 Aug 2023 16:45:28 GMT; Secure
+Set-Cookie: x-pp-s=eyJ0IjoiMTY2MDQwOTEyODI1NiIsImwiOiIwIiwibSI6IjAifQ; Domain=.paypal.com; Path=/; HttpOnly; Secure
+Set-Cookie: tsrce=merchantnotifnodeweb; Domain=.paypal.com; Path=/; Expires=Tue, 16 Aug 2022 16:45:28 GMT; HttpOnly; Secure; SameSite=None
+Set-Cookie: nsid=s%3AHidJKSwL5lQ-QLu2hJ4rmDvOb_vcmNY0.L8TYyKxV1nV05%2Ft2LJoQzOd6FF96SduyWxHS7p1%2B6do; Path=/; HttpOnly; Secure
+Set-Cookie: ts=vreXpYrS%3D1755103528%26vteXpYrS%3D1660410928%26vr%3D9818a5181820a2d087316795ffabf6c0%26vt%3D9818a5181820a2d087316795ffabf6bf%26vtyp%3Dnew; Path=/; Domain=paypal.com; Expires=Tue, 12 Aug 2025 16:45:28 GMT; HttpOnly; Secure
+Set-Cookie: ts_c=vr%3D9818a5181820a2d087316795ffabf6c0%26vt%3D9818a5181820a2d087316795ffabf6bf; Path=/; Domain=paypal.com; Expires=Tue, 12 Aug 2025 16:45:28 GMT; Secure
+Traceparent: 00-0000000000000000000f823927c9a952-c181aaf5e28cfcb0-01
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+X-Xss-Protection: 1; mode=block
+DC: ccg11-origin-www-1.paypal.com
+Accept-Ranges: bytes
+Via: 1.1 varnish, 1.1 varnish
+Date: Sat, 13 Aug 2022 16:45:28 GMT
+Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
+X-Served-By: cache-iad-kjyo7100083-IAD, cache-den8226-DEN
+X-Cache: MISS, MISS
+X-Cache-Hits: 0, 0
+X-Timer: S1660409128.159552,VS0,VE148
+Vary: Accept-Encoding
+Server-Timing: content-encoding;desc="",x-cdn;desc="fastly"
+
+VERIFIED
+Payment status:  Completed[2022-08-13 11:45 America/Chicago] Verified IPN: cmd=_notify-validate&mc_gross=10.00&protection_eligibility=Eligible&address_status=confirmed&item_number1=11&payer_id=RQG4FQERGUH6L&address_street=793+Lupine+Ct&payment_date=09%3A45%3A21+Aug+13%2C+2022+PDT&payment_status=Completed&charset=UTF-8&address_zip=55379&first_name=Logan&mc_fee=0.84&address_country_code=US&address_name=Logan+Shafland&notify_version=3.9&custom=Logan&payer_status=unverified&business=primalosps%40gmail.com&address_country=United+States&num_cart_items=1&address_city=Shakopee&verify_sign=A3ZvRt6h92yDknX3q4opF9Gbcu.GAYtm5gG9ESXl1l7.LO3QOnxaCZnL&payer_email=Shaflandl%40gmail.com&txn_id=58U27567V16666638&payment_type=instant&last_name=Shafland&item_name1=%2410+Scroll&address_state=MN&receiver_email=primalosps%40gmail.com&payment_fee=0.84&shipping_discount=0.00&quantity1=1&insurance_amount=0.00&receiver_id=ZSR3U3D55F3AU&txn_type=cart&discount=0.00&mc_gross_1=10.00&mc_currency=USD&residence_country=US&shipping_method=Default&transaction_subject=&payment_gross=10.00&ipn_track_id=f866093017393 
+[2022-08-13 11:50 America/Chicago] HTTP request of validation request:POST /cgi-bin/webscr HTTP/1.1
+Host: www.paypal.com
+Accept: */*
+Connection: Close
+Content-Length: 1052
+Content-Type: application/x-www-form-urlencoded
+
+ for IPN payload: cmd=_notify-validate&mc_gross=10.00&protection_eligibility=Eligible&address_status=confirmed&item_number1=11&payer_id=7K5W4NWEBYNNS&address_street=1317+Waterford+Oak+Drive%0D%0A102&payment_date=09%3A49%3A54+Aug+13%2C+2022+PDT&payment_status=Completed&charset=UTF-8&address_zip=32828&first_name=Domonic&mc_fee=0.84&address_country_code=US&address_name=Domonic+DeMascola&notify_version=3.9&custom=Derb&payer_status=unverified&business=primalosps%40gmail.com&address_country=United+States&num_cart_items=1&address_city=Orlando&verify_sign=A19LTdRzlGQP6UdbKKthOR8iXy-HA2d9CUeW2ZgNZWBjONfP6ecDvK1Z&payer_email=domonicdemascola%40gmail.com&txn_id=6YM31646XJ5782020&payment_type=instant&last_name=DeMascola&item_name1=%2410+Scroll&address_state=FL&receiver_email=primalosps%40gmail.com&payment_fee=0.84&shipping_discount=0.00&quantity1=1&insurance_amount=0.00&receiver_id=ZSR3U3D55F3AU&txn_type=cart&discount=0.00&mc_gross_1=10.00&mc_currency=USD&residence_country=US&shipping_method=Default&transaction_subject=&payment_gross=10.00&ipn_track_id=f5895721516dc
+[2022-08-13 11:50 America/Chicago] HTTP response of validation request: HTTP/1.1 200 OK
+Connection: close
+Content-Length: 8
+Cache-Control: max-age=0, no-cache, no-store, must-revalidate
+Content-Security-Policy: default-src 'self' https://*.paypal.com https://*.paypalobjects.com 'unsafe-inline'; style-src 'self' https://*.paypal.com https://*.paypalobjects.com 'unsafe-inline'; script-src 'nonce-uVe0N+zGE1fnky2TvUjoi7cBD/8Aq+myOu5Z9o0wXBPmL5OH' 'self' 'unsafe-inline' https://*.paypal.com https://*.paypalobjects.com; img-src 'self' https: data:; object-src 'none'; font-src 'self' https://*.paypal.com https://*.paypalobjects.com; frame-src 'self' https://*.paypalobjects.com https://*.paypal.com https://*.qualtrics.com; connect-src 'self' 'unsafe-inline' https://*.paypal.com https://*.paypalobjects.com https://*.qualtrics.com; form-action 'self' https://*.paypal.com; base-uri 'self' https://*.paypal.com; block-all-mixed-content;; report-uri https://www.paypal.com/csplog/api/log/csp
+Content-Type: text/html; charset=utf-8
+Etag: W/"8-WXvD6WBsMSDy5c0v7r4OHopk5Ys"
+Paypal-Debug-Id: f222572bd928a
+Set-Cookie: LANG=en_US%3BUS; Max-Age=31556; Domain=.paypal.com; Path=/; Expires=Sun, 14 Aug 2022 01:35:58 GMT; HttpOnly; Secure
+Set-Cookie: enforce_policy=ccpa; Max-Age=31536000; Domain=.paypal.com; Path=/; Expires=Sun, 13 Aug 2023 16:50:02 GMT; Secure
+Set-Cookie: x-pp-s=eyJ0IjoiMTY2MDQwOTQwMjc3OCIsImwiOiIwIiwibSI6IjAifQ; Domain=.paypal.com; Path=/; HttpOnly; Secure
+Set-Cookie: tsrce=merchantnotifnodeweb; Domain=.paypal.com; Path=/; Expires=Tue, 16 Aug 2022 16:50:02 GMT; HttpOnly; Secure; SameSite=None
+Set-Cookie: nsid=s%3AOuC6NJh85AkeWMl5tHt560LvMsfwmGVK.6PYIC8DCvOU4wrOj9CfpSh4EayD4lf2VVQSCd%2Fk3%2BhQ; Path=/; HttpOnly; Secure
+Set-Cookie: ts=vreXpYrS%3D1755103802%26vteXpYrS%3D1660411202%26vr%3D981cd56f1820a1d2d288455effab2660%26vt%3D981cd56f1820a1d2d288455effab265f%26vtyp%3Dnew; Path=/; Domain=paypal.com; Expires=Tue, 12 Aug 2025 16:50:02 GMT; HttpOnly; Secure
+Set-Cookie: ts_c=vr%3D981cd56f1820a1d2d288455effab2660%26vt%3D981cd56f1820a1d2d288455effab265f; Path=/; Domain=paypal.com; Expires=Tue, 12 Aug 2025 16:50:02 GMT; Secure
+Traceparent: 00-0000000000000000000f222572bd928a-b1201db6b909ed65-01
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+X-Xss-Protection: 1; mode=block
+DC: ccg11-origin-www-1.paypal.com
+Accept-Ranges: bytes
+Via: 1.1 varnish, 1.1 varnish
+Date: Sat, 13 Aug 2022 16:50:02 GMT
+Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
+X-Served-By: cache-iad-kjyo7100034-IAD, cache-den8272-DEN
+X-Cache: MISS, MISS
+X-Cache-Hits: 0, 0
+X-Timer: S1660409403.674299,VS0,VE157
+Vary: Accept-Encoding
+Server-Timing: content-encoding;desc="",x-cdn;desc="fastly"
+
+VERIFIED
+Payment status:  Completed[2022-08-13 11:50 America/Chicago] Verified IPN: cmd=_notify-validate&mc_gross=10.00&protection_eligibility=Eligible&address_status=confirmed&item_number1=11&payer_id=7K5W4NWEBYNNS&address_street=1317+Waterford+Oak+Drive%0D%0A102&payment_date=09%3A49%3A54+Aug+13%2C+2022+PDT&payment_status=Completed&charset=UTF-8&address_zip=32828&first_name=Domonic&mc_fee=0.84&address_country_code=US&address_name=Domonic+DeMascola&notify_version=3.9&custom=Derb&payer_status=unverified&business=primalosps%40gmail.com&address_country=United+States&num_cart_items=1&address_city=Orlando&verify_sign=A19LTdRzlGQP6UdbKKthOR8iXy-HA2d9CUeW2ZgNZWBjONfP6ecDvK1Z&payer_email=domonicdemascola%40gmail.com&txn_id=6YM31646XJ5782020&payment_type=instant&last_name=DeMascola&item_name1=%2410+Scroll&address_state=FL&receiver_email=primalosps%40gmail.com&payment_fee=0.84&shipping_discount=0.00&quantity1=1&insurance_amount=0.00&receiver_id=ZSR3U3D55F3AU&txn_type=cart&discount=0.00&mc_gross_1=10.00&mc_currency=USD&residence_country=US&shipping_method=Default&transaction_subject=&payment_gross=10.00&ipn_track_id=f5895721516dc 
+[2022-08-13 12:01 America/Chicago] HTTP request of validation request:POST /cgi-bin/webscr HTTP/1.1
+Host: www.paypal.com
+Accept: */*
+Connection: Close
+Content-Length: 1016
+Content-Type: application/x-www-form-urlencoded
+
+ for IPN payload: cmd=_notify-validate&mc_gross=50.00&protection_eligibility=Eligible&address_status=confirmed&item_number1=17&payer_id=ACDUY5MD3C6FS&address_street=Skogaromvn.13&payment_date=10%3A01%3A02+Aug+13%2C+2022+PDT&payment_status=Completed&charset=UTF-8&address_zip=7350&first_name=Lars&mc_fee=2.99&address_country_code=NO&address_name=Lars+Larsen&notify_version=3.9&custom=sheldore&payer_status=verified&business=primalosps%40gmail.com&address_country=Norway&num_cart_items=1&address_city=Buvika&verify_sign=AuO1vB7EOZLPTHEin2U0HXTQU6ZsApZfidyCMKnVnhsUZAs9.Q73xrlu&payer_email=larsn1%40live.no&txn_id=9V614370TW531843U&payment_type=instant&last_name=Larsen&item_name1=%2450+Donator+Scroll&address_state=Trondheim&receiver_email=primalosps%40gmail.com&payment_fee=2.99&shipping_discount=0.00&quantity1=1&insurance_amount=0.00&receiver_id=ZSR3U3D55F3AU&txn_type=cart&discount=0.00&mc_gross_1=50.00&mc_currency=USD&residence_country=NO&shipping_method=Default&transaction_subject=&payment_gross=50.00&ipn_track_id=f5647950f9122
+[2022-08-13 12:01 America/Chicago] HTTP response of validation request: HTTP/1.1 200 OK
+Connection: close
+Content-Length: 8
+Cache-Control: max-age=0, no-cache, no-store, must-revalidate
+Content-Security-Policy: default-src 'self' https://*.paypal.com https://*.paypalobjects.com 'unsafe-inline'; style-src 'self' https://*.paypal.com https://*.paypalobjects.com 'unsafe-inline'; script-src 'nonce-OSWoNIRrffoasnfyRDfPu1JKcM49ZwfYwoS10YQzuTDPVWYF' 'self' 'unsafe-inline' https://*.paypal.com https://*.paypalobjects.com; img-src 'self' https: data:; object-src 'none'; font-src 'self' https://*.paypal.com https://*.paypalobjects.com; frame-src 'self' https://*.paypalobjects.com https://*.paypal.com https://*.qualtrics.com; connect-src 'self' 'unsafe-inline' https://*.paypal.com https://*.paypalobjects.com https://*.qualtrics.com; form-action 'self' https://*.paypal.com; base-uri 'self' https://*.paypal.com; block-all-mixed-content;; report-uri https://www.paypal.com/csplog/api/log/csp
+Content-Type: text/html; charset=utf-8
+Etag: W/"8-WXvD6WBsMSDy5c0v7r4OHopk5Ys"
+Paypal-Debug-Id: f605881164ebf
+Set-Cookie: LANG=en_US%3BUS; Max-Age=31556; Domain=.paypal.com; Path=/; Expires=Sun, 14 Aug 2022 01:47:06 GMT; HttpOnly; Secure
+Set-Cookie: enforce_policy=ccpa; Max-Age=31536000; Domain=.paypal.com; Path=/; Expires=Sun, 13 Aug 2023 17:01:10 GMT; Secure
+Set-Cookie: x-pp-s=eyJ0IjoiMTY2MDQxMDA3MDI2NSIsImwiOiIwIiwibSI6IjAifQ; Domain=.paypal.com; Path=/; HttpOnly; Secure
+Set-Cookie: tsrce=merchantnotifnodeweb; Domain=.paypal.com; Path=/; Expires=Tue, 16 Aug 2022 17:01:10 GMT; HttpOnly; Secure; SameSite=None
+Set-Cookie: nsid=s%3AMNf_EcfexBWRDZnoKt8pghkRqTi0seGd.7riNLwvY6AnCV1UxwkrvQ1ULw7EeEV8ziGdENjRLHKE; Path=/; HttpOnly; Secure
+Set-Cookie: ts=vreXpYrS%3D1755104470%26vteXpYrS%3D1660411870%26vr%3D982704e31820ad0486e7b48bff90cf41%26vt%3D982704e31820ad0486e7b48bff90cf40%26vtyp%3Dnew; Path=/; Domain=paypal.com; Expires=Tue, 12 Aug 2025 17:01:10 GMT; HttpOnly; Secure
+Set-Cookie: ts_c=vr%3D982704e31820ad0486e7b48bff90cf41%26vt%3D982704e31820ad0486e7b48bff90cf40; Path=/; Domain=paypal.com; Expires=Tue, 12 Aug 2025 17:01:10 GMT; Secure
+Traceparent: 00-0000000000000000000f605881164ebf-2cb835409cbd18a6-01
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+X-Xss-Protection: 1; mode=block
+DC: ccg11-origin-www-1.paypal.com
+Accept-Ranges: bytes
+Via: 1.1 varnish, 1.1 varnish
+Date: Sat, 13 Aug 2022 17:01:10 GMT
+Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
+X-Served-By: cache-iad-kjyo7100068-IAD, cache-den8242-DEN
+X-Cache: MISS, MISS
+X-Cache-Hits: 0, 0
+X-Timer: S1660410070.185670,VS0,VE135
+Vary: Accept-Encoding
+Server-Timing: content-encoding;desc="",x-cdn;desc="fastly"
+
+VERIFIED
+Payment status:  Completed[2022-08-13 12:01 America/Chicago] Verified IPN: cmd=_notify-validate&mc_gross=50.00&protection_eligibility=Eligible&address_status=confirmed&item_number1=17&payer_id=ACDUY5MD3C6FS&address_street=Skogaromvn.13&payment_date=10%3A01%3A02+Aug+13%2C+2022+PDT&payment_status=Completed&charset=UTF-8&address_zip=7350&first_name=Lars&mc_fee=2.99&address_country_code=NO&address_name=Lars+Larsen&notify_version=3.9&custom=sheldore&payer_status=verified&business=primalosps%40gmail.com&address_country=Norway&num_cart_items=1&address_city=Buvika&verify_sign=AuO1vB7EOZLPTHEin2U0HXTQU6ZsApZfidyCMKnVnhsUZAs9.Q73xrlu&payer_email=larsn1%40live.no&txn_id=9V614370TW531843U&payment_type=instant&last_name=Larsen&item_name1=%2450+Donator+Scroll&address_state=Trondheim&receiver_email=primalosps%40gmail.com&payment_fee=2.99&shipping_discount=0.00&quantity1=1&insurance_amount=0.00&receiver_id=ZSR3U3D55F3AU&txn_type=cart&discount=0.00&mc_gross_1=50.00&mc_currency=USD&residence_country=NO&shipping_method=Default&transaction_subject=&payment_gross=50.00&ipn_track_id=f5647950f9122 
+[2022-08-13 12:51 America/Chicago] HTTP request of validation request:POST /cgi-bin/webscr HTTP/1.1
+Host: www.paypal.com
+Accept: */*
+Connection: Close
+Content-Length: 1052
+Content-Type: application/x-www-form-urlencoded
+
+ for IPN payload: cmd=_notify-validate&mc_gross=100.00&protection_eligibility=Eligible&address_status=confirmed&item_number1=1023&payer_id=3NEPRFZDHQBYN&address_street=227+Chatsworth+Avenue%0D%0APortsmouth&payment_date=10%3A51%3A37+Aug+13%2C+2022+PDT&payment_status=Completed&charset=UTF-8&address_zip=PO62UL&first_name=Alfie&mc_fee=5.48&address_country_code=GB&address_name=alfie+clarke&notify_version=3.9&custom=Alfie&payer_status=verified&business=primalosps%40gmail.com&address_country=United+Kingdom&num_cart_items=1&address_city=Portsmouth&verify_sign=AEPisTkyRVDN-DgDcwFo3PX0vGhVAC9y59ee0GXBDnFoslYM1VtiO48z&payer_email=alfieclarke93%40live.co.uk&txn_id=28628058436694506&payment_type=instant&last_name=Clarke&item_name1=%24100+Scroll&address_state=&receiver_email=primalosps%40gmail.com&payment_fee=5.48&shipping_discount=0.00&quantity1=1&insurance_amount=0.00&receiver_id=ZSR3U3D55F3AU&txn_type=cart&discount=0.00&mc_gross_1=100.00&mc_currency=USD&residence_country=GB&shipping_method=Default&transaction_subject=&payment_gross=100.00&ipn_track_id=f506996a0a6d2
+[2022-08-13 12:51 America/Chicago] HTTP response of validation request: HTTP/1.1 200 OK
+Connection: close
+Content-Length: 8
+Cache-Control: max-age=0, no-cache, no-store, must-revalidate
+Content-Security-Policy: default-src 'self' https://*.paypal.com https://*.paypalobjects.com 'unsafe-inline'; style-src 'self' https://*.paypal.com https://*.paypalobjects.com 'unsafe-inline'; script-src 'nonce-8c0cxQdVc2QrX29FAOhxWE9w1azExdRfAE1BGs5CoA3+SIHV' 'self' 'unsafe-inline' https://*.paypal.com https://*.paypalobjects.com; img-src 'self' https: data:; object-src 'none'; font-src 'self' https://*.paypal.com https://*.paypalobjects.com; frame-src 'self' https://*.paypalobjects.com https://*.paypal.com https://*.qualtrics.com; connect-src 'self' 'unsafe-inline' https://*.paypal.com https://*.paypalobjects.com https://*.qualtrics.com; form-action 'self' https://*.paypal.com; base-uri 'self' https://*.paypal.com; block-all-mixed-content;; report-uri https://www.paypal.com/csplog/api/log/csp
+Content-Type: text/html; charset=utf-8
+Etag: W/"8-WXvD6WBsMSDy5c0v7r4OHopk5Ys"
+Paypal-Debug-Id: f79552712b536
+Set-Cookie: LANG=en_US%3BUS; Max-Age=31556; Domain=.paypal.com; Path=/; Expires=Sun, 14 Aug 2022 02:37:41 GMT; HttpOnly; Secure
+Set-Cookie: enforce_policy=ccpa; Max-Age=31536000; Domain=.paypal.com; Path=/; Expires=Sun, 13 Aug 2023 17:51:45 GMT; Secure
+Set-Cookie: x-pp-s=eyJ0IjoiMTY2MDQxMzEwNTY3OCIsImwiOiIwIiwibSI6IjAifQ; Domain=.paypal.com; Path=/; HttpOnly; Secure
+Set-Cookie: tsrce=merchantnotifnodeweb; Domain=.paypal.com; Path=/; Expires=Tue, 16 Aug 2022 17:51:45 GMT; HttpOnly; Secure; SameSite=None
+Set-Cookie: nsid=s%3Ajp2hAH7mpsSKbuJ_EHXalXygoTeysn0i.%2FMkP6PIphFs5igQt3rodcpvlWVLCk%2BCc693Z4TNgcWo; Path=/; HttpOnly; Secure
+Set-Cookie: ts=vreXpYrS%3D1755107505%26vteXpYrS%3D1660414905%26vr%3D985555f91820a7a0a6c963c5fff8bd80%26vt%3D985555f91820a7a0a6c963c5fff8bd7f%26vtyp%3Dnew; Path=/; Domain=paypal.com; Expires=Tue, 12 Aug 2025 17:51:45 GMT; HttpOnly; Secure
+Set-Cookie: ts_c=vr%3D985555f91820a7a0a6c963c5fff8bd80%26vt%3D985555f91820a7a0a6c963c5fff8bd7f; Path=/; Domain=paypal.com; Expires=Tue, 12 Aug 2025 17:51:45 GMT; Secure
+Traceparent: 00-0000000000000000000f79552712b536-d9858c1bba7fdb32-01
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+X-Xss-Protection: 1; mode=block
+DC: ccg11-origin-www-1.paypal.com
+Accept-Ranges: bytes
+Via: 1.1 varnish, 1.1 varnish
+Date: Sat, 13 Aug 2022 17:51:45 GMT
+Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
+X-Served-By: cache-iad-kiad7000142-IAD, cache-den8234-DEN
+X-Cache: MISS, MISS
+X-Cache-Hits: 0, 0
+X-Timer: S1660413106.598470,VS0,VE134
+Vary: Accept-Encoding
+Server-Timing: content-encoding;desc="",x-cdn;desc="fastly"
+
+VERIFIED
+Payment status:  Completed[2022-08-13 12:51 America/Chicago] Verified IPN: cmd=_notify-validate&mc_gross=100.00&protection_eligibility=Eligible&address_status=confirmed&item_number1=1023&payer_id=3NEPRFZDHQBYN&address_street=227+Chatsworth+Avenue%0D%0APortsmouth&payment_date=10%3A51%3A37+Aug+13%2C+2022+PDT&payment_status=Completed&charset=UTF-8&address_zip=PO62UL&first_name=Alfie&mc_fee=5.48&address_country_code=GB&address_name=alfie+clarke&notify_version=3.9&custom=Alfie&payer_status=verified&business=primalosps%40gmail.com&address_country=United+Kingdom&num_cart_items=1&address_city=Portsmouth&verify_sign=AEPisTkyRVDN-DgDcwFo3PX0vGhVAC9y59ee0GXBDnFoslYM1VtiO48z&payer_email=alfieclarke93%40live.co.uk&txn_id=28628058436694506&payment_type=instant&last_name=Clarke&item_name1=%24100+Scroll&address_state=&receiver_email=primalosps%40gmail.com&payment_fee=5.48&shipping_discount=0.00&quantity1=1&insurance_amount=0.00&receiver_id=ZSR3U3D55F3AU&txn_type=cart&discount=0.00&mc_gross_1=100.00&mc_currency=USD&residence_country=GB&shipping_method=Default&transaction_subject=&payment_gross=100.00&ipn_track_id=f506996a0a6d2 
+[2022-08-13 13:00 America/Chicago] HTTP request of validation request:POST /cgi-bin/webscr HTTP/1.1
+Host: www.sandbox.paypal.com
+Accept: */*
+Connection: Close
+Content-Length: 1377
+Content-Type: application/x-www-form-urlencoded
+
+ for IPN payload: cmd=_notify-validate&mc_gross=240.00&protection_eligibility=Eligible&address_status=confirmed&item_number1=10&item_number2=11&payer_id=X44TPQPKDLWLN&item_number3=17&address_street=1+Main+St&item_number4=1022&payment_date=11%3A00%3A47+Aug+13%2C+2022+PDT&item_number5=1023&payment_status=Completed&charset=UTF-8&address_zip=95131&first_name=John&mc_fee=8.87&address_country_code=US&address_name=John+Doe&notify_version=3.9&custom=oh+silis&payer_status=verified&business=sb-439fbc18073957%40business.example.com&address_country=United+States&num_cart_items=5&address_city=San+Jose&verify_sign=A2vy0r8wlqhAeccXCmFk9Y6Pmi6GAtJNUU-q0bM4QvPG73JgFxc5wibC&payer_email=sb-pvg9r19571555%40personal.example.com&txn_id=06R28380N8087203J&payment_type=instant&last_name=Doe&address_state=CA&item_name1=%245+Donator+Scroll&receiver_email=sb-439fbc18073957%40business.example.com&item_name2=%2410+Scroll&payment_fee=8.87&item_name3=%2450+Donator+Scroll&item_name4=%2475+Donator+Scroll&shipping_discount=0.00&item_name5=%24100+Scroll&quantity1=1&insurance_amount=0.00&quantity2=1&receiver_id=VFJDYXB3NHGWJ&quantity3=1&txn_type=cart&quantity4=1&discount=0.00&quantity5=1&mc_gross_1=5.00&mc_currency=USD&mc_gross_2=10.00&mc_gross_3=50.00&residence_country=US&test_ipn=1&mc_gross_4=75.00&shipping_method=Default&mc_gross_5=100.00&transaction_subject=&payment_gross=240.00&ipn_track_id=910d37f545bbb
+[2022-08-13 13:00 America/Chicago] HTTP response of validation request: HTTP/1.1 200 OK
+Connection: close
+Content-Length: 8
+Content-Type: text/html; charset=utf-8
+Cache-Control: max-age=0, no-cache, no-store, must-revalidate
+Content-Security-Policy: default-src 'self' https://*.paypal.com https://*.paypalobjects.com 'unsafe-inline'; style-src 'self' https://*.paypal.com https://*.paypalobjects.com 'unsafe-inline'; script-src 'nonce-lAGnzeosWaLWOnQLXxqAwEEyFgGu+5w9+CiVDAlfujJE/Xlf' 'self' 'unsafe-inline' https://*.paypal.com https://*.paypalobjects.com; img-src 'self' https: data:; object-src 'none'; font-src 'self' https://*.paypal.com https://*.paypalobjects.com; frame-src 'self' https://*.paypalobjects.com https://*.paypal.com https://*.qualtrics.com; connect-src 'self' 'unsafe-inline' https://*.paypal.com https://*.paypalobjects.com https://*.qualtrics.com; form-action 'self' https://*.paypal.com; base-uri 'self' https://*.paypal.com; block-all-mixed-content;
+Etag: W/"8-WXvD6WBsMSDy5c0v7r4OHopk5Ys"
+Paypal-Debug-Id: 2f48c713c631f
+Set-Cookie: LANG=en_US%3BUS; Max-Age=31556; Domain=.paypal.com; Path=/; Expires=Sun, 14 Aug 2022 02:46:50 GMT; HttpOnly; Secure
+Set-Cookie: enforce_policy=ccpa; Max-Age=31536000; Domain=.paypal.com; Path=/; Expires=Sun, 13 Aug 2023 18:00:54 GMT; Secure
+Set-Cookie: x-pp-s=eyJ0IjoiMTY2MDQxMzY1NDg1OCIsImwiOiIwIiwibSI6IjAifQ; Domain=.paypal.com; Path=/; HttpOnly; Secure
+Set-Cookie: tsrce=merchantnotifnodeweb; Domain=.paypal.com; Path=/; Expires=Tue, 16 Aug 2022 18:00:54 GMT; HttpOnly; Secure; SameSite=None
+Set-Cookie: nsid=s%3AmsiHkeAZbY9SM7e6PMKjU01vrspTAYZ1.wVfCnqi%2Fd%2BARIQjxI62RyJ%2FTfQ7U2nhxVplBPANSHFo; Path=/; HttpOnly; Secure
+Set-Cookie: ts=vreXpYrS%3D1755108054%26vteXpYrS%3D1660415454%26vr%3D985db7331820a6022c607c8fff06717f%26vt%3D985db7331820a6022c607c8fff06717e%26vtyp%3Dnew; Path=/; Domain=paypal.com; Expires=Tue, 12 Aug 2025 18:00:54 GMT; HttpOnly; Secure
+Set-Cookie: ts_c=vr%3D985db7331820a6022c607c8fff06717f%26vt%3D985db7331820a6022c607c8fff06717e; Path=/; Domain=paypal.com; Expires=Tue, 12 Aug 2025 18:00:54 GMT; Secure
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+X-Xss-Protection: 1; mode=block
+Accept-Ranges: bytes
+Via: 1.1 varnish, 1.1 varnish
+Date: Sat, 13 Aug 2022 18:00:54 GMT
+Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
+X-Served-By: cache-chi-klot8100043-CHI, cache-den8243-DEN
+X-Cache: MISS, MISS
+X-Cache-Hits: 0, 0
+X-Timer: S1660413655.795149,VS0,VE98
+Vary: Accept-Encoding
+Set-Cookie: x-cdn=fastly:DEN; Domain=paypal.com; Path=/; Secure
+
+VERIFIED
+[2022-08-13 13:00 America/Chicago]  Invalid Payment: {"item_name":"$5 Donator Scroll","item_number":"10","status":"Invalid product","paid":"5.00","quantity":"1","currency":"USD","buyer":"sb-pvg9r19571555@personal.example.com","player_name":"oh silis","dateline":1660413654} 
+[2022-08-13 13:00 America/Chicago]  Invalid Payment: {"item_name":"$10 Scroll","item_number":"11","status":"Invalid product","paid":"10.00","quantity":"1","currency":"USD","buyer":"sb-pvg9r19571555@personal.example.com","player_name":"oh silis","dateline":1660413654} 
+[2022-08-13 13:00 America/Chicago]  Invalid Payment: {"item_name":"$50 Donator Scroll","item_number":"17","status":"Invalid product","paid":"50.00","quantity":"1","currency":"USD","buyer":"sb-pvg9r19571555@personal.example.com","player_name":"oh silis","dateline":1660413654} 
+[2022-08-13 13:00 America/Chicago]  Invalid Payment: {"item_name":"$75 Donator Scroll","item_number":"1022","status":"Invalid product","paid":"75.00","quantity":"1","currency":"USD","buyer":"sb-pvg9r19571555@personal.example.com","player_name":"oh silis","dateline":1660413654} 
+[2022-08-13 13:00 America/Chicago]  Invalid Payment: {"item_name":"$100 Scroll","item_number":"1023","status":"Invalid product","paid":"100.00","quantity":"1","currency":"USD","buyer":"sb-pvg9r19571555@personal.example.com","player_name":"oh silis","dateline":1660413654} 
+[2022-08-13 13:00 America/Chicago] Verified IPN: cmd=_notify-validate&mc_gross=240.00&protection_eligibility=Eligible&address_status=confirmed&item_number1=10&item_number2=11&payer_id=X44TPQPKDLWLN&item_number3=17&address_street=1+Main+St&item_number4=1022&payment_date=11%3A00%3A47+Aug+13%2C+2022+PDT&item_number5=1023&payment_status=Completed&charset=UTF-8&address_zip=95131&first_name=John&mc_fee=8.87&address_country_code=US&address_name=John+Doe&notify_version=3.9&custom=oh+silis&payer_status=verified&business=sb-439fbc18073957%40business.example.com&address_country=United+States&num_cart_items=5&address_city=San+Jose&verify_sign=A2vy0r8wlqhAeccXCmFk9Y6Pmi6GAtJNUU-q0bM4QvPG73JgFxc5wibC&payer_email=sb-pvg9r19571555%40personal.example.com&txn_id=06R28380N8087203J&payment_type=instant&last_name=Doe&address_state=CA&item_name1=%245+Donator+Scroll&receiver_email=sb-439fbc18073957%40business.example.com&item_name2=%2410+Scroll&payment_fee=8.87&item_name3=%2450+Donator+Scroll&item_name4=%2475+Donator+Scroll&shipping_discount=0.00&item_name5=%24100+Scroll&quantity1=1&insurance_amount=0.00&quantity2=1&receiver_id=VFJDYXB3NHGWJ&quantity3=1&txn_type=cart&quantity4=1&discount=0.00&quantity5=1&mc_gross_1=5.00&mc_currency=USD&mc_gross_2=10.00&mc_gross_3=50.00&residence_country=US&test_ipn=1&mc_gross_4=75.00&shipping_method=Default&mc_gross_5=100.00&transaction_subject=&payment_gross=240.00&ipn_track_id=910d37f545bbb 
+[2022-08-13 13:03 America/Chicago] HTTP request of validation request:POST /cgi-bin/webscr HTTP/1.1
+Host: www.sandbox.paypal.com
+Accept: */*
+Connection: Close
+Content-Length: 1377
+Content-Type: application/x-www-form-urlencoded
+
+ for IPN payload: cmd=_notify-validate&mc_gross=240.00&protection_eligibility=Eligible&address_status=confirmed&item_number1=10&item_number2=11&payer_id=X44TPQPKDLWLN&item_number3=17&address_street=1+Main+St&item_number4=1022&payment_date=11%3A02%3A53+Aug+13%2C+2022+PDT&item_number5=1023&payment_status=Completed&charset=UTF-8&address_zip=95131&first_name=John&mc_fee=8.87&address_country_code=US&address_name=John+Doe&notify_version=3.9&custom=oh+silis&payer_status=verified&business=sb-439fbc18073957%40business.example.com&address_country=United+States&num_cart_items=5&address_city=San+Jose&verify_sign=AN3aT2Q0z4U2tpYBbFJdIrej6JGbAGWz5f4AFzeFbFDhLgOD3IuXUOqh&payer_email=sb-pvg9r19571555%40personal.example.com&txn_id=3A419727W34411148&payment_type=instant&last_name=Doe&address_state=CA&item_name1=%245+Donator+Scroll&receiver_email=sb-439fbc18073957%40business.example.com&item_name2=%2410+Scroll&payment_fee=8.87&item_name3=%2450+Donator+Scroll&item_name4=%2475+Donator+Scroll&shipping_discount=0.00&item_name5=%24100+Scroll&quantity1=1&insurance_amount=0.00&quantity2=1&receiver_id=VFJDYXB3NHGWJ&quantity3=1&txn_type=cart&quantity4=1&discount=0.00&quantity5=1&mc_gross_1=5.00&mc_currency=USD&mc_gross_2=10.00&mc_gross_3=50.00&residence_country=US&test_ipn=1&mc_gross_4=75.00&shipping_method=Default&mc_gross_5=100.00&transaction_subject=&payment_gross=240.00&ipn_track_id=e3c79f8f0f3ae
+[2022-08-13 13:03 America/Chicago] HTTP response of validation request: HTTP/1.1 200 OK
+Connection: close
+Content-Length: 8
+Content-Type: text/html; charset=utf-8
+Cache-Control: max-age=0, no-cache, no-store, must-revalidate
+Content-Security-Policy: default-src 'self' https://*.paypal.com https://*.paypalobjects.com 'unsafe-inline'; style-src 'self' https://*.paypal.com https://*.paypalobjects.com 'unsafe-inline'; script-src 'nonce-vddjOi0kkY9kl9QLImf9Mq6NqQrCh0v0sWbR+JjKVkDsEIMP' 'self' 'unsafe-inline' https://*.paypal.com https://*.paypalobjects.com; img-src 'self' https: data:; object-src 'none'; font-src 'self' https://*.paypal.com https://*.paypalobjects.com; frame-src 'self' https://*.paypalobjects.com https://*.paypal.com https://*.qualtrics.com; connect-src 'self' 'unsafe-inline' https://*.paypal.com https://*.paypalobjects.com https://*.qualtrics.com; form-action 'self' https://*.paypal.com; base-uri 'self' https://*.paypal.com; block-all-mixed-content;
+Etag: W/"8-WXvD6WBsMSDy5c0v7r4OHopk5Ys"
+Paypal-Debug-Id: 98346289a777a
+Set-Cookie: LANG=en_US%3BUS; Max-Age=31556; Domain=.paypal.com; Path=/; Expires=Sun, 14 Aug 2022 02:48:57 GMT; HttpOnly; Secure
+Set-Cookie: enforce_policy=ccpa; Max-Age=31536000; Domain=.paypal.com; Path=/; Expires=Sun, 13 Aug 2023 18:03:01 GMT; Secure
+Set-Cookie: x-pp-s=eyJ0IjoiMTY2MDQxMzc4MTQ3NSIsImwiOiIwIiwibSI6IjAifQ; Domain=.paypal.com; Path=/; HttpOnly; Secure
+Set-Cookie: tsrce=merchantnotifnodeweb; Domain=.paypal.com; Path=/; Expires=Tue, 16 Aug 2022 18:03:01 GMT; HttpOnly; Secure; SameSite=None
+Set-Cookie: nsid=s%3Ahrzkqjd3egNpeJTvFvo9AVRPrsfpO6ns.sizCTaM%2B3R18rIKCapDBlc%2FUoftHnGpL76tw4PSJmNc; Path=/; HttpOnly; Secure
+Set-Cookie: ts=vreXpYrS%3D1755108181%26vteXpYrS%3D1660415581%26vr%3D985fa5cb1820a6022c92cdbcff07e674%26vt%3D985fa5cb1820a6022c92cdbcff07e673%26vtyp%3Dnew; Path=/; Domain=paypal.com; Expires=Tue, 12 Aug 2025 18:03:01 GMT; HttpOnly; Secure
+Set-Cookie: ts_c=vr%3D985fa5cb1820a6022c92cdbcff07e674%26vt%3D985fa5cb1820a6022c92cdbcff07e673; Path=/; Domain=paypal.com; Expires=Tue, 12 Aug 2025 18:03:01 GMT; Secure
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+X-Xss-Protection: 1; mode=block
+Accept-Ranges: bytes
+Via: 1.1 varnish, 1.1 varnish
+Date: Sat, 13 Aug 2022 18:03:01 GMT
+Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
+X-Served-By: cache-chi-klot8100046-CHI, cache-den8257-DEN
+X-Cache: MISS, MISS
+X-Cache-Hits: 0, 0
+X-Timer: S1660413781.415273,VS0,VE97
+Vary: Accept-Encoding
+Set-Cookie: x-cdn=fastly:DEN; Domain=paypal.com; Path=/; Secure
+
+VERIFIED
+Payment status:  CompletedPayment status:  CompletedPayment status:  CompletedPayment status:  CompletedPayment status:  Completed[2022-08-13 13:03 America/Chicago] Verified IPN: cmd=_notify-validate&mc_gross=240.00&protection_eligibility=Eligible&address_status=confirmed&item_number1=10&item_number2=11&payer_id=X44TPQPKDLWLN&item_number3=17&address_street=1+Main+St&item_number4=1022&payment_date=11%3A02%3A53+Aug+13%2C+2022+PDT&item_number5=1023&payment_status=Completed&charset=UTF-8&address_zip=95131&first_name=John&mc_fee=8.87&address_country_code=US&address_name=John+Doe&notify_version=3.9&custom=oh+silis&payer_status=verified&business=sb-439fbc18073957%40business.example.com&address_country=United+States&num_cart_items=5&address_city=San+Jose&verify_sign=AN3aT2Q0z4U2tpYBbFJdIrej6JGbAGWz5f4AFzeFbFDhLgOD3IuXUOqh&payer_email=sb-pvg9r19571555%40personal.example.com&txn_id=3A419727W34411148&payment_type=instant&last_name=Doe&address_state=CA&item_name1=%245+Donator+Scroll&receiver_email=sb-439fbc18073957%40business.example.com&item_name2=%2410+Scroll&payment_fee=8.87&item_name3=%2450+Donator+Scroll&item_name4=%2475+Donator+Scroll&shipping_discount=0.00&item_name5=%24100+Scroll&quantity1=1&insurance_amount=0.00&quantity2=1&receiver_id=VFJDYXB3NHGWJ&quantity3=1&txn_type=cart&quantity4=1&discount=0.00&quantity5=1&mc_gross_1=5.00&mc_currency=USD&mc_gross_2=10.00&mc_gross_3=50.00&residence_country=US&test_ipn=1&mc_gross_4=75.00&shipping_method=Default&mc_gross_5=100.00&transaction_subject=&payment_gross=240.00&ipn_track_id=e3c79f8f0f3ae 
+[2022-08-13 13:06 America/Chicago] HTTP request of validation request:POST /cgi-bin/webscr HTTP/1.1
+Host: www.sandbox.paypal.com
+Accept: */*
+Connection: Close
+Content-Length: 1381
+Content-Type: application/x-www-form-urlencoded
+
+ for IPN payload: cmd=_notify-validate&mc_gross=240.00&protection_eligibility=Eligible&address_status=confirmed&item_number1=2403&item_number2=2396&payer_id=X44TPQPKDLWLN&item_number3=1505&address_street=1+Main+St&item_number4=608&payment_date=11%3A05%3A59+Aug+13%2C+2022+PDT&item_number5=607&payment_status=Completed&charset=UTF-8&address_zip=95131&first_name=John&mc_fee=8.87&address_country_code=US&address_name=John+Doe&notify_version=3.9&custom=oh+silis&payer_status=verified&business=sb-439fbc18073957%40business.example.com&address_country=United+States&num_cart_items=5&address_city=San+Jose&verify_sign=AmU98zthRzndWQVGgf-Ew8sCGk-wAECByZp4p6AOj2uMtJuPxCqYYf9b&payer_email=sb-pvg9r19571555%40personal.example.com&txn_id=6SK67168WY4647246&payment_type=instant&last_name=Doe&address_state=CA&item_name1=%24100+Scroll&receiver_email=sb-439fbc18073957%40business.example.com&item_name2=%2475+Donator+Scroll&payment_fee=8.87&item_name3=%2450+Donator+Scroll&item_name4=%2410+Scroll&shipping_discount=0.00&item_name5=%245+Donator+Scroll&quantity1=1&insurance_amount=0.00&quantity2=1&receiver_id=VFJDYXB3NHGWJ&quantity3=1&txn_type=cart&quantity4=1&discount=0.00&quantity5=1&mc_gross_1=100.00&mc_currency=USD&mc_gross_2=75.00&mc_gross_3=50.00&residence_country=US&test_ipn=1&mc_gross_4=10.00&shipping_method=Default&mc_gross_5=5.00&transaction_subject=&payment_gross=240.00&ipn_track_id=a9056da65d5b1
+[2022-08-13 13:06 America/Chicago] HTTP response of validation request: HTTP/1.1 200 OK
+Connection: close
+Content-Length: 8
+Content-Type: text/html; charset=utf-8
+Cache-Control: max-age=0, no-cache, no-store, must-revalidate
+Content-Security-Policy: default-src 'self' https://*.paypal.com https://*.paypalobjects.com 'unsafe-inline'; style-src 'self' https://*.paypal.com https://*.paypalobjects.com 'unsafe-inline'; script-src 'nonce-vKMgb5eSNF/K/B2bwrNpBxQUwwUsLiYUJdxTCBwkmxiZ3Sbv' 'self' 'unsafe-inline' https://*.paypal.com https://*.paypalobjects.com; img-src 'self' https: data:; object-src 'none'; font-src 'self' https://*.paypal.com https://*.paypalobjects.com; frame-src 'self' https://*.paypalobjects.com https://*.paypal.com https://*.qualtrics.com; connect-src 'self' 'unsafe-inline' https://*.paypal.com https://*.paypalobjects.com https://*.qualtrics.com; form-action 'self' https://*.paypal.com; base-uri 'self' https://*.paypal.com; block-all-mixed-content;
+Etag: W/"8-WXvD6WBsMSDy5c0v7r4OHopk5Ys"
+Paypal-Debug-Id: caf505e030ed7
+Set-Cookie: LANG=en_US%3BUS; Max-Age=31556; Domain=.paypal.com; Path=/; Expires=Sun, 14 Aug 2022 02:52:00 GMT; HttpOnly; Secure
+Set-Cookie: enforce_policy=ccpa; Max-Age=31536000; Domain=.paypal.com; Path=/; Expires=Sun, 13 Aug 2023 18:06:04 GMT; Secure
+Set-Cookie: x-pp-s=eyJ0IjoiMTY2MDQxMzk2NDQzMSIsImwiOiIwIiwibSI6IjAifQ; Domain=.paypal.com; Path=/; HttpOnly; Secure
+Set-Cookie: tsrce=merchantnotifnodeweb; Domain=.paypal.com; Path=/; Expires=Tue, 16 Aug 2022 18:06:04 GMT; HttpOnly; Secure; SameSite=None
+Set-Cookie: nsid=s%3Al4ljXNIDvR4W-zHnO8Q7eBUuoP7Arm_g.ZGdGnwR5MOSzezqVunB3nBtOOXAkkXJsSy68pjp3k%2Bo; Path=/; HttpOnly; Secure
+Set-Cookie: ts=vreXpYrS%3D1755108364%26vteXpYrS%3D1660415764%26vr%3D9862707a1820a602060fa7cdff088ee0%26vt%3D9862707a1820a602060fa7cdff088edf%26vtyp%3Dnew; Path=/; Domain=paypal.com; Expires=Tue, 12 Aug 2025 18:06:04 GMT; HttpOnly; Secure
+Set-Cookie: ts_c=vr%3D9862707a1820a602060fa7cdff088ee0%26vt%3D9862707a1820a602060fa7cdff088edf; Path=/; Domain=paypal.com; Expires=Tue, 12 Aug 2025 18:06:04 GMT; Secure
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+X-Xss-Protection: 1; mode=block
+Accept-Ranges: bytes
+Via: 1.1 varnish, 1.1 varnish
+Date: Sat, 13 Aug 2022 18:06:04 GMT
+Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
+X-Served-By: cache-chi-kigq8000081-CHI, cache-den8279-DEN
+X-Cache: MISS, MISS
+X-Cache-Hits: 0, 0
+X-Timer: S1660413964.372026,VS0,VE95
+Vary: Accept-Encoding
+Set-Cookie: x-cdn=fastly:DEN; Domain=paypal.com; Path=/; Secure
+
+VERIFIED
+Payment status:  CompletedPayment status:  CompletedPayment status:  CompletedPayment status:  CompletedPayment status:  Completed[2022-08-13 13:06 America/Chicago] Verified IPN: cmd=_notify-validate&mc_gross=240.00&protection_eligibility=Eligible&address_status=confirmed&item_number1=2403&item_number2=2396&payer_id=X44TPQPKDLWLN&item_number3=1505&address_street=1+Main+St&item_number4=608&payment_date=11%3A05%3A59+Aug+13%2C+2022+PDT&item_number5=607&payment_status=Completed&charset=UTF-8&address_zip=95131&first_name=John&mc_fee=8.87&address_country_code=US&address_name=John+Doe&notify_version=3.9&custom=oh+silis&payer_status=verified&business=sb-439fbc18073957%40business.example.com&address_country=United+States&num_cart_items=5&address_city=San+Jose&verify_sign=AmU98zthRzndWQVGgf-Ew8sCGk-wAECByZp4p6AOj2uMtJuPxCqYYf9b&payer_email=sb-pvg9r19571555%40personal.example.com&txn_id=6SK67168WY4647246&payment_type=instant&last_name=Doe&address_state=CA&item_name1=%24100+Scroll&receiver_email=sb-439fbc18073957%40business.example.com&item_name2=%2475+Donator+Scroll&payment_fee=8.87&item_name3=%2450+Donator+Scroll&item_name4=%2410+Scroll&shipping_discount=0.00&item_name5=%245+Donator+Scroll&quantity1=1&insurance_amount=0.00&quantity2=1&receiver_id=VFJDYXB3NHGWJ&quantity3=1&txn_type=cart&quantity4=1&discount=0.00&quantity5=1&mc_gross_1=100.00&mc_currency=USD&mc_gross_2=75.00&mc_gross_3=50.00&residence_country=US&test_ipn=1&mc_gross_4=10.00&shipping_method=Default&mc_gross_5=5.00&transaction_subject=&payment_gross=240.00&ipn_track_id=a9056da65d5b1 
+[2022-08-13 19:26 America/Chicago] HTTP request of validation request:POST /cgi-bin/webscr HTTP/1.1
+Host: www.paypal.com
+Accept: */*
+Connection: Close
+Content-Length: 1032
+Content-Type: application/x-www-form-urlencoded
+
+ for IPN payload: cmd=_notify-validate&mc_gross=100.00&protection_eligibility=Eligible&address_status=confirmed&item_number1=2403&payer_id=FMDDBBDGSTH24&address_street=8+Edgecroft+Cres&payment_date=17%3A26%3A51+Aug+13%2C+2022+PDT&payment_status=Completed&charset=UTF-8&address_zip=L8J+3Y6&first_name=Bronson&mc_fee=5.48&address_country_code=CA&address_name=Bronson+Lendvoy&notify_version=3.9&custom=Bronson&payer_status=verified&business=primalosps%40gmail.com&address_country=Canada&num_cart_items=1&address_city=Hamilton&verify_sign=ABCSxRQUeHiTBwH1qmeS9wf25wUoAzR5GVzhEB4waGr1DuXIaTCWC70o&payer_email=ricochet_103%40hotmail.com&txn_id=96S23525P0641792Y&payment_type=instant&last_name=Lendvoy&item_name1=%24100+Scroll&address_state=ON&receiver_email=primalosps%40gmail.com&payment_fee=5.48&shipping_discount=0.00&quantity1=1&insurance_amount=0.00&receiver_id=ZSR3U3D55F3AU&txn_type=cart&discount=0.00&mc_gross_1=100.00&mc_currency=USD&residence_country=CA&shipping_method=Default&transaction_subject=&payment_gross=100.00&ipn_track_id=f2804288bc2e7
+[2022-08-13 19:26 America/Chicago] HTTP response of validation request: HTTP/1.1 200 OK
+Cache-Control: max-age=0, no-cache, no-store, must-revalidate
+Content-Security-Policy: default-src 'self' https://*.paypal.com https://*.paypalobjects.com 'unsafe-inline'; style-src 'self' https://*.paypal.com https://*.paypalobjects.com 'unsafe-inline'; script-src 'nonce-AOz63jkJQbi39XqjpGMOAFjKW7I8VMBcedhuHi7YAelqkBm5' 'self' 'unsafe-inline' https://*.paypal.com https://*.paypalobjects.com; img-src 'self' https: data:; object-src 'none'; font-src 'self' https://*.paypal.com https://*.paypalobjects.com; frame-src 'self' https://*.paypalobjects.com https://*.paypal.com https://*.qualtrics.com; connect-src 'self' 'unsafe-inline' https://*.paypal.com https://*.paypalobjects.com https://*.qualtrics.com; form-action 'self' https://*.paypal.com; base-uri 'self' https://*.paypal.com; block-all-mixed-content;; report-uri https://www.paypal.com/csplog/api/log/csp
+Content-Type: text/html; charset=utf-8
+ETag: W/"8-WXvD6WBsMSDy5c0v7r4OHopk5Ys"
+Paypal-Debug-Id: a82c75f4948cf
+Traceparent: 00-0000000000000000000a82c75f4948cf-36d03e48dbe0fa8f-01
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+X-Xss-Protection: 1; mode=block
+DC: ccg11-origin-www-1.paypal.com
+X-Akamai-Transformed: 9 8 0 pmb=mRUM,1
+Date: Sun, 14 Aug 2022 00:26:57 GMT
+Content-Length: 8
+Connection: close
+Set-Cookie: LANG=en_US%3BUS; Max-Age=31556; Domain=.paypal.com; Path=/; Expires=Sun, 14 Aug 2022 09:12:53 GMT; HttpOnly; Secure
+Set-Cookie: enforce_policy=ccpa; Max-Age=31536000; Domain=.paypal.com; Path=/; Expires=Mon, 14 Aug 2023 00:26:57 GMT; Secure
+Set-Cookie: x-pp-s=eyJ0IjoiMTY2MDQzNjgxNzU1NyIsImwiOiIwIiwibSI6IjAifQ; Domain=.paypal.com; Path=/; HttpOnly; Secure
+Set-Cookie: tsrce=merchantnotifnodeweb; Domain=.paypal.com; Path=/; Expires=Wed, 17 Aug 2022 00:26:57 GMT; HttpOnly; Secure; SameSite=None
+Set-Cookie: nsid=s%3AMOu--rHxDz_rZZvfXz8D44Qb6mNVNTVn.Eo2iQ8xLAJBqq0u%2Fvx%2FW%2Fm6uexYZh%2FRdswObCrhYqPw; Path=/; HttpOnly; Secure
+Set-Cookie: ts=vreXpYrS%3D1755131217%26vteXpYrS%3D1660438617%26vr%3D99bf267a1820a78065bbacbcffa3a5a9%26vt%3D99bf267a1820a78065bbacbcffa3a5a8%26vtyp%3Dnew; Path=/; Domain=paypal.com; Expires=Wed, 13 Aug 2025 00:26:57 GMT; HttpOnly; Secure
+Set-Cookie: ts_c=vr%3D99bf267a1820a78065bbacbcffa3a5a9%26vt%3D99bf267a1820a78065bbacbcffa3a5a8; Path=/; Domain=paypal.com; Expires=Wed, 13 Aug 2025 00:26:57 GMT; Secure
+Server-Timing: edge; dur=7
+Server-Timing: origin; dur=71
+Server-Timing: cdn-cache; desc=MISS
+Server-Timing: content-encoding;desc="",x-cdn;desc="akamai"
+Strict-Transport-Security: max-age=63072000
+
+VERIFIED
+Payment status:  Completed[2022-08-13 19:26 America/Chicago] Verified IPN: cmd=_notify-validate&mc_gross=100.00&protection_eligibility=Eligible&address_status=confirmed&item_number1=2403&payer_id=FMDDBBDGSTH24&address_street=8+Edgecroft+Cres&payment_date=17%3A26%3A51+Aug+13%2C+2022+PDT&payment_status=Completed&charset=UTF-8&address_zip=L8J+3Y6&first_name=Bronson&mc_fee=5.48&address_country_code=CA&address_name=Bronson+Lendvoy&notify_version=3.9&custom=Bronson&payer_status=verified&business=primalosps%40gmail.com&address_country=Canada&num_cart_items=1&address_city=Hamilton&verify_sign=ABCSxRQUeHiTBwH1qmeS9wf25wUoAzR5GVzhEB4waGr1DuXIaTCWC70o&payer_email=ricochet_103%40hotmail.com&txn_id=96S23525P0641792Y&payment_type=instant&last_name=Lendvoy&item_name1=%24100+Scroll&address_state=ON&receiver_email=primalosps%40gmail.com&payment_fee=5.48&shipping_discount=0.00&quantity1=1&insurance_amount=0.00&receiver_id=ZSR3U3D55F3AU&txn_type=cart&discount=0.00&mc_gross_1=100.00&mc_currency=USD&residence_country=CA&shipping_method=Default&transaction_subject=&payment_gross=100.00&ipn_track_id=f2804288bc2e7 
+[2022-08-13 21:17 America/Chicago] HTTP request of validation request:POST /cgi-bin/webscr HTTP/1.1
+Host: www.paypal.com
+Accept: */*
+Connection: Close
+Content-Length: 1020
+Content-Type: application/x-www-form-urlencoded
+
+ for IPN payload: cmd=_notify-validate&mc_gross=10.00&protection_eligibility=Eligible&address_status=confirmed&item_number1=608&payer_id=74UBCZQP9GGUJ&address_street=1+takapu+place&payment_date=19%3A17%3A09+Aug+13%2C+2022+PDT&payment_status=Completed&charset=UTF-8&address_zip=3210&first_name=Ben&mc_fee=0.99&address_country_code=NZ&address_name=Ben+Weake&notify_version=3.9&custom=Difference&payer_status=unverified&business=primalosps%40gmail.com&address_country=New+Zealand&num_cart_items=1&address_city=Hamilton&verify_sign=AYLsXOSSSNUWa9FhYl5mAKG-ivYzACm4fO3tcLVgZGCu24X9etP5Ndbk&payer_email=bweake%40hotmail.com&txn_id=9X446231G0331772U&payment_type=instant&last_name=Weake&item_name1=%2410+Scroll&address_state=Hamilton&receiver_email=primalosps%40gmail.com&payment_fee=0.99&shipping_discount=0.00&quantity1=1&insurance_amount=0.00&receiver_id=ZSR3U3D55F3AU&txn_type=cart&discount=0.00&mc_gross_1=10.00&mc_currency=USD&residence_country=NZ&shipping_method=Default&transaction_subject=&payment_gross=10.00&ipn_track_id=f866793010d52
+[2022-08-13 21:17 America/Chicago] HTTP response of validation request: HTTP/1.1 200 OK
+Connection: close
+Content-Length: 8
+Cache-Control: max-age=0, no-cache, no-store, must-revalidate
+Content-Security-Policy: default-src 'self' https://*.paypal.com https://*.paypalobjects.com 'unsafe-inline'; style-src 'self' https://*.paypal.com https://*.paypalobjects.com 'unsafe-inline'; script-src 'nonce-dBZ4AXKvksb1g3cylhSt61Kpiw6qvXObzWxr46eYkKmWe4xD' 'self' 'unsafe-inline' https://*.paypal.com https://*.paypalobjects.com; img-src 'self' https: data:; object-src 'none'; font-src 'self' https://*.paypal.com https://*.paypalobjects.com; frame-src 'self' https://*.paypalobjects.com https://*.paypal.com https://*.qualtrics.com; connect-src 'self' 'unsafe-inline' https://*.paypal.com https://*.paypalobjects.com https://*.qualtrics.com; form-action 'self' https://*.paypal.com; base-uri 'self' https://*.paypal.com; block-all-mixed-content;; report-uri https://www.paypal.com/csplog/api/log/csp
+Content-Type: text/html; charset=utf-8
+Etag: W/"8-WXvD6WBsMSDy5c0v7r4OHopk5Ys"
+Paypal-Debug-Id: f921733868597
+Set-Cookie: LANG=en_US%3BUS; Max-Age=31556; Domain=.paypal.com; Path=/; Expires=Sun, 14 Aug 2022 11:03:12 GMT; HttpOnly; Secure
+Set-Cookie: enforce_policy=ccpa; Max-Age=31536000; Domain=.paypal.com; Path=/; Expires=Mon, 14 Aug 2023 02:17:16 GMT; Secure
+Set-Cookie: x-pp-s=eyJ0IjoiMTY2MDQ0MzQzNjk4MyIsImwiOiIwIiwibSI6IjAifQ; Domain=.paypal.com; Path=/; HttpOnly; Secure
+Set-Cookie: tsrce=merchantnotifnodeweb; Domain=.paypal.com; Path=/; Expires=Wed, 17 Aug 2022 02:17:16 GMT; HttpOnly; Secure; SameSite=None
+Set-Cookie: nsid=s%3AqNLaWodZPEMOy-Kl9usfaR3xPPp13kD-.%2Fej5dtpYKb1AK2Q69OwwX5Cff5z5NEFi9Kl7DdBSjj0; Path=/; HttpOnly; Secure
+Set-Cookie: ts=vreXpYrS%3D1755137836%26vteXpYrS%3D1660445236%26vr%3D9a2427961820a1f3c895a543ff9c73c9%26vt%3D9a2427961820a1f3c895a543ff9c73c8%26vtyp%3Dnew; Path=/; Domain=paypal.com; Expires=Wed, 13 Aug 2025 02:17:16 GMT; HttpOnly; Secure
+Set-Cookie: ts_c=vr%3D9a2427961820a1f3c895a543ff9c73c9%26vt%3D9a2427961820a1f3c895a543ff9c73c8; Path=/; Domain=paypal.com; Expires=Wed, 13 Aug 2025 02:17:16 GMT; Secure
+Traceparent: 00-0000000000000000000f921733868597-7e045d0f7c2d9546-01
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+X-Xss-Protection: 1; mode=block
+DC: ccg11-origin-www-1.paypal.com
+Accept-Ranges: bytes
+Via: 1.1 varnish, 1.1 varnish
+Date: Sun, 14 Aug 2022 02:17:17 GMT
+Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
+X-Served-By: cache-iad-kiad7000081-IAD, cache-den8258-DEN
+X-Cache: MISS, MISS
+X-Cache-Hits: 0, 0
+X-Timer: S1660443437.884655,VS0,VE161
+Vary: Accept-Encoding
+Server-Timing: content-encoding;desc="",x-cdn;desc="fastly"
+
+VERIFIED
+Payment status:  Completed[2022-08-13 21:17 America/Chicago] Verified IPN: cmd=_notify-validate&mc_gross=10.00&protection_eligibility=Eligible&address_status=confirmed&item_number1=608&payer_id=74UBCZQP9GGUJ&address_street=1+takapu+place&payment_date=19%3A17%3A09+Aug+13%2C+2022+PDT&payment_status=Completed&charset=UTF-8&address_zip=3210&first_name=Ben&mc_fee=0.99&address_country_code=NZ&address_name=Ben+Weake&notify_version=3.9&custom=Difference&payer_status=unverified&business=primalosps%40gmail.com&address_country=New+Zealand&num_cart_items=1&address_city=Hamilton&verify_sign=AYLsXOSSSNUWa9FhYl5mAKG-ivYzACm4fO3tcLVgZGCu24X9etP5Ndbk&payer_email=bweake%40hotmail.com&txn_id=9X446231G0331772U&payment_type=instant&last_name=Weake&item_name1=%2410+Scroll&address_state=Hamilton&receiver_email=primalosps%40gmail.com&payment_fee=0.99&shipping_discount=0.00&quantity1=1&insurance_amount=0.00&receiver_id=ZSR3U3D55F3AU&txn_type=cart&discount=0.00&mc_gross_1=10.00&mc_currency=USD&residence_country=NZ&shipping_method=Default&transaction_subject=&payment_gross=10.00&ipn_track_id=f866793010d52 
+[2022-08-13 21:19 America/Chicago] HTTP request of validation request:POST /cgi-bin/webscr HTTP/1.1
+Host: www.paypal.com
+Accept: */*
+Connection: Close
+Content-Length: 1096
+Content-Type: application/x-www-form-urlencoded
+
+ for IPN payload: cmd=_notify-validate&mc_gross=15.00&protection_eligibility=Eligible&address_status=confirmed&item_number1=607&item_number2=608&payer_id=74UBCZQP9GGUJ&address_street=1+takapu+place&payment_date=19%3A19%3A09+Aug+13%2C+2022+PDT&payment_status=Completed&charset=UTF-8&address_zip=3210&first_name=Ben&mc_fee=1.24&address_country_code=NZ&address_name=Ben+Weake&notify_version=3.9&custom=Difference&payer_status=unverified&business=primalosps%40gmail.com&address_country=New+Zealand&num_cart_items=2&address_city=Hamilton&verify_sign=ApJTjs9JGbPMPRqOqsMiJNhM6bB8AYE4L1ksB8AsYq9JJVZ-EVWvUXIZ&payer_email=bweake%40hotmail.com&txn_id=24S12685EH797832G&payment_type=instant&last_name=Weake&address_state=Hamilton&item_name1=%245+Donator+Scroll&receiver_email=primalosps%40gmail.com&item_name2=%2410+Scroll&payment_fee=1.24&shipping_discount=0.00&quantity1=1&insurance_amount=0.00&quantity2=1&receiver_id=ZSR3U3D55F3AU&txn_type=cart&discount=0.00&mc_gross_1=5.00&mc_currency=USD&mc_gross_2=10.00&residence_country=NZ&shipping_method=Default&transaction_subject=&payment_gross=15.00&ipn_track_id=f912918511690
+[2022-08-13 21:19 America/Chicago] HTTP response of validation request: HTTP/1.1 200 OK
+Connection: close
+Content-Length: 8
+Cache-Control: max-age=0, no-cache, no-store, must-revalidate
+Content-Security-Policy: default-src 'self' https://*.paypal.com https://*.paypalobjects.com 'unsafe-inline'; style-src 'self' https://*.paypal.com https://*.paypalobjects.com 'unsafe-inline'; script-src 'nonce-u/ZIztlMHJrmzQk1EVyQ4eeIWr8BhWThIGT5QGeri591V6gH' 'self' 'unsafe-inline' https://*.paypal.com https://*.paypalobjects.com; img-src 'self' https: data:; object-src 'none'; font-src 'self' https://*.paypal.com https://*.paypalobjects.com; frame-src 'self' https://*.paypalobjects.com https://*.paypal.com https://*.qualtrics.com; connect-src 'self' 'unsafe-inline' https://*.paypal.com https://*.paypalobjects.com https://*.qualtrics.com; form-action 'self' https://*.paypal.com; base-uri 'self' https://*.paypal.com; block-all-mixed-content;; report-uri https://www.paypal.com/csplog/api/log/csp
+Content-Type: text/html; charset=utf-8
+Etag: W/"8-WXvD6WBsMSDy5c0v7r4OHopk5Ys"
+Paypal-Debug-Id: f1563644ae4b1
+Set-Cookie: LANG=en_US%3BUS; Max-Age=31556; Domain=.paypal.com; Path=/; Expires=Sun, 14 Aug 2022 11:05:13 GMT; HttpOnly; Secure
+Set-Cookie: enforce_policy=ccpa; Max-Age=31536000; Domain=.paypal.com; Path=/; Expires=Mon, 14 Aug 2023 02:19:17 GMT; Secure
+Set-Cookie: x-pp-s=eyJ0IjoiMTY2MDQ0MzU1NzQzMyIsImwiOiIwIiwibSI6IjAifQ; Domain=.paypal.com; Path=/; HttpOnly; Secure
+Set-Cookie: tsrce=merchantnotifnodeweb; Domain=.paypal.com; Path=/; Expires=Wed, 17 Aug 2022 02:19:17 GMT; HttpOnly; Secure; SameSite=None
+Set-Cookie: nsid=s%3AHknjH_ZURgSF3WV-d7dRjaTDeQubtD_H.uwEkncdCEXQlzvBqINhv9FO2Usl%2F5id2gyfj8PbMzpE; Path=/; HttpOnly; Secure
+Set-Cookie: ts=vreXpYrS%3D1755137957%26vteXpYrS%3D1660445357%26vr%3D9a25fe251820ad00983d0f01fffdcfd8%26vt%3D9a25fe251820ad00983d0f01fffdcfd7%26vtyp%3Dnew; Path=/; Domain=paypal.com; Expires=Wed, 13 Aug 2025 02:19:17 GMT; HttpOnly; Secure
+Set-Cookie: ts_c=vr%3D9a25fe251820ad00983d0f01fffdcfd8%26vt%3D9a25fe251820ad00983d0f01fffdcfd7; Path=/; Domain=paypal.com; Expires=Wed, 13 Aug 2025 02:19:17 GMT; Secure
+Traceparent: 00-0000000000000000000f1563644ae4b1-1fe7c263d9dc391c-01
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+X-Xss-Protection: 1; mode=block
+DC: ccg11-origin-www-1.paypal.com
+Accept-Ranges: bytes
+Via: 1.1 varnish, 1.1 varnish
+Date: Sun, 14 Aug 2022 02:19:17 GMT
+Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
+X-Served-By: cache-iad-kjyo7100059-IAD, cache-den8234-DEN
+X-Cache: MISS, MISS
+X-Cache-Hits: 0, 0
+X-Timer: S1660443557.351599,VS0,VE135
+Vary: Accept-Encoding
+Server-Timing: content-encoding;desc="",x-cdn;desc="fastly"
+
+VERIFIED
+Payment status:  CompletedPayment status:  Completed[2022-08-13 21:19 America/Chicago] Verified IPN: cmd=_notify-validate&mc_gross=15.00&protection_eligibility=Eligible&address_status=confirmed&item_number1=607&item_number2=608&payer_id=74UBCZQP9GGUJ&address_street=1+takapu+place&payment_date=19%3A19%3A09+Aug+13%2C+2022+PDT&payment_status=Completed&charset=UTF-8&address_zip=3210&first_name=Ben&mc_fee=1.24&address_country_code=NZ&address_name=Ben+Weake&notify_version=3.9&custom=Difference&payer_status=unverified&business=primalosps%40gmail.com&address_country=New+Zealand&num_cart_items=2&address_city=Hamilton&verify_sign=ApJTjs9JGbPMPRqOqsMiJNhM6bB8AYE4L1ksB8AsYq9JJVZ-EVWvUXIZ&payer_email=bweake%40hotmail.com&txn_id=24S12685EH797832G&payment_type=instant&last_name=Weake&address_state=Hamilton&item_name1=%245+Donator+Scroll&receiver_email=primalosps%40gmail.com&item_name2=%2410+Scroll&payment_fee=1.24&shipping_discount=0.00&quantity1=1&insurance_amount=0.00&quantity2=1&receiver_id=ZSR3U3D55F3AU&txn_type=cart&discount=0.00&mc_gross_1=5.00&mc_currency=USD&mc_gross_2=10.00&residence_country=NZ&shipping_method=Default&transaction_subject=&payment_gross=15.00&ipn_track_id=f912918511690 
+[2022-08-13 22:30 America/Chicago] HTTP request of validation request:POST /cgi-bin/webscr HTTP/1.1
+Host: www.paypal.com
+Accept: */*
+Connection: Close
+Content-Length: 1046
+Content-Type: application/x-www-form-urlencoded
+
+ for IPN payload: cmd=_notify-validate&mc_gross=50.00&protection_eligibility=Eligible&address_status=confirmed&item_number1=1505&payer_id=Q43XTSDDQN3EU&address_street=4717+Belfast+Dr&payment_date=20%3A30%3A47+Aug+13%2C+2022+PDT&payment_status=Completed&charset=UTF-8&address_zip=34652&first_name=sean&mc_fee=2.24&address_country_code=US&address_name=sean+jefferson&notify_version=3.9&custom=sus&payer_status=unverified&business=primalosps%40gmail.com&address_country=United+States&num_cart_items=1&address_city=New+Port+Richey&verify_sign=A9A0gZTWcGyirG.qnLuzNtP0Yj-IAX7ricY6F.s17i6Wve9NCfp0fHRn&payer_email=jeffersonsean6969%40yahoo.com&txn_id=1VH476060G884931J&payment_type=instant&last_name=jefferson&item_name1=%2450+Donator+Scroll&address_state=FL&receiver_email=primalosps%40gmail.com&payment_fee=2.24&shipping_discount=0.00&quantity1=1&insurance_amount=0.00&receiver_id=ZSR3U3D55F3AU&txn_type=cart&discount=0.00&mc_gross_1=50.00&mc_currency=USD&residence_country=US&shipping_method=Default&transaction_subject=&payment_gross=50.00&ipn_track_id=f424680be4364
+[2022-08-13 22:30 America/Chicago] HTTP response of validation request: HTTP/1.1 200 OK
+Connection: close
+Content-Length: 8
+Cache-Control: max-age=0, no-cache, no-store, must-revalidate
+Content-Security-Policy: default-src 'self' https://*.paypal.com https://*.paypalobjects.com 'unsafe-inline'; style-src 'self' https://*.paypal.com https://*.paypalobjects.com 'unsafe-inline'; script-src 'nonce-T1ZRGE8lgQD23I2s5B0+OnTX1bE2k7gRri7B1w1U2wxlKSUc' 'self' 'unsafe-inline' https://*.paypal.com https://*.paypalobjects.com; img-src 'self' https: data:; object-src 'none'; font-src 'self' https://*.paypal.com https://*.paypalobjects.com; frame-src 'self' https://*.paypalobjects.com https://*.paypal.com https://*.qualtrics.com; connect-src 'self' 'unsafe-inline' https://*.paypal.com https://*.paypalobjects.com https://*.qualtrics.com; form-action 'self' https://*.paypal.com; base-uri 'self' https://*.paypal.com; block-all-mixed-content;; report-uri https://www.paypal.com/csplog/api/log/csp
+Content-Type: text/html; charset=utf-8
+Etag: W/"8-WXvD6WBsMSDy5c0v7r4OHopk5Ys"
+Paypal-Debug-Id: f168105f1cf55
+Set-Cookie: LANG=en_US%3BUS; Max-Age=31556; Domain=.paypal.com; Path=/; Expires=Sun, 14 Aug 2022 12:16:50 GMT; HttpOnly; Secure
+Set-Cookie: enforce_policy=ccpa; Max-Age=31536000; Domain=.paypal.com; Path=/; Expires=Mon, 14 Aug 2023 03:30:54 GMT; Secure
+Set-Cookie: x-pp-s=eyJ0IjoiMTY2MDQ0Nzg1NDI0NCIsImwiOiIwIiwibSI6IjAifQ; Domain=.paypal.com; Path=/; HttpOnly; Secure
+Set-Cookie: tsrce=merchantnotifnodeweb; Domain=.paypal.com; Path=/; Expires=Wed, 17 Aug 2022 03:30:54 GMT; HttpOnly; Secure; SameSite=None
+Set-Cookie: nsid=s%3AZHmKyj92v9srVWGop-TRv5v0G_5jo5w7.zUPPEsBUrYmLv8S2fxGvogrNQhOY11sJOVNOVRbXZsc; Path=/; HttpOnly; Secure
+Set-Cookie: ts=vreXpYrS%3D1755142254%26vteXpYrS%3D1660449654%26vr%3D9a678e861820a1d60a02ba19ff9ab5f9%26vt%3D9a678e861820a1d60a02ba19ff9ab5f8%26vtyp%3Dnew; Path=/; Domain=paypal.com; Expires=Wed, 13 Aug 2025 03:30:54 GMT; HttpOnly; Secure
+Set-Cookie: ts_c=vr%3D9a678e861820a1d60a02ba19ff9ab5f9%26vt%3D9a678e861820a1d60a02ba19ff9ab5f8; Path=/; Domain=paypal.com; Expires=Wed, 13 Aug 2025 03:30:54 GMT; Secure
+Traceparent: 00-0000000000000000000f168105f1cf55-8acff3cad482a90a-01
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+X-Xss-Protection: 1; mode=block
+DC: ccg11-origin-www-1.paypal.com
+Accept-Ranges: bytes
+Via: 1.1 varnish, 1.1 varnish
+Date: Sun, 14 Aug 2022 03:30:54 GMT
+Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
+X-Served-By: cache-iad-kjyo7100141-IAD, cache-den8223-DEN
+X-Cache: MISS, MISS
+X-Cache-Hits: 0, 0
+X-Timer: S1660447854.146427,VS0,VE167
+Vary: Accept-Encoding
+Server-Timing: content-encoding;desc="",x-cdn;desc="fastly"
+
+VERIFIED
+Payment status:  Completed[2022-08-13 22:30 America/Chicago] Verified IPN: cmd=_notify-validate&mc_gross=50.00&protection_eligibility=Eligible&address_status=confirmed&item_number1=1505&payer_id=Q43XTSDDQN3EU&address_street=4717+Belfast+Dr&payment_date=20%3A30%3A47+Aug+13%2C+2022+PDT&payment_status=Completed&charset=UTF-8&address_zip=34652&first_name=sean&mc_fee=2.24&address_country_code=US&address_name=sean+jefferson&notify_version=3.9&custom=sus&payer_status=unverified&business=primalosps%40gmail.com&address_country=United+States&num_cart_items=1&address_city=New+Port+Richey&verify_sign=A9A0gZTWcGyirG.qnLuzNtP0Yj-IAX7ricY6F.s17i6Wve9NCfp0fHRn&payer_email=jeffersonsean6969%40yahoo.com&txn_id=1VH476060G884931J&payment_type=instant&last_name=jefferson&item_name1=%2450+Donator+Scroll&address_state=FL&receiver_email=primalosps%40gmail.com&payment_fee=2.24&shipping_discount=0.00&quantity1=1&insurance_amount=0.00&receiver_id=ZSR3U3D55F3AU&txn_type=cart&discount=0.00&mc_gross_1=50.00&mc_currency=USD&residence_country=US&shipping_method=Default&transaction_subject=&payment_gross=50.00&ipn_track_id=f424680be4364 
+[2022-08-14 00:02 America/Chicago] HTTP request of validation request:POST /cgi-bin/webscr HTTP/1.1
+Host: www.paypal.com
+Accept: */*
+Connection: Close
+Content-Length: 1020
+Content-Type: application/x-www-form-urlencoded
+
+ for IPN payload: cmd=_notify-validate&mc_gross=10.00&protection_eligibility=Eligible&address_status=confirmed&item_number1=608&payer_id=BYDJBUK4GCXMA&address_street=21+Fiona+avenue&payment_date=22%3A02%3A11+Aug+13%2C+2022+PDT&payment_status=Completed&charset=UTF-8&address_zip=3214&first_name=Hayden&mc_fee=0.99&address_country_code=AU&address_name=Hayden+Gerrard&notify_version=3.9&custom=Irony&payer_status=verified&business=primalosps%40gmail.com&address_country=Australia&num_cart_items=1&address_city=Corio&verify_sign=AYkxioWBrKwCt6wLJrw2HSJcBZrtAp05flDj3vPtZkvVA3utXQLLYpVy&payer_email=haydengerrard1%40gmail.com&txn_id=8X359266U2530962S&payment_type=instant&last_name=Gerrard&item_name1=%2410+Scroll&address_state=VIC&receiver_email=primalosps%40gmail.com&payment_fee=0.99&shipping_discount=0.00&quantity1=1&insurance_amount=0.00&receiver_id=ZSR3U3D55F3AU&txn_type=cart&discount=0.00&mc_gross_1=10.00&mc_currency=USD&residence_country=AU&shipping_method=Default&transaction_subject=&payment_gross=10.00&ipn_track_id=f712995f402dd
+[2022-08-14 00:02 America/Chicago] HTTP response of validation request: HTTP/1.1 200 OK
+Connection: close
+Content-Length: 8
+Cache-Control: max-age=0, no-cache, no-store, must-revalidate
+Content-Security-Policy: default-src 'self' https://*.paypal.com https://*.paypalobjects.com 'unsafe-inline'; style-src 'self' https://*.paypal.com https://*.paypalobjects.com 'unsafe-inline'; script-src 'nonce-1mq0F6TDvDIGOmzMCC4/ByJDam71qNQRmpM5j2pjdnC+ffT/' 'self' 'unsafe-inline' https://*.paypal.com https://*.paypalobjects.com; img-src 'self' https: data:; object-src 'none'; font-src 'self' https://*.paypal.com https://*.paypalobjects.com; frame-src 'self' https://*.paypalobjects.com https://*.paypal.com https://*.qualtrics.com; connect-src 'self' 'unsafe-inline' https://*.paypal.com https://*.paypalobjects.com https://*.qualtrics.com; form-action 'self' https://*.paypal.com; base-uri 'self' https://*.paypal.com; block-all-mixed-content;; report-uri https://www.paypal.com/csplog/api/log/csp
+Content-Type: text/html; charset=utf-8
+Etag: W/"8-WXvD6WBsMSDy5c0v7r4OHopk5Ys"
+Paypal-Debug-Id: f496113ef6c44
+Set-Cookie: LANG=en_US%3BUS; Max-Age=31556; Domain=.paypal.com; Path=/; Expires=Sun, 14 Aug 2022 13:48:14 GMT; HttpOnly; Secure
+Set-Cookie: enforce_policy=ccpa; Max-Age=31536000; Domain=.paypal.com; Path=/; Expires=Mon, 14 Aug 2023 05:02:18 GMT; Secure
+Set-Cookie: x-pp-s=eyJ0IjoiMTY2MDQ1MzMzODExMiIsImwiOiIwIiwibSI6IjAifQ; Domain=.paypal.com; Path=/; HttpOnly; Secure
+Set-Cookie: tsrce=merchantnotifnodeweb; Domain=.paypal.com; Path=/; Expires=Wed, 17 Aug 2022 05:02:18 GMT; HttpOnly; Secure; SameSite=None
+Set-Cookie: nsid=s%3AtPuZdyypRjLDgr9A7aP47R8DatLzo-l9.SYPdA7WJWJgte6DvbbK0SYkYxi5no4icTzNuS2FWQrM; Path=/; HttpOnly; Secure
+Set-Cookie: ts=vreXpYrS%3D1755147738%26vteXpYrS%3D1660455138%26vr%3D9abb3baa1820a7a09984868effa04113%26vt%3D9abb3baa1820a7a09984868effa04112%26vtyp%3Dnew; Path=/; Domain=paypal.com; Expires=Wed, 13 Aug 2025 05:02:18 GMT; HttpOnly; Secure
+Set-Cookie: ts_c=vr%3D9abb3baa1820a7a09984868effa04113%26vt%3D9abb3baa1820a7a09984868effa04112; Path=/; Domain=paypal.com; Expires=Wed, 13 Aug 2025 05:02:18 GMT; Secure
+Traceparent: 00-0000000000000000000f496113ef6c44-e073b41a3323d932-01
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+X-Xss-Protection: 1; mode=block
+DC: ccg11-origin-www-1.paypal.com
+Accept-Ranges: bytes
+Via: 1.1 varnish, 1.1 varnish
+Date: Sun, 14 Aug 2022 05:02:18 GMT
+Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
+X-Served-By: cache-iad-kiad7000038-IAD, cache-den8265-DEN
+X-Cache: MISS, MISS
+X-Cache-Hits: 0, 0
+X-Timer: S1660453338.969081,VS0,VE204
+Vary: Accept-Encoding
+Server-Timing: content-encoding;desc="",x-cdn;desc="fastly"
+
+VERIFIED
+Payment status:  Completed[2022-08-14 00:02 America/Chicago] Verified IPN: cmd=_notify-validate&mc_gross=10.00&protection_eligibility=Eligible&address_status=confirmed&item_number1=608&payer_id=BYDJBUK4GCXMA&address_street=21+Fiona+avenue&payment_date=22%3A02%3A11+Aug+13%2C+2022+PDT&payment_status=Completed&charset=UTF-8&address_zip=3214&first_name=Hayden&mc_fee=0.99&address_country_code=AU&address_name=Hayden+Gerrard&notify_version=3.9&custom=Irony&payer_status=verified&business=primalosps%40gmail.com&address_country=Australia&num_cart_items=1&address_city=Corio&verify_sign=AYkxioWBrKwCt6wLJrw2HSJcBZrtAp05flDj3vPtZkvVA3utXQLLYpVy&payer_email=haydengerrard1%40gmail.com&txn_id=8X359266U2530962S&payment_type=instant&last_name=Gerrard&item_name1=%2410+Scroll&address_state=VIC&receiver_email=primalosps%40gmail.com&payment_fee=0.99&shipping_discount=0.00&quantity1=1&insurance_amount=0.00&receiver_id=ZSR3U3D55F3AU&txn_type=cart&discount=0.00&mc_gross_1=10.00&mc_currency=USD&residence_country=AU&shipping_method=Default&transaction_subject=&payment_gross=10.00&ipn_track_id=f712995f402dd 
+[2022-08-14 05:21 America/Chicago] HTTP request of validation request:POST /cgi-bin/webscr HTTP/1.1
+Host: www.paypal.com
+Accept: */*
+Connection: Close
+Content-Length: 1052
+Content-Type: application/x-www-form-urlencoded
+
+ for IPN payload: cmd=_notify-validate&mc_gross=100.00&protection_eligibility=Eligible&address_status=confirmed&item_number1=2403&payer_id=3NEPRFZDHQBYN&address_street=227+Chatsworth+Avenue%0D%0APortsmouth&payment_date=03%3A21%3A40+Aug+14%2C+2022+PDT&payment_status=Completed&charset=UTF-8&address_zip=PO62UL&first_name=Alfie&mc_fee=5.48&address_country_code=GB&address_name=alfie+clarke&notify_version=3.9&custom=Alfie&payer_status=verified&business=primalosps%40gmail.com&address_country=United+Kingdom&num_cart_items=1&address_city=Portsmouth&verify_sign=AfPc5WX9y2REdFXOH4lFU09kWJ2kAEsKlgEzw03HT6Fzq7CyJsoMUJmH&payer_email=alfieclarke93%40live.co.uk&txn_id=5HH26235EL167681F&payment_type=instant&last_name=Clarke&item_name1=%24100+Scroll&address_state=&receiver_email=primalosps%40gmail.com&payment_fee=5.48&shipping_discount=0.00&quantity1=1&insurance_amount=0.00&receiver_id=ZSR3U3D55F3AU&txn_type=cart&discount=0.00&mc_gross_1=100.00&mc_currency=USD&residence_country=GB&shipping_method=Default&transaction_subject=&payment_gross=100.00&ipn_track_id=f772235e89473
+[2022-08-14 05:21 America/Chicago] HTTP response of validation request: HTTP/1.1 200 OK
+Connection: close
+Content-Length: 8
+Cache-Control: max-age=0, no-cache, no-store, must-revalidate
+Content-Security-Policy: default-src 'self' https://*.paypal.com https://*.paypalobjects.com 'unsafe-inline'; style-src 'self' https://*.paypal.com https://*.paypalobjects.com 'unsafe-inline'; script-src 'nonce-wFGQEXzDPV/vfZ8D1YM8XRk+JrBdaftG54x/Y9Zxrk1XAssX' 'self' 'unsafe-inline' https://*.paypal.com https://*.paypalobjects.com; img-src 'self' https: data:; object-src 'none'; font-src 'self' https://*.paypal.com https://*.paypalobjects.com; frame-src 'self' https://*.paypalobjects.com https://*.paypal.com https://*.qualtrics.com; connect-src 'self' 'unsafe-inline' https://*.paypal.com https://*.paypalobjects.com https://*.qualtrics.com; form-action 'self' https://*.paypal.com; base-uri 'self' https://*.paypal.com; block-all-mixed-content;; report-uri https://www.paypal.com/csplog/api/log/csp
+Content-Type: text/html; charset=utf-8
+Etag: W/"8-WXvD6WBsMSDy5c0v7r4OHopk5Ys"
+Paypal-Debug-Id: f6199523de8ba
+Set-Cookie: LANG=en_US%3BUS; Max-Age=31556; Domain=.paypal.com; Path=/; Expires=Sun, 14 Aug 2022 19:07:44 GMT; HttpOnly; Secure
+Set-Cookie: enforce_policy=ccpa; Max-Age=31536000; Domain=.paypal.com; Path=/; Expires=Mon, 14 Aug 2023 10:21:48 GMT; Secure
+Set-Cookie: x-pp-s=eyJ0IjoiMTY2MDQ3MjUwODAyMSIsImwiOiIwIiwibSI6IjAifQ; Domain=.paypal.com; Path=/; HttpOnly; Secure
+Set-Cookie: tsrce=merchantnotifnodeweb; Domain=.paypal.com; Path=/; Expires=Wed, 17 Aug 2022 10:21:48 GMT; HttpOnly; Secure; SameSite=None
+Set-Cookie: nsid=s%3AGr7ab8BdnPMnd9PHjw3rKQitYkx52r0K.FyAdpUDVk2ueS4L6rqJohDm65KwQu227J6Ktpi4OfHw; Path=/; HttpOnly; Secure
+Set-Cookie: ts=vreXpYrS%3D1755166907%26vteXpYrS%3D1660474307%26vr%3D9bdfbe5f1820a78879220b53ffec069c%26vt%3D9bdfbe5f1820a78879220b53ffec069b%26vtyp%3Dnew; Path=/; Domain=paypal.com; Expires=Wed, 13 Aug 2025 10:21:48 GMT; HttpOnly; Secure
+Set-Cookie: ts_c=vr%3D9bdfbe5f1820a78879220b53ffec069c%26vt%3D9bdfbe5f1820a78879220b53ffec069b; Path=/; Domain=paypal.com; Expires=Wed, 13 Aug 2025 10:21:48 GMT; Secure
+Traceparent: 00-0000000000000000000f6199523de8ba-dfd7a9cf925936b3-01
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+X-Xss-Protection: 1; mode=block
+DC: ccg11-origin-www-1.paypal.com
+Accept-Ranges: bytes
+Via: 1.1 varnish, 1.1 varnish
+Date: Sun, 14 Aug 2022 10:21:48 GMT
+Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
+X-Served-By: cache-iad-kiad7000077-IAD, cache-den8274-DEN
+X-Cache: MISS, MISS
+X-Cache-Hits: 0, 0
+X-Timer: S1660472508.942830,VS0,VE133
+Vary: Accept-Encoding
+Server-Timing: content-encoding;desc="",x-cdn;desc="fastly"
+
+VERIFIED
+Payment status:  Completed[2022-08-14 05:21 America/Chicago] Verified IPN: cmd=_notify-validate&mc_gross=100.00&protection_eligibility=Eligible&address_status=confirmed&item_number1=2403&payer_id=3NEPRFZDHQBYN&address_street=227+Chatsworth+Avenue%0D%0APortsmouth&payment_date=03%3A21%3A40+Aug+14%2C+2022+PDT&payment_status=Completed&charset=UTF-8&address_zip=PO62UL&first_name=Alfie&mc_fee=5.48&address_country_code=GB&address_name=alfie+clarke&notify_version=3.9&custom=Alfie&payer_status=verified&business=primalosps%40gmail.com&address_country=United+Kingdom&num_cart_items=1&address_city=Portsmouth&verify_sign=AfPc5WX9y2REdFXOH4lFU09kWJ2kAEsKlgEzw03HT6Fzq7CyJsoMUJmH&payer_email=alfieclarke93%40live.co.uk&txn_id=5HH26235EL167681F&payment_type=instant&last_name=Clarke&item_name1=%24100+Scroll&address_state=&receiver_email=primalosps%40gmail.com&payment_fee=5.48&shipping_discount=0.00&quantity1=1&insurance_amount=0.00&receiver_id=ZSR3U3D55F3AU&txn_type=cart&discount=0.00&mc_gross_1=100.00&mc_currency=USD&residence_country=GB&shipping_method=Default&transaction_subject=&payment_gross=100.00&ipn_track_id=f772235e89473 
+[2022-08-14 06:39 America/Chicago] HTTP request of validation request:POST /cgi-bin/webscr HTTP/1.1
+Host: www.paypal.com
+Accept: */*
+Connection: Close
+Content-Length: 1009
+Content-Type: application/x-www-form-urlencoded
+
+ for IPN payload: cmd=_notify-validate&mc_gross=30.00&protection_eligibility=Eligible&address_status=confirmed&item_number1=608&payer_id=ACDUY5MD3C6FS&address_street=Skogaromvn.13&payment_date=04%3A38%3A55+Aug+14%2C+2022+PDT&payment_status=Completed&charset=UTF-8&address_zip=7350&first_name=Lars&mc_fee=1.99&address_country_code=NO&address_name=Lars+Larsen&notify_version=3.9&custom=sheldore&payer_status=verified&business=primalosps%40gmail.com&address_country=Norway&num_cart_items=1&address_city=Buvika&verify_sign=ASU9OvA8D9c.V2wVXJ4eB9oOJpbwAT-eXXm7zRTyJAlXTm-JmmSD5PS4&payer_email=larsn1%40live.no&txn_id=55236157TM831743P&payment_type=instant&last_name=Larsen&item_name1=%2410+Scroll&address_state=Trondheim&receiver_email=primalosps%40gmail.com&payment_fee=1.99&shipping_discount=0.00&quantity1=3&insurance_amount=0.00&receiver_id=ZSR3U3D55F3AU&txn_type=cart&discount=0.00&mc_gross_1=30.00&mc_currency=USD&residence_country=NO&shipping_method=Default&transaction_subject=&payment_gross=30.00&ipn_track_id=f81381771b6b3
+[2022-08-14 06:39 America/Chicago] HTTP response of validation request: HTTP/1.1 200 OK
+Connection: close
+Content-Length: 8
+Cache-Control: max-age=0, no-cache, no-store, must-revalidate
+Content-Security-Policy: default-src 'self' https://*.paypal.com https://*.paypalobjects.com 'unsafe-inline'; style-src 'self' https://*.paypal.com https://*.paypalobjects.com 'unsafe-inline'; script-src 'nonce-1ebqdxxsX+PRsA1Rh6WJHzNB3SO0/Fkmbs9WhQcnG5JGV1ov' 'self' 'unsafe-inline' https://*.paypal.com https://*.paypalobjects.com; img-src 'self' https: data:; object-src 'none'; font-src 'self' https://*.paypal.com https://*.paypalobjects.com; frame-src 'self' https://*.paypalobjects.com https://*.paypal.com https://*.qualtrics.com; connect-src 'self' 'unsafe-inline' https://*.paypal.com https://*.paypalobjects.com https://*.qualtrics.com; form-action 'self' https://*.paypal.com; base-uri 'self' https://*.paypal.com; block-all-mixed-content;; report-uri https://www.paypal.com/csplog/api/log/csp
+Content-Type: text/html; charset=utf-8
+Etag: W/"8-WXvD6WBsMSDy5c0v7r4OHopk5Ys"
+Paypal-Debug-Id: f60960389f8f6
+Set-Cookie: LANG=en_US%3BUS; Max-Age=31556; Domain=.paypal.com; Path=/; Expires=Sun, 14 Aug 2022 20:24:59 GMT; HttpOnly; Secure
+Set-Cookie: enforce_policy=ccpa; Max-Age=31536000; Domain=.paypal.com; Path=/; Expires=Mon, 14 Aug 2023 11:39:03 GMT; Secure
+Set-Cookie: x-pp-s=eyJ0IjoiMTY2MDQ3NzE0MzA5OSIsImwiOiIwIiwibSI6IjAifQ; Domain=.paypal.com; Path=/; HttpOnly; Secure
+Set-Cookie: tsrce=merchantnotifnodeweb; Domain=.paypal.com; Path=/; Expires=Wed, 17 Aug 2022 11:39:03 GMT; HttpOnly; Secure; SameSite=None
+Set-Cookie: nsid=s%3AT3LPZrOl0vrVnuEAjmCPeuzzO6K77ydJ.Rb6K8j2p6i5kKeh5CVE9oorJMloojpWx63SN1G469NE; Path=/; HttpOnly; Secure
+Set-Cookie: ts=vreXpYrS%3D1755171543%26vteXpYrS%3D1660478943%26vr%3D9c2677f31820a1d4f4d841d1ff926a81%26vt%3D9c2677f31820a1d4f4d841d1ff926a80%26vtyp%3Dnew; Path=/; Domain=paypal.com; Expires=Wed, 13 Aug 2025 11:39:03 GMT; HttpOnly; Secure
+Set-Cookie: ts_c=vr%3D9c2677f31820a1d4f4d841d1ff926a81%26vt%3D9c2677f31820a1d4f4d841d1ff926a80; Path=/; Domain=paypal.com; Expires=Wed, 13 Aug 2025 11:39:03 GMT; Secure
+Traceparent: 00-0000000000000000000f60960389f8f6-03484739db7ac2c0-01
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+X-Xss-Protection: 1; mode=block
+DC: ccg11-origin-www-1.paypal.com
+Accept-Ranges: bytes
+Via: 1.1 varnish, 1.1 varnish
+Date: Sun, 14 Aug 2022 11:39:03 GMT
+Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
+X-Served-By: cache-iad-kcgs7200112-IAD, cache-den8243-DEN
+X-Cache: MISS, MISS
+X-Cache-Hits: 0, 0
+X-Timer: S1660477143.963330,VS0,VE214
+Vary: Accept-Encoding
+Server-Timing: content-encoding;desc="",x-cdn;desc="fastly"
+
+VERIFIED
+Payment status:  Completed[2022-08-14 06:39 America/Chicago] Verified IPN: cmd=_notify-validate&mc_gross=30.00&protection_eligibility=Eligible&address_status=confirmed&item_number1=608&payer_id=ACDUY5MD3C6FS&address_street=Skogaromvn.13&payment_date=04%3A38%3A55+Aug+14%2C+2022+PDT&payment_status=Completed&charset=UTF-8&address_zip=7350&first_name=Lars&mc_fee=1.99&address_country_code=NO&address_name=Lars+Larsen&notify_version=3.9&custom=sheldore&payer_status=verified&business=primalosps%40gmail.com&address_country=Norway&num_cart_items=1&address_city=Buvika&verify_sign=ASU9OvA8D9c.V2wVXJ4eB9oOJpbwAT-eXXm7zRTyJAlXTm-JmmSD5PS4&payer_email=larsn1%40live.no&txn_id=55236157TM831743P&payment_type=instant&last_name=Larsen&item_name1=%2410+Scroll&address_state=Trondheim&receiver_email=primalosps%40gmail.com&payment_fee=1.99&shipping_discount=0.00&quantity1=3&insurance_amount=0.00&receiver_id=ZSR3U3D55F3AU&txn_type=cart&discount=0.00&mc_gross_1=30.00&mc_currency=USD&residence_country=NO&shipping_method=Default&transaction_subject=&payment_gross=30.00&ipn_track_id=f81381771b6b3 
+[2022-08-14 09:06 America/Chicago] HTTP request of validation request:POST /cgi-bin/webscr HTTP/1.1
+Host: www.paypal.com
+Accept: */*
+Connection: Close
+Content-Length: 1023
+Content-Type: application/x-www-form-urlencoded
+
+ for IPN payload: cmd=_notify-validate&mc_gross=20.00&protection_eligibility=Eligible&address_status=confirmed&item_number1=608&payer_id=A5V5X3BD79NP6&address_street=3009+North+Ct.%0D%0A315&payment_date=07%3A06%3A26+Aug+14%2C+2022+PDT&payment_status=Completed&charset=UTF-8&address_zip=54650&first_name=Chor&mc_fee=1.19&address_country_code=US&address_name=Chor+Xiong&notify_version=3.9&custom=Lazy&payer_status=verified&business=primalosps%40gmail.com&address_country=United+States&num_cart_items=1&address_city=Onalaska&verify_sign=ACvihIv6qn.ghXurvtLXrZhvQhB7AZTi1gOVYRq6Wxhf4L15U0vNZ0wo&payer_email=xiongchor98%40gmail.com&txn_id=1E936659M1436174S&payment_type=instant&last_name=Xiong&item_name1=%2410+Scroll&address_state=WI&receiver_email=primalosps%40gmail.com&payment_fee=1.19&shipping_discount=0.00&quantity1=2&insurance_amount=0.00&receiver_id=ZSR3U3D55F3AU&txn_type=cart&discount=0.00&mc_gross_1=20.00&mc_currency=USD&residence_country=US&shipping_method=Default&transaction_subject=&payment_gross=20.00&ipn_track_id=f682287d26400
+[2022-08-14 09:06 America/Chicago] HTTP response of validation request: HTTP/1.1 200 OK
+Connection: close
+Content-Length: 8
+Cache-Control: max-age=0, no-cache, no-store, must-revalidate
+Content-Security-Policy: default-src 'self' https://*.paypal.com https://*.paypalobjects.com 'unsafe-inline'; style-src 'self' https://*.paypal.com https://*.paypalobjects.com 'unsafe-inline'; script-src 'nonce-k7lkFRjR9RfAxqpoFW6sKIPYFDLiG12Wl7eL9VaVvC3ogwaK' 'self' 'unsafe-inline' https://*.paypal.com https://*.paypalobjects.com; img-src 'self' https: data:; object-src 'none'; font-src 'self' https://*.paypal.com https://*.paypalobjects.com; frame-src 'self' https://*.paypalobjects.com https://*.paypal.com https://*.qualtrics.com; connect-src 'self' 'unsafe-inline' https://*.paypal.com https://*.paypalobjects.com https://*.qualtrics.com; form-action 'self' https://*.paypal.com; base-uri 'self' https://*.paypal.com; block-all-mixed-content;; report-uri https://www.paypal.com/csplog/api/log/csp
+Content-Type: text/html; charset=utf-8
+Etag: W/"8-WXvD6WBsMSDy5c0v7r4OHopk5Ys"
+Paypal-Debug-Id: f6932699b3ae1
+Set-Cookie: LANG=en_US%3BUS; Max-Age=31556; Domain=.paypal.com; Path=/; Expires=Sun, 14 Aug 2022 22:52:28 GMT; HttpOnly; Secure
+Set-Cookie: enforce_policy=ccpa; Max-Age=31536000; Domain=.paypal.com; Path=/; Expires=Mon, 14 Aug 2023 14:06:32 GMT; Secure
+Set-Cookie: x-pp-s=eyJ0IjoiMTY2MDQ4NTk5Mjk3MSIsImwiOiIwIiwibSI6IjAifQ; Domain=.paypal.com; Path=/; HttpOnly; Secure
+Set-Cookie: tsrce=merchantnotifnodeweb; Domain=.paypal.com; Path=/; Expires=Wed, 17 Aug 2022 14:06:32 GMT; HttpOnly; Secure; SameSite=None
+Set-Cookie: nsid=s%3AmnQ7W6u6ZeQPK_nfpJ-8ovfrBLEzf7so.8r22wFgnW7qRASzU%2Bd0N7uKyOQ0vL2P5unCTsiET2u4; Path=/; HttpOnly; Secure
+Set-Cookie: ts=vreXpYrS%3D1755180392%26vteXpYrS%3D1660487792%26vr%3D9cad81f31820a78866b0a1b9ff99be5d%26vt%3D9cad81f31820a78866b0a1b9ff99be5c%26vtyp%3Dnew; Path=/; Domain=paypal.com; Expires=Wed, 13 Aug 2025 14:06:32 GMT; HttpOnly; Secure
+Set-Cookie: ts_c=vr%3D9cad81f31820a78866b0a1b9ff99be5d%26vt%3D9cad81f31820a78866b0a1b9ff99be5c; Path=/; Domain=paypal.com; Expires=Wed, 13 Aug 2025 14:06:32 GMT; Secure
+Traceparent: 00-0000000000000000000f6932699b3ae1-4cfe497f7a708ef7-01
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+X-Xss-Protection: 1; mode=block
+DC: ccg11-origin-www-1.paypal.com
+Accept-Ranges: bytes
+Via: 1.1 varnish, 1.1 varnish
+Date: Sun, 14 Aug 2022 14:06:33 GMT
+Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
+X-Served-By: cache-iad-kjyo7100176-IAD, cache-den8282-DEN
+X-Cache: MISS, MISS
+X-Cache-Hits: 0, 0
+X-Timer: S1660485993.891020,VS0,VE136
+Vary: Accept-Encoding
+Server-Timing: content-encoding;desc="",x-cdn;desc="fastly"
+
+VERIFIED
+Payment status:  Completed[2022-08-14 09:06 America/Chicago] Verified IPN: cmd=_notify-validate&mc_gross=20.00&protection_eligibility=Eligible&address_status=confirmed&item_number1=608&payer_id=A5V5X3BD79NP6&address_street=3009+North+Ct.%0D%0A315&payment_date=07%3A06%3A26+Aug+14%2C+2022+PDT&payment_status=Completed&charset=UTF-8&address_zip=54650&first_name=Chor&mc_fee=1.19&address_country_code=US&address_name=Chor+Xiong&notify_version=3.9&custom=Lazy&payer_status=verified&business=primalosps%40gmail.com&address_country=United+States&num_cart_items=1&address_city=Onalaska&verify_sign=ACvihIv6qn.ghXurvtLXrZhvQhB7AZTi1gOVYRq6Wxhf4L15U0vNZ0wo&payer_email=xiongchor98%40gmail.com&txn_id=1E936659M1436174S&payment_type=instant&last_name=Xiong&item_name1=%2410+Scroll&address_state=WI&receiver_email=primalosps%40gmail.com&payment_fee=1.19&shipping_discount=0.00&quantity1=2&insurance_amount=0.00&receiver_id=ZSR3U3D55F3AU&txn_type=cart&discount=0.00&mc_gross_1=20.00&mc_currency=USD&residence_country=US&shipping_method=Default&transaction_subject=&payment_gross=20.00&ipn_track_id=f682287d26400 
+[2022-08-14 12:21 America/Chicago] HTTP request of validation request:POST /cgi-bin/webscr HTTP/1.1
+Host: www.paypal.com
+Accept: */*
+Connection: Close
+Content-Length: 1037
+Content-Type: application/x-www-form-urlencoded
+
+ for IPN payload: cmd=_notify-validate&mc_gross=30.00&protection_eligibility=Eligible&address_status=confirmed&item_number1=608&payer_id=Q43XTSDDQN3EU&address_street=4717+Belfast+Dr&payment_date=10%3A21%3A22+Aug+14%2C+2022+PDT&payment_status=Completed&charset=UTF-8&address_zip=34652&first_name=sean&mc_fee=1.54&address_country_code=US&address_name=sean+jefferson&notify_version=3.9&custom=sus&payer_status=unverified&business=primalosps%40gmail.com&address_country=United+States&num_cart_items=1&address_city=New+Port+Richey&verify_sign=Ajfh8JrSDJjPlnEbvetFI.T0Ru67AfUlN6EqODJD6XD9Rt6hyyVv6f-H&payer_email=jeffersonsean6969%40yahoo.com&txn_id=0KR84514770131351&payment_type=instant&last_name=jefferson&item_name1=%2410+Scroll&address_state=FL&receiver_email=primalosps%40gmail.com&payment_fee=1.54&shipping_discount=0.00&quantity1=3&insurance_amount=0.00&receiver_id=ZSR3U3D55F3AU&txn_type=cart&discount=0.00&mc_gross_1=30.00&mc_currency=USD&residence_country=US&shipping_method=Default&transaction_subject=&payment_gross=30.00&ipn_track_id=f2607281df97d
+[2022-08-14 12:21 America/Chicago] HTTP response of validation request: HTTP/1.1 200 OK
+Connection: close
+Content-Length: 8
+Cache-Control: max-age=0, no-cache, no-store, must-revalidate
+Content-Security-Policy: default-src 'self' https://*.paypal.com https://*.paypalobjects.com 'unsafe-inline'; style-src 'self' https://*.paypal.com https://*.paypalobjects.com 'unsafe-inline'; script-src 'nonce-MAp9U5IZ7UiY+3+rQg4mMKyclf/8bekc96g9fX9hTwhMQQe2' 'self' 'unsafe-inline' https://*.paypal.com https://*.paypalobjects.com; img-src 'self' https: data:; object-src 'none'; font-src 'self' https://*.paypal.com https://*.paypalobjects.com; frame-src 'self' https://*.paypalobjects.com https://*.paypal.com https://*.qualtrics.com; connect-src 'self' 'unsafe-inline' https://*.paypal.com https://*.paypalobjects.com https://*.qualtrics.com; form-action 'self' https://*.paypal.com; base-uri 'self' https://*.paypal.com; block-all-mixed-content;; report-uri https://www.paypal.com/csplog/api/log/csp
+Content-Type: text/html; charset=utf-8
+Etag: W/"8-WXvD6WBsMSDy5c0v7r4OHopk5Ys"
+Paypal-Debug-Id: f46606514525d
+Set-Cookie: LANG=en_US%3BUS; Max-Age=31556; Domain=.paypal.com; Path=/; Expires=Mon, 15 Aug 2022 02:07:26 GMT; HttpOnly; Secure
+Set-Cookie: enforce_policy=ccpa; Max-Age=31536000; Domain=.paypal.com; Path=/; Expires=Mon, 14 Aug 2023 17:21:30 GMT; Secure
+Set-Cookie: x-pp-s=eyJ0IjoiMTY2MDQ5NzY5MDMyMiIsImwiOiIwIiwibSI6IjAifQ; Domain=.paypal.com; Path=/; HttpOnly; Secure
+Set-Cookie: tsrce=merchantnotifnodeweb; Domain=.paypal.com; Path=/; Expires=Wed, 17 Aug 2022 17:21:30 GMT; HttpOnly; Secure; SameSite=None
+Set-Cookie: nsid=s%3ALQ7Ao_whoXY2YqEELOS6Zcw0qHT1FyWs.tfoUETnX2SkChUvyKnGc3TnA9D9GpFuUQFY3P5%2FfihE; Path=/; HttpOnly; Secure
+Set-Cookie: ts=vreXpYrS%3D1755192090%26vteXpYrS%3D1660499490%26vr%3D9d5ffeb41820a7a85a055172ffe4952c%26vt%3D9d5ffeb41820a7a85a055172ffe4952b%26vtyp%3Dnew; Path=/; Domain=paypal.com; Expires=Wed, 13 Aug 2025 17:21:30 GMT; HttpOnly; Secure
+Set-Cookie: ts_c=vr%3D9d5ffeb41820a7a85a055172ffe4952c%26vt%3D9d5ffeb41820a7a85a055172ffe4952b; Path=/; Domain=paypal.com; Expires=Wed, 13 Aug 2025 17:21:30 GMT; Secure
+Traceparent: 00-0000000000000000000f46606514525d-637754d7996611f7-01
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+X-Xss-Protection: 1; mode=block
+DC: ccg11-origin-www-1.paypal.com
+Accept-Ranges: bytes
+Via: 1.1 varnish, 1.1 varnish
+Date: Sun, 14 Aug 2022 17:21:30 GMT
+Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
+X-Served-By: cache-iad-kiad7000115-IAD, cache-den8274-DEN
+X-Cache: MISS, MISS
+X-Cache-Hits: 0, 0
+X-Timer: S1660497690.235078,VS0,VE144
+Vary: Accept-Encoding
+Server-Timing: content-encoding;desc="",x-cdn;desc="fastly"
+
+VERIFIED
+Payment status:  Completed[2022-08-14 12:21 America/Chicago] Verified IPN: cmd=_notify-validate&mc_gross=30.00&protection_eligibility=Eligible&address_status=confirmed&item_number1=608&payer_id=Q43XTSDDQN3EU&address_street=4717+Belfast+Dr&payment_date=10%3A21%3A22+Aug+14%2C+2022+PDT&payment_status=Completed&charset=UTF-8&address_zip=34652&first_name=sean&mc_fee=1.54&address_country_code=US&address_name=sean+jefferson&notify_version=3.9&custom=sus&payer_status=unverified&business=primalosps%40gmail.com&address_country=United+States&num_cart_items=1&address_city=New+Port+Richey&verify_sign=Ajfh8JrSDJjPlnEbvetFI.T0Ru67AfUlN6EqODJD6XD9Rt6hyyVv6f-H&payer_email=jeffersonsean6969%40yahoo.com&txn_id=0KR84514770131351&payment_type=instant&last_name=jefferson&item_name1=%2410+Scroll&address_state=FL&receiver_email=primalosps%40gmail.com&payment_fee=1.54&shipping_discount=0.00&quantity1=3&insurance_amount=0.00&receiver_id=ZSR3U3D55F3AU&txn_type=cart&discount=0.00&mc_gross_1=30.00&mc_currency=USD&residence_country=US&shipping_method=Default&transaction_subject=&payment_gross=30.00&ipn_track_id=f2607281df97d 
+[2022-08-14 16:09 America/Chicago] HTTP request of validation request:POST /cgi-bin/webscr HTTP/1.1
+Host: www.paypal.com
+Accept: */*
+Connection: Close
+Content-Length: 1104
+Content-Type: application/x-www-form-urlencoded
+
+ for IPN payload: cmd=_notify-validate&mc_gross=25.00&protection_eligibility=Eligible&address_status=confirmed&item_number1=607&item_number2=608&payer_id=YM9PGFYXB2P7U&address_street=14+MAES-Y-CASTELL&payment_date=14%3A08%3A59+Aug+14%2C+2022+PDT&payment_status=Completed&charset=UTF-8&address_zip=LL301NG&first_name=luke&mc_fee=1.74&address_country_code=GB&address_name=luke+williams&notify_version=3.9&custom=blazed&payer_status=verified&business=primalosps%40gmail.com&address_country=United+Kingdom&num_cart_items=2&address_city=LLANRHOS&verify_sign=As-j2clZcZ.N6nLcEedR0-UxtzRkAtv0F4aApIG8CDaaQgkoM8gJq7l0&payer_email=blazedpandaaa%40gmail.com&txn_id=2A6822982R962632L&payment_type=instant&last_name=williams&address_state=&item_name1=%245+Donator+Scroll&receiver_email=primalosps%40gmail.com&item_name2=%2410+Scroll&payment_fee=1.74&shipping_discount=0.00&quantity1=1&insurance_amount=0.00&quantity2=2&receiver_id=ZSR3U3D55F3AU&txn_type=cart&discount=0.00&mc_gross_1=5.00&mc_currency=USD&mc_gross_2=20.00&residence_country=GB&shipping_method=Default&transaction_subject=&payment_gross=25.00&ipn_track_id=f684898afabdd
+[2022-08-14 16:09 America/Chicago] HTTP response of validation request: HTTP/1.1 200 OK
+Connection: close
+Content-Length: 8
+Cache-Control: max-age=0, no-cache, no-store, must-revalidate
+Content-Security-Policy: default-src 'self' https://*.paypal.com https://*.paypalobjects.com 'unsafe-inline'; style-src 'self' https://*.paypal.com https://*.paypalobjects.com 'unsafe-inline'; script-src 'nonce-X/v22V7t8zZsN7PliCIxLXGN6p8jbiTGVJyMYNyeWFWHXQnh' 'self' 'unsafe-inline' https://*.paypal.com https://*.paypalobjects.com; img-src 'self' https: data:; object-src 'none'; font-src 'self' https://*.paypal.com https://*.paypalobjects.com; frame-src 'self' https://*.paypalobjects.com https://*.paypal.com https://*.qualtrics.com; connect-src 'self' 'unsafe-inline' https://*.paypal.com https://*.paypalobjects.com https://*.qualtrics.com; form-action 'self' https://*.paypal.com; base-uri 'self' https://*.paypal.com; block-all-mixed-content;; report-uri https://www.paypal.com/csplog/api/log/csp
+Content-Type: text/html; charset=utf-8
+Etag: W/"8-WXvD6WBsMSDy5c0v7r4OHopk5Ys"
+Paypal-Debug-Id: f1414175b02ce
+Set-Cookie: LANG=en_US%3BUS; Max-Age=31556; Domain=.paypal.com; Path=/; Expires=Mon, 15 Aug 2022 05:55:01 GMT; HttpOnly; Secure
+Set-Cookie: enforce_policy=ccpa; Max-Age=31536000; Domain=.paypal.com; Path=/; Expires=Mon, 14 Aug 2023 21:09:05 GMT; Secure
+Set-Cookie: x-pp-s=eyJ0IjoiMTY2MDUxMTM0NTczMyIsImwiOiIwIiwibSI6IjAifQ; Domain=.paypal.com; Path=/; HttpOnly; Secure
+Set-Cookie: tsrce=merchantnotifnodeweb; Domain=.paypal.com; Path=/; Expires=Wed, 17 Aug 2022 21:09:05 GMT; HttpOnly; Secure; SameSite=None
+Set-Cookie: nsid=s%3ArXXwhCuBYpgh1ntt_KuiDyuaeRnB7UeB.jjXgQkZA2F5O22A0XyzfJmyB2PxSIUSw9ON0vdBJEHo; Path=/; HttpOnly; Secure
+Set-Cookie: ts=vreXpYrS%3D1755205745%26vteXpYrS%3D1660513145%26vr%3D9e305c251820ad005153e6bcff64ee30%26vt%3D9e305c251820ad005153e6bcff64ee2f%26vtyp%3Dnew; Path=/; Domain=paypal.com; Expires=Wed, 13 Aug 2025 21:09:05 GMT; HttpOnly; Secure
+Set-Cookie: ts_c=vr%3D9e305c251820ad005153e6bcff64ee30%26vt%3D9e305c251820ad005153e6bcff64ee2f; Path=/; Domain=paypal.com; Expires=Wed, 13 Aug 2025 21:09:05 GMT; Secure
+Traceparent: 00-0000000000000000000f1414175b02ce-1b9637637d4b989d-01
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+X-Xss-Protection: 1; mode=block
+DC: ccg11-origin-www-1.paypal.com
+Accept-Ranges: bytes
+Via: 1.1 varnish, 1.1 varnish
+Date: Sun, 14 Aug 2022 21:09:05 GMT
+Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
+X-Served-By: cache-iad-kjyo7100055-IAD, cache-den8231-DEN
+X-Cache: MISS, MISS
+X-Cache-Hits: 0, 0
+X-Timer: S1660511346.626730,VS0,VE167
+Vary: Accept-Encoding
+Server-Timing: content-encoding;desc="",x-cdn;desc="fastly"
+
+VERIFIED
+Payment status:  CompletedPayment status:  Completed[2022-08-14 16:09 America/Chicago] Verified IPN: cmd=_notify-validate&mc_gross=25.00&protection_eligibility=Eligible&address_status=confirmed&item_number1=607&item_number2=608&payer_id=YM9PGFYXB2P7U&address_street=14+MAES-Y-CASTELL&payment_date=14%3A08%3A59+Aug+14%2C+2022+PDT&payment_status=Completed&charset=UTF-8&address_zip=LL301NG&first_name=luke&mc_fee=1.74&address_country_code=GB&address_name=luke+williams&notify_version=3.9&custom=blazed&payer_status=verified&business=primalosps%40gmail.com&address_country=United+Kingdom&num_cart_items=2&address_city=LLANRHOS&verify_sign=As-j2clZcZ.N6nLcEedR0-UxtzRkAtv0F4aApIG8CDaaQgkoM8gJq7l0&payer_email=blazedpandaaa%40gmail.com&txn_id=2A6822982R962632L&payment_type=instant&last_name=williams&address_state=&item_name1=%245+Donator+Scroll&receiver_email=primalosps%40gmail.com&item_name2=%2410+Scroll&payment_fee=1.74&shipping_discount=0.00&quantity1=1&insurance_amount=0.00&quantity2=2&receiver_id=ZSR3U3D55F3AU&txn_type=cart&discount=0.00&mc_gross_1=5.00&mc_currency=USD&mc_gross_2=20.00&residence_country=GB&shipping_method=Default&transaction_subject=&payment_gross=25.00&ipn_track_id=f684898afabdd 
+[2022-08-14 19:14 America/Chicago] HTTP request of validation request:POST /cgi-bin/webscr HTTP/1.1
+Host: www.paypal.com
+Accept: */*
+Connection: Close
+Content-Length: 20
+Content-Type: application/x-www-form-urlencoded
+
+ for IPN payload: cmd=_notify-validate
+[2022-08-14 19:14 America/Chicago] HTTP response of validation request: HTTP/1.1 200 OK
+Connection: close
+Content-Length: 7
+Cache-Control: max-age=0, no-cache, no-store, must-revalidate
+Content-Security-Policy: default-src 'self' https://*.paypal.com https://*.paypalobjects.com 'unsafe-inline'; style-src 'self' https://*.paypal.com https://*.paypalobjects.com 'unsafe-inline'; script-src 'nonce-vrvYqsc1E3nZTnmcmzVidG+pKVmO2dwc2GSAlBiHeOVOTxl9' 'self' 'unsafe-inline' https://*.paypal.com https://*.paypalobjects.com; img-src 'self' https: data:; object-src 'none'; font-src 'self' https://*.paypal.com https://*.paypalobjects.com; frame-src 'self' https://*.paypalobjects.com https://*.paypal.com https://*.qualtrics.com; connect-src 'self' 'unsafe-inline' https://*.paypal.com https://*.paypalobjects.com https://*.qualtrics.com; form-action 'self' https://*.paypal.com; base-uri 'self' https://*.paypal.com; block-all-mixed-content;; report-uri https://www.paypal.com/csplog/api/log/csp
+Content-Type: text/html; charset=utf-8
+Etag: W/"7-Ory3K5VGd+UTzTV4Xd/UXaIbp98"
+Paypal-Debug-Id: f412207d1ee9c
+Set-Cookie: LANG=en_US%3BUS; Max-Age=31556; Domain=.paypal.com; Path=/; Expires=Mon, 15 Aug 2022 09:00:08 GMT; HttpOnly; Secure
+Set-Cookie: enforce_policy=ccpa; Max-Age=31536000; Domain=.paypal.com; Path=/; Expires=Tue, 15 Aug 2023 00:14:12 GMT; Secure
+Set-Cookie: x-pp-s=eyJ0IjoiMTY2MDUyMjQ1MjQ0NiIsImwiOiIwIiwibSI6IjAifQ; Domain=.paypal.com; Path=/; HttpOnly; Secure
+Set-Cookie: tsrce=merchantnotifnodeweb; Domain=.paypal.com; Path=/; Expires=Thu, 18 Aug 2022 00:14:12 GMT; HttpOnly; Secure; SameSite=None
+Set-Cookie: nsid=s%3AWSEw86i2YvVX7qIcWL2q9gmn5C-wSg7Z.WIfoe5vymE0gQb8Uhp8DfrvzhKcCWCPkb7mw6VkmX%2F8; Path=/; HttpOnly; Secure
+Set-Cookie: ts=vreXpYrS%3D1755216852%26vteXpYrS%3D1660524252%26vr%3D9ed9d5991820a1d60a47a9c7fff45e99%26vt%3D9ed9d5991820a1d60a47a9c7fff45e98%26vtyp%3Dnew; Path=/; Domain=paypal.com; Expires=Thu, 14 Aug 2025 00:14:12 GMT; HttpOnly; Secure
+Set-Cookie: ts_c=vr%3D9ed9d5991820a1d60a47a9c7fff45e99%26vt%3D9ed9d5991820a1d60a47a9c7fff45e98; Path=/; Domain=paypal.com; Expires=Thu, 14 Aug 2025 00:14:12 GMT; Secure
+Traceparent: 00-0000000000000000000f412207d1ee9c-d705f1c14d829cbd-01
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+X-Xss-Protection: 1; mode=block
+DC: ccg11-origin-www-1.paypal.com
+Accept-Ranges: bytes
+Via: 1.1 varnish, 1.1 varnish
+Date: Mon, 15 Aug 2022 00:14:12 GMT
+Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
+X-Served-By: cache-iad-kiad7000115-IAD, cache-den8264-DEN
+X-Cache: MISS, MISS
+X-Cache-Hits: 0, 0
+X-Timer: S1660522452.315069,VS0,VE200
+Vary: Accept-Encoding
+Server-Timing: content-encoding;desc="",x-cdn;desc="fastly"
+
+INVALID
+[2022-08-14 19:14 America/Chicago] Invalid IPN: cmd=_notify-validate
+[2022-08-14 19:18 America/Chicago] HTTP request of validation request:POST /cgi-bin/webscr HTTP/1.1
+Host: www.paypal.com
+Accept: */*
+Connection: Close
+Content-Length: 20
+Content-Type: application/x-www-form-urlencoded
+
+ for IPN payload: cmd=_notify-validate
+[2022-08-14 19:18 America/Chicago] HTTP response of validation request: HTTP/1.1 200 OK
+Connection: close
+Content-Length: 7
+Cache-Control: max-age=0, no-cache, no-store, must-revalidate
+Content-Security-Policy: default-src 'self' https://*.paypal.com https://*.paypalobjects.com 'unsafe-inline'; style-src 'self' https://*.paypal.com https://*.paypalobjects.com 'unsafe-inline'; script-src 'nonce-IaNb5IP0ToVuVmCGOLMZrXAgeaH3od+TN+bClXYhTAQJnCml' 'self' 'unsafe-inline' https://*.paypal.com https://*.paypalobjects.com; img-src 'self' https: data:; object-src 'none'; font-src 'self' https://*.paypal.com https://*.paypalobjects.com; frame-src 'self' https://*.paypalobjects.com https://*.paypal.com https://*.qualtrics.com; connect-src 'self' 'unsafe-inline' https://*.paypal.com https://*.paypalobjects.com https://*.qualtrics.com; form-action 'self' https://*.paypal.com; base-uri 'self' https://*.paypal.com; block-all-mixed-content;; report-uri https://www.paypal.com/csplog/api/log/csp
+Content-Type: text/html; charset=utf-8
+Etag: W/"7-Ory3K5VGd+UTzTV4Xd/UXaIbp98"
+Paypal-Debug-Id: f476803667831
+Set-Cookie: LANG=en_US%3BUS; Max-Age=31556; Domain=.paypal.com; Path=/; Expires=Mon, 15 Aug 2022 09:04:52 GMT; HttpOnly; Secure
+Set-Cookie: enforce_policy=ccpa; Max-Age=31536000; Domain=.paypal.com; Path=/; Expires=Tue, 15 Aug 2023 00:18:56 GMT; Secure
+Set-Cookie: x-pp-s=eyJ0IjoiMTY2MDUyMjczNjE4OSIsImwiOiIwIiwibSI6IjAifQ; Domain=.paypal.com; Path=/; HttpOnly; Secure
+Set-Cookie: tsrce=merchantnotifnodeweb; Domain=.paypal.com; Path=/; Expires=Thu, 18 Aug 2022 00:18:56 GMT; HttpOnly; Secure; SameSite=None
+Set-Cookie: nsid=s%3AjcKFisXgqySm7GUkZPQktjEYwEm9xidM.LESJt25e71Uf0gY%2FcoPr8EGhj%2BS84Nc9b65DbOfpL7Y; Path=/; HttpOnly; Secure
+Set-Cookie: ts=vreXpYrS%3D1755217136%26vteXpYrS%3D1660524536%26vr%3D9ede29f81820a1d516a49d42fff4ea46%26vt%3D9ede29f81820a1d516a49d42fff4ea45%26vtyp%3Dnew; Path=/; Domain=paypal.com; Expires=Thu, 14 Aug 2025 00:18:56 GMT; HttpOnly; Secure
+Set-Cookie: ts_c=vr%3D9ede29f81820a1d516a49d42fff4ea46%26vt%3D9ede29f81820a1d516a49d42fff4ea45; Path=/; Domain=paypal.com; Expires=Thu, 14 Aug 2025 00:18:56 GMT; Secure
+Traceparent: 00-0000000000000000000f476803667831-ca5d00b1bb6c420f-01
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+X-Xss-Protection: 1; mode=block
+DC: ccg11-origin-www-1.paypal.com
+Accept-Ranges: bytes
+Via: 1.1 varnish, 1.1 varnish
+Date: Mon, 15 Aug 2022 00:18:56 GMT
+Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
+X-Served-By: cache-iad-kjyo7100111-IAD, cache-den8279-DEN
+X-Cache: MISS, MISS
+X-Cache-Hits: 0, 0
+X-Timer: S1660522736.052774,VS0,VE205
+Vary: Accept-Encoding
+Server-Timing: content-encoding;desc="",x-cdn;desc="fastly"
+
+INVALID
+[2022-08-14 19:18 America/Chicago] Invalid IPN: cmd=_notify-validate
+[2022-08-14 19:27 America/Chicago] HTTP request of validation request:POST /cgi-bin/webscr HTTP/1.1
+Host: www.paypal.com
+Accept: */*
+Connection: Close
+Content-Length: 20
+Content-Type: application/x-www-form-urlencoded
+
+ for IPN payload: cmd=_notify-validate
+[2022-08-14 19:27 America/Chicago] HTTP response of validation request: HTTP/1.1 200 OK
+Cache-Control: max-age=0, no-cache, no-store, must-revalidate
+Content-Security-Policy: default-src 'self' https://*.paypal.com https://*.paypalobjects.com 'unsafe-inline'; style-src 'self' https://*.paypal.com https://*.paypalobjects.com 'unsafe-inline'; script-src 'nonce-ZKLTDbl7hvUaIvSmYAF4nP3dA/8ZCQJ0h10dGU7jdDR4opdv' 'self' 'unsafe-inline' https://*.paypal.com https://*.paypalobjects.com; img-src 'self' https: data:; object-src 'none'; font-src 'self' https://*.paypal.com https://*.paypalobjects.com; frame-src 'self' https://*.paypalobjects.com https://*.paypal.com https://*.qualtrics.com; connect-src 'self' 'unsafe-inline' https://*.paypal.com https://*.paypalobjects.com https://*.qualtrics.com; form-action 'self' https://*.paypal.com; base-uri 'self' https://*.paypal.com; block-all-mixed-content;; report-uri https://www.paypal.com/csplog/api/log/csp
+Content-Type: text/html; charset=utf-8
+ETag: W/"7-Ory3K5VGd+UTzTV4Xd/UXaIbp98"
+Paypal-Debug-Id: a81a534185f22
+Traceparent: 00-0000000000000000000a81a534185f22-b080a3e4814c6bdc-01
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+X-Xss-Protection: 1; mode=block
+DC: ccg11-origin-www-1.paypal.com
+X-Akamai-Transformed: 9 7 0 pmb=mRUM,1
+Date: Mon, 15 Aug 2022 00:27:46 GMT
+Content-Length: 7
+Connection: close
+Set-Cookie: LANG=en_US%3BUS; Max-Age=31556; Domain=.paypal.com; Path=/; Expires=Mon, 15 Aug 2022 09:13:42 GMT; HttpOnly; Secure
+Set-Cookie: enforce_policy=ccpa; Max-Age=31536000; Domain=.paypal.com; Path=/; Expires=Tue, 15 Aug 2023 00:27:46 GMT; Secure
+Set-Cookie: x-pp-s=eyJ0IjoiMTY2MDUyMzI2NjUyNCIsImwiOiIwIiwibSI6IjAifQ; Domain=.paypal.com; Path=/; HttpOnly; Secure
+Set-Cookie: tsrce=merchantnotifnodeweb; Domain=.paypal.com; Path=/; Expires=Thu, 18 Aug 2022 00:27:46 GMT; HttpOnly; Secure; SameSite=None
+Set-Cookie: nsid=s%3A_c0t5s1C3UTSJfhVx8IpWH7pY9-ikf6M.553gvLivrWkidpDJ%2BQB6zaJe3hKyAuv1WTPeB3f5Cug; Path=/; HttpOnly; Secure
+Set-Cookie: ts=vreXpYrS%3D1755217666%26vteXpYrS%3D1660525066%26vr%3D9ee6419c1820ad0469698bd2ff5fe862%26vt%3D9ee6419c1820ad0469698bd2ff5fe861%26vtyp%3Dnew; Path=/; Domain=paypal.com; Expires=Thu, 14 Aug 2025 00:27:46 GMT; HttpOnly; Secure
+Set-Cookie: ts_c=vr%3D9ee6419c1820ad0469698bd2ff5fe862%26vt%3D9ee6419c1820ad0469698bd2ff5fe861; Path=/; Domain=paypal.com; Expires=Thu, 14 Aug 2025 00:27:46 GMT; Secure
+Server-Timing: edge; dur=2
+Server-Timing: origin; dur=116
+Server-Timing: cdn-cache; desc=MISS
+Server-Timing: content-encoding;desc="",x-cdn;desc="akamai"
+Strict-Transport-Security: max-age=63072000
+
+INVALID
+[2022-08-14 19:27 America/Chicago] Invalid IPN: cmd=_notify-validate
+[2022-08-14 19:28 America/Chicago] HTTP request of validation request:POST /cgi-bin/webscr HTTP/1.1
+Host: www.paypal.com
+Accept: */*
+Connection: Close
+Content-Length: 20
+Content-Type: application/x-www-form-urlencoded
+
+ for IPN payload: cmd=_notify-validate
+[2022-08-14 19:28 America/Chicago] HTTP response of validation request: HTTP/1.1 200 OK
+Connection: close
+Content-Length: 7
+Cache-Control: max-age=0, no-cache, no-store, must-revalidate
+Content-Security-Policy: default-src 'self' https://*.paypal.com https://*.paypalobjects.com 'unsafe-inline'; style-src 'self' https://*.paypal.com https://*.paypalobjects.com 'unsafe-inline'; script-src 'nonce-lfGf/0RbiNNQvHQIQRxVhcUrjHjuk/CZYPTbeSjaY5xegygL' 'self' 'unsafe-inline' https://*.paypal.com https://*.paypalobjects.com; img-src 'self' https: data:; object-src 'none'; font-src 'self' https://*.paypal.com https://*.paypalobjects.com; frame-src 'self' https://*.paypalobjects.com https://*.paypal.com https://*.qualtrics.com; connect-src 'self' 'unsafe-inline' https://*.paypal.com https://*.paypalobjects.com https://*.qualtrics.com; form-action 'self' https://*.paypal.com; base-uri 'self' https://*.paypal.com; block-all-mixed-content;; report-uri https://www.paypal.com/csplog/api/log/csp
+Content-Type: text/html; charset=utf-8
+Etag: W/"7-Ory3K5VGd+UTzTV4Xd/UXaIbp98"
+Paypal-Debug-Id: f88760702562a
+Set-Cookie: LANG=en_US%3BUS; Max-Age=31556; Domain=.paypal.com; Path=/; Expires=Mon, 15 Aug 2022 09:14:45 GMT; HttpOnly; Secure
+Set-Cookie: enforce_policy=ccpa; Max-Age=31536000; Domain=.paypal.com; Path=/; Expires=Tue, 15 Aug 2023 00:28:49 GMT; Secure
+Set-Cookie: x-pp-s=eyJ0IjoiMTY2MDUyMzMyOTk3MCIsImwiOiIwIiwibSI6IjAifQ; Domain=.paypal.com; Path=/; HttpOnly; Secure
+Set-Cookie: tsrce=merchantnotifnodeweb; Domain=.paypal.com; Path=/; Expires=Thu, 18 Aug 2022 00:28:49 GMT; HttpOnly; Secure; SameSite=None
+Set-Cookie: nsid=s%3ADnZWJ1G0SZWjfAHoX6lEoX9JuQKl3hjh.7nDSvmlW5bXXvS3hm%2BkKS4EsJjXZ7wqR3ZLPk%2FUkiUU; Path=/; HttpOnly; Secure
+Set-Cookie: ts=vreXpYrS%3D1755217729%26vteXpYrS%3D1660525129%26vr%3D9ee739a11820a7885ab03ae7ffdbbad2%26vt%3D9ee739a11820a7885ab03ae7ffdbbad1%26vtyp%3Dnew; Path=/; Domain=paypal.com; Expires=Thu, 14 Aug 2025 00:28:49 GMT; HttpOnly; Secure
+Set-Cookie: ts_c=vr%3D9ee739a11820a7885ab03ae7ffdbbad2%26vt%3D9ee739a11820a7885ab03ae7ffdbbad1; Path=/; Domain=paypal.com; Expires=Thu, 14 Aug 2025 00:28:49 GMT; Secure
+Traceparent: 00-0000000000000000000f88760702562a-b96f8e7feeb28790-01
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+X-Xss-Protection: 1; mode=block
+DC: ccg11-origin-www-1.paypal.com
+Accept-Ranges: bytes
+Via: 1.1 varnish, 1.1 varnish
+Date: Mon, 15 Aug 2022 00:28:50 GMT
+Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
+X-Served-By: cache-iad-kiad7000036-IAD, cache-den8226-DEN
+X-Cache: MISS, MISS
+X-Cache-Hits: 0, 0
+X-Timer: S1660523330.899396,VS0,VE125
+Vary: Accept-Encoding
+Server-Timing: content-encoding;desc="",x-cdn;desc="fastly"
+
+INVALID
+[2022-08-14 19:28 America/Chicago] Invalid IPN: cmd=_notify-validate
+[2022-08-14 20:31 America/Chicago] HTTP request of validation request:POST /cgi-bin/webscr HTTP/1.1
+Host: www.paypal.com
+Accept: */*
+Connection: Close
+Content-Length: 20
+Content-Type: application/x-www-form-urlencoded
+
+ for IPN payload: cmd=_notify-validate
+[2022-08-14 20:31 America/Chicago] HTTP response of validation request: HTTP/1.1 200 OK
+Connection: close
+Content-Length: 7
+Cache-Control: max-age=0, no-cache, no-store, must-revalidate
+Content-Security-Policy: default-src 'self' https://*.paypal.com https://*.paypalobjects.com 'unsafe-inline'; style-src 'self' https://*.paypal.com https://*.paypalobjects.com 'unsafe-inline'; script-src 'nonce-SWt5DxC000InXlOdQyRyAe0gMbW5e+ikMieYlYPqV6IbbvbT' 'self' 'unsafe-inline' https://*.paypal.com https://*.paypalobjects.com; img-src 'self' https: data:; object-src 'none'; font-src 'self' https://*.paypal.com https://*.paypalobjects.com; frame-src 'self' https://*.paypalobjects.com https://*.paypal.com https://*.qualtrics.com; connect-src 'self' 'unsafe-inline' https://*.paypal.com https://*.paypalobjects.com https://*.qualtrics.com; form-action 'self' https://*.paypal.com; base-uri 'self' https://*.paypal.com; block-all-mixed-content;; report-uri https://www.paypal.com/csplog/api/log/csp
+Content-Type: text/html; charset=utf-8
+Etag: W/"7-Ory3K5VGd+UTzTV4Xd/UXaIbp98"
+Paypal-Debug-Id: f30367717bb34
+Set-Cookie: LANG=en_US%3BUS; Max-Age=31556; Domain=.paypal.com; Path=/; Expires=Mon, 15 Aug 2022 10:17:44 GMT; HttpOnly; Secure
+Set-Cookie: enforce_policy=ccpa; Max-Age=31536000; Domain=.paypal.com; Path=/; Expires=Tue, 15 Aug 2023 01:31:48 GMT; Secure
+Set-Cookie: x-pp-s=eyJ0IjoiMTY2MDUyNzEwODI0OSIsImwiOiIwIiwibSI6IjAifQ; Domain=.paypal.com; Path=/; HttpOnly; Secure
+Set-Cookie: tsrce=merchantnotifnodeweb; Domain=.paypal.com; Path=/; Expires=Thu, 18 Aug 2022 01:31:48 GMT; HttpOnly; Secure; SameSite=None
+Set-Cookie: nsid=s%3ArmDrm8gL_bWqfDL63VGcwJF1bGbK-mWN.onMwQ0Eor1bVn6XZrjrJwM7N9rbVI%2Fm3WdfgHK5M8ZM; Path=/; HttpOnly; Secure
+Set-Cookie: ts=vreXpYrS%3D1755221508%26vteXpYrS%3D1660528908%26vr%3D9f20e0881820a1d610133d10fff2c6b7%26vt%3D9f20e0881820a1d610133d10fff2c6b6%26vtyp%3Dnew; Path=/; Domain=paypal.com; Expires=Thu, 14 Aug 2025 01:31:48 GMT; HttpOnly; Secure
+Set-Cookie: ts_c=vr%3D9f20e0881820a1d610133d10fff2c6b7%26vt%3D9f20e0881820a1d610133d10fff2c6b6; Path=/; Domain=paypal.com; Expires=Thu, 14 Aug 2025 01:31:48 GMT; Secure
+Traceparent: 00-0000000000000000000f30367717bb34-c1eb1605ef9496b0-01
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+X-Xss-Protection: 1; mode=block
+DC: ccg11-origin-www-1.paypal.com
+Accept-Ranges: bytes
+Via: 1.1 varnish, 1.1 varnish
+Date: Mon, 15 Aug 2022 01:31:48 GMT
+Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
+X-Served-By: cache-iad-kjyo7100177-IAD, cache-den8277-DEN
+X-Cache: MISS, MISS
+X-Cache-Hits: 0, 0
+X-Timer: S1660527108.169733,VS0,VE147
+Vary: Accept-Encoding
+Server-Timing: content-encoding;desc="",x-cdn;desc="fastly"
+
+INVALID
+[2022-08-14 20:31 America/Chicago] Invalid IPN: cmd=_notify-validate
+[2022-08-24 02:32 America/Chicago] HTTP request of validation request:POST /cgi-bin/webscr HTTP/1.1
+Host: www.paypal.com
+Accept: */*
+Connection: Close
+Content-Length: 1089
+Content-Type: application/x-www-form-urlencoded
+
+ for IPN payload: cmd=_notify-validate&mc_gross=5.00&protection_eligibility=Ineligible&address_status=confirmed&item_number1=10&payer_id=VD4QWQFRDWBFU&tax=0.00&address_street=2549+80th+Place&payment_date=09%3A44%3A24+Aug+13%2C+2022+PDT&payment_status=Denied&charset=UTF-8&address_zip=53143&mc_shipping=0.00&mc_handling=0.00&first_name=Nathaniel&address_country_code=US&address_name=Nathaniel+Foster&notify_version=3.9&custom=goop&payer_status=verified&business=primalosps%40gmail.com&address_country=United+States&num_cart_items=1&mc_handling1=0.00&address_city=Kenosha&verify_sign=ArjI6wMRsBNWop-3NCMh8trd93GoAg4Sw33XlVOvB8YEKnNgJKlSVYW0&payer_email=mrtheiphonekid%40gmail.com&mc_shipping1=0.00&tax1=0.00&txn_id=85468334UK965884H&payment_type=echeck&last_name=Foster&address_state=WI&item_name1=%245+Donator+Scroll&receiver_email=primalosps%40gmail.com&shipping_discount=0.00&quantity1=1&insurance_amount=0.00&receiver_id=ZSR3U3D55F3AU&txn_type=cart&discount=0.00&mc_gross_1=5.00&mc_currency=USD&residence_country=US&shipping_method=Default&transaction_subject=&payment_gross=5.00&ipn_track_id=413414b2a8a2
+[2022-08-24 02:32 America/Chicago] HTTP response of validation request: HTTP/1.1 200 OK
+Connection: close
+Content-Length: 8
+Cache-Control: max-age=0, no-cache, no-store, must-revalidate
+Content-Security-Policy: default-src 'self' https://*.paypal.com https://*.paypalobjects.com 'unsafe-inline'; style-src 'self' https://*.paypal.com https://*.paypalobjects.com 'unsafe-inline'; script-src 'nonce-jWGfKmqhJhHOkOd+nxQqsd+O/4kEHlkctxuK9nxj5WoFWAfM' 'self' 'unsafe-inline' https://*.paypal.com https://*.paypalobjects.com; img-src 'self' https: data:; object-src 'none'; font-src 'self' https://*.paypal.com https://*.paypalobjects.com; frame-src 'self' https://*.paypalobjects.com https://*.paypal.com https://*.qualtrics.com; connect-src 'self' 'unsafe-inline' https://*.paypal.com https://*.paypalobjects.com https://*.qualtrics.com; form-action 'self' https://*.paypal.com; base-uri 'self' https://*.paypal.com; block-all-mixed-content;; report-uri https://www.paypal.com/csplog/api/log/csp
+Content-Type: text/html; charset=utf-8
+Etag: W/"8-WXvD6WBsMSDy5c0v7r4OHopk5Ys"
+Paypal-Debug-Id: f53564159bb35
+Set-Cookie: LANG=en_US%3BUS; Max-Age=31556; Domain=.paypal.com; Path=/; Expires=Wed, 24 Aug 2022 16:18:25 GMT; HttpOnly; Secure
+Set-Cookie: enforce_policy=ccpa; Max-Age=31536000; Domain=.paypal.com; Path=/; Expires=Thu, 24 Aug 2023 07:32:29 GMT; Secure
+Set-Cookie: x-pp-s=eyJ0IjoiMTY2MTMyNjM0OTk3MiIsImwiOiIwIiwibSI6IjAifQ; Domain=.paypal.com; Path=/; HttpOnly; Secure
+Set-Cookie: tsrce=merchantnotifnodeweb; Domain=.paypal.com; Path=/; Expires=Sat, 27 Aug 2022 07:32:29 GMT; HttpOnly; Secure; SameSite=None
+Set-Cookie: nsid=s%3APSD5jz7VcQLwmU-2A6G3k5_f1cFU-r-2.HLF58%2BSBXWzABAHgFOLpyHhWvRobvLPjlfpKMzlnMY8; Path=/; HttpOnly; Secure
+Set-Cookie: ts=vreXpYrS%3D1756020749%26vteXpYrS%3D1661328149%26vr%3Dcec4567a1820ad04be165366fea76418%26vt%3Dcec4567a1820ad04be165366fea76417%26vtyp%3Dnew; Path=/; Domain=paypal.com; Expires=Sat, 23 Aug 2025 07:32:29 GMT; HttpOnly; Secure
+Set-Cookie: ts_c=vr%3Dcec4567a1820ad04be165366fea76418%26vt%3Dcec4567a1820ad04be165366fea76417; Path=/; Domain=paypal.com; Expires=Sat, 23 Aug 2025 07:32:29 GMT; Secure
+Traceparent: 00-0000000000000000000f53564159bb35-a67185bbfdfede54-01
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+X-Xss-Protection: 1; mode=block
+DC: ccg11-origin-www-1.paypal.com
+Accept-Ranges: bytes
+Via: 1.1 varnish, 1.1 varnish
+Date: Wed, 24 Aug 2022 07:32:30 GMT
+Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
+X-Served-By: cache-iad-kcgs7200050-IAD, cache-den8250-DEN
+X-Cache: MISS, MISS
+X-Cache-Hits: 0, 0
+X-Timer: S1661326350.888477,VS0,VE139
+Vary: Accept-Encoding
+Server-Timing: content-encoding;desc="",x-cdn;desc="fastly"
+
+VERIFIED
+[2022-08-24 02:32 America/Chicago]  Invalid Payment: {"item_name":"$5 Donator Scroll","item_number":"10","status":"Invalid product","paid":"5.00","quantity":"1","currency":"USD","buyer":"mrtheiphonekid@gmail.com","player_name":"goop","dateline":1661326350} 
+[2022-08-24 02:32 America/Chicago] Verified IPN: cmd=_notify-validate&mc_gross=5.00&protection_eligibility=Ineligible&address_status=confirmed&item_number1=10&payer_id=VD4QWQFRDWBFU&tax=0.00&address_street=2549+80th+Place&payment_date=09%3A44%3A24+Aug+13%2C+2022+PDT&payment_status=Denied&charset=UTF-8&address_zip=53143&mc_shipping=0.00&mc_handling=0.00&first_name=Nathaniel&address_country_code=US&address_name=Nathaniel+Foster&notify_version=3.9&custom=goop&payer_status=verified&business=primalosps%40gmail.com&address_country=United+States&num_cart_items=1&mc_handling1=0.00&address_city=Kenosha&verify_sign=ArjI6wMRsBNWop-3NCMh8trd93GoAg4Sw33XlVOvB8YEKnNgJKlSVYW0&payer_email=mrtheiphonekid%40gmail.com&mc_shipping1=0.00&tax1=0.00&txn_id=85468334UK965884H&payment_type=echeck&last_name=Foster&address_state=WI&item_name1=%245+Donator+Scroll&receiver_email=primalosps%40gmail.com&shipping_discount=0.00&quantity1=1&insurance_amount=0.00&receiver_id=ZSR3U3D55F3AU&txn_type=cart&discount=0.00&mc_gross_1=5.00&mc_currency=USD&residence_country=US&shipping_method=Default&transaction_subject=&payment_gross=5.00&ipn_track_id=413414b2a8a2 

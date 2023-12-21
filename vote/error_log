@@ -1,0 +1,78 @@
+[13-Jun-2023 11:02:06 America/Chicago] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2002] Connection timed out in /home2/primalps/public_html/vote/app/plugins/vendor/lukafurlan/php-query-builder/database/connector/MySQLConnector.php:18
+Stack trace:
+#0 /home2/primalps/public_html/vote/app/plugins/vendor/lukafurlan/php-query-builder/database/connector/MySQLConnector.php(18): PDO->__construct('mysql:host=135....', 'primalps_web', '(JqPK0=n[Hk&', Array)
+#1 /home2/primalps/public_html/vote/app/plugins/vendor/lukafurlan/php-query-builder/database/DMLQuery/DMLQueryManager.php(23): lukafurlan\database\connector\MySQLConnector->connect()
+#2 /home2/primalps/public_html/vote/app/core/Model.php(13): lukafurlan\database\DMLQuery\DMLQueryManager->__construct('lukafurlan\\data...')
+#3 /home2/primalps/public_html/vote/app/models/Votes.php(322): Model::getDb()
+#4 /home2/primalps/public_html/vote/app/controllers/IndexController.php(24): Votes::topVoters()
+#5 /home2/primalps/public_html/vote/app/core/App.php(68): IndexController->index()
+#6 /home2/primalps/public_html/vo in /home2/primalps/public_html/vote/app/plugins/vendor/lukafurlan/php-query-builder/database/connector/MySQLConnector.php on line 18
+[13-Jun-2023 11:05:46 America/Chicago] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2002] Connection timed out in /home2/primalps/public_html/vote/app/plugins/vendor/lukafurlan/php-query-builder/database/connector/MySQLConnector.php:18
+Stack trace:
+#0 /home2/primalps/public_html/vote/app/plugins/vendor/lukafurlan/php-query-builder/database/connector/MySQLConnector.php(18): PDO->__construct('mysql:host=135....', 'primalps_web', '(JqPK0=n[Hk&', Array)
+#1 /home2/primalps/public_html/vote/app/plugins/vendor/lukafurlan/php-query-builder/database/DMLQuery/DMLQueryManager.php(23): lukafurlan\database\connector\MySQLConnector->connect()
+#2 /home2/primalps/public_html/vote/app/core/Model.php(13): lukafurlan\database\DMLQuery\DMLQueryManager->__construct('lukafurlan\\data...')
+#3 /home2/primalps/public_html/vote/app/models/Votes.php(322): Model::getDb()
+#4 /home2/primalps/public_html/vote/app/controllers/IndexController.php(24): Votes::topVoters()
+#5 /home2/primalps/public_html/vote/app/core/App.php(68): IndexController->index()
+#6 /home2/primalps/public_html/vo in /home2/primalps/public_html/vote/app/plugins/vendor/lukafurlan/php-query-builder/database/connector/MySQLConnector.php on line 18
+[13-Jun-2023 11:10:57 America/Chicago] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2002] Connection timed out in /home2/primalps/public_html/vote/app/plugins/vendor/lukafurlan/php-query-builder/database/connector/MySQLConnector.php:18
+Stack trace:
+#0 /home2/primalps/public_html/vote/app/plugins/vendor/lukafurlan/php-query-builder/database/connector/MySQLConnector.php(18): PDO->__construct('mysql:host=135....', 'primalps_web', '(JqPK0=n[Hk&', Array)
+#1 /home2/primalps/public_html/vote/app/plugins/vendor/lukafurlan/php-query-builder/database/DMLQuery/DMLQueryManager.php(23): lukafurlan\database\connector\MySQLConnector->connect()
+#2 /home2/primalps/public_html/vote/app/core/Model.php(13): lukafurlan\database\DMLQuery\DMLQueryManager->__construct('lukafurlan\\data...')
+#3 /home2/primalps/public_html/vote/app/models/Votes.php(322): Model::getDb()
+#4 /home2/primalps/public_html/vote/app/controllers/IndexController.php(24): Votes::topVoters()
+#5 /home2/primalps/public_html/vote/app/core/App.php(68): IndexController->index()
+#6 /home2/primalps/public_html/vo in /home2/primalps/public_html/vote/app/plugins/vendor/lukafurlan/php-query-builder/database/connector/MySQLConnector.php on line 18
+[13-Jun-2023 11:13:31 America/Chicago] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'primalps_web'@'localhost' (using password: YES) in /home2/primalps/public_html/vote/app/plugins/vendor/lukafurlan/php-query-builder/database/connector/MySQLConnector.php:18
+Stack trace:
+#0 /home2/primalps/public_html/vote/app/plugins/vendor/lukafurlan/php-query-builder/database/connector/MySQLConnector.php(18): PDO->__construct('mysql:host=loca...', 'primalps_web', '(JqPK0=n[Hk&', Array)
+#1 /home2/primalps/public_html/vote/app/plugins/vendor/lukafurlan/php-query-builder/database/DMLQuery/DMLQueryManager.php(23): lukafurlan\database\connector\MySQLConnector->connect()
+#2 /home2/primalps/public_html/vote/app/core/Model.php(13): lukafurlan\database\DMLQuery\DMLQueryManager->__construct('lukafurlan\\data...')
+#3 /home2/primalps/public_html/vote/app/models/Votes.php(322): Model::getDb()
+#4 /home2/primalps/public_html/vote/app/controllers/IndexController.php(24): Votes::topVoters()
+#5 /home2/primalps/public_html/vote/app/core/App.php(68): IndexCo in /home2/primalps/public_html/vote/app/plugins/vendor/lukafurlan/php-query-builder/database/connector/MySQLConnector.php on line 18
+[13-Jun-2023 11:14:32 America/Chicago] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2002] Connection timed out in /home2/primalps/public_html/vote/app/plugins/vendor/lukafurlan/php-query-builder/database/connector/MySQLConnector.php:18
+Stack trace:
+#0 /home2/primalps/public_html/vote/app/plugins/vendor/lukafurlan/php-query-builder/database/connector/MySQLConnector.php(18): PDO->__construct('mysql:host=135....', 'primalps_voteus...', '(JqPK0=n[Hk&', Array)
+#1 /home2/primalps/public_html/vote/app/plugins/vendor/lukafurlan/php-query-builder/database/DMLQuery/DMLQueryManager.php(23): lukafurlan\database\connector\MySQLConnector->connect()
+#2 /home2/primalps/public_html/vote/app/core/Model.php(13): lukafurlan\database\DMLQuery\DMLQueryManager->__construct('lukafurlan\\data...')
+#3 /home2/primalps/public_html/vote/app/models/Votes.php(322): Model::getDb()
+#4 /home2/primalps/public_html/vote/app/controllers/IndexController.php(24): Votes::topVoters()
+#5 /home2/primalps/public_html/vote/app/core/App.php(68): IndexController->index()
+#6 /home2/primalps/public_h in /home2/primalps/public_html/vote/app/plugins/vendor/lukafurlan/php-query-builder/database/connector/MySQLConnector.php on line 18
+[13-Jun-2023 11:15:57 America/Chicago] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2002] Connection timed out in /home2/primalps/public_html/vote/app/plugins/vendor/lukafurlan/php-query-builder/database/connector/MySQLConnector.php:18
+Stack trace:
+#0 /home2/primalps/public_html/vote/app/plugins/vendor/lukafurlan/php-query-builder/database/connector/MySQLConnector.php(18): PDO->__construct('mysql:host=135....', 'primalps_voteus...', '(JqPK0=n[Hk&', Array)
+#1 /home2/primalps/public_html/vote/app/plugins/vendor/lukafurlan/php-query-builder/database/DMLQuery/DMLQueryManager.php(23): lukafurlan\database\connector\MySQLConnector->connect()
+#2 /home2/primalps/public_html/vote/app/core/Model.php(13): lukafurlan\database\DMLQuery\DMLQueryManager->__construct('lukafurlan\\data...')
+#3 /home2/primalps/public_html/vote/app/models/Votes.php(322): Model::getDb()
+#4 /home2/primalps/public_html/vote/app/controllers/IndexController.php(24): Votes::topVoters()
+#5 /home2/primalps/public_html/vote/app/core/App.php(68): IndexController->index()
+#6 /home2/primalps/public_h in /home2/primalps/public_html/vote/app/plugins/vendor/lukafurlan/php-query-builder/database/connector/MySQLConnector.php on line 18
+[13-Jun-2023 11:16:33 America/Chicago] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2002] Connection timed out in /home2/primalps/public_html/vote/app/plugins/vendor/lukafurlan/php-query-builder/database/connector/MySQLConnector.php:18
+Stack trace:
+#0 /home2/primalps/public_html/vote/app/plugins/vendor/lukafurlan/php-query-builder/database/connector/MySQLConnector.php(18): PDO->__construct('mysql:host=135....', 'primalps_voteus...', '(JqPK0=n[Hk&', Array)
+#1 /home2/primalps/public_html/vote/app/plugins/vendor/lukafurlan/php-query-builder/database/DMLQuery/DMLQueryManager.php(23): lukafurlan\database\connector\MySQLConnector->connect()
+#2 /home2/primalps/public_html/vote/app/core/Model.php(13): lukafurlan\database\DMLQuery\DMLQueryManager->__construct('lukafurlan\\data...')
+#3 /home2/primalps/public_html/vote/app/models/Votes.php(322): Model::getDb()
+#4 /home2/primalps/public_html/vote/app/controllers/IndexController.php(24): Votes::topVoters()
+#5 /home2/primalps/public_html/vote/app/core/App.php(68): IndexController->index()
+#6 /home2/primalps/public_h in /home2/primalps/public_html/vote/app/plugins/vendor/lukafurlan/php-query-builder/database/connector/MySQLConnector.php on line 18
+[13-Jun-2023 11:16:33 America/Chicago] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'primalps_voteuser'@'localhost' (using password: YES) in /home2/primalps/public_html/vote/app/plugins/vendor/lukafurlan/php-query-builder/database/connector/MySQLConnector.php:18
+Stack trace:
+#0 /home2/primalps/public_html/vote/app/plugins/vendor/lukafurlan/php-query-builder/database/connector/MySQLConnector.php(18): PDO->__construct('mysql:host=loca...', 'primalps_voteus...', '(JqPK0=n[Hk&', Array)
+#1 /home2/primalps/public_html/vote/app/plugins/vendor/lukafurlan/php-query-builder/database/DMLQuery/DMLQueryManager.php(23): lukafurlan\database\connector\MySQLConnector->connect()
+#2 /home2/primalps/public_html/vote/app/core/Model.php(13): lukafurlan\database\DMLQuery\DMLQueryManager->__construct('lukafurlan\\data...')
+#3 /home2/primalps/public_html/vote/app/models/Votes.php(322): Model::getDb()
+#4 /home2/primalps/public_html/vote/app/controllers/IndexController.php(24): Votes::topVoters()
+#5 /home2/primalps/public_html/vote/app/core/App.php(6 in /home2/primalps/public_html/vote/app/plugins/vendor/lukafurlan/php-query-builder/database/connector/MySQLConnector.php on line 18
+[13-Jun-2023 11:16:38 America/Chicago] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'primalps_voteuser'@'localhost' (using password: YES) in /home2/primalps/public_html/vote/app/plugins/vendor/lukafurlan/php-query-builder/database/connector/MySQLConnector.php:18
+Stack trace:
+#0 /home2/primalps/public_html/vote/app/plugins/vendor/lukafurlan/php-query-builder/database/connector/MySQLConnector.php(18): PDO->__construct('mysql:host=loca...', 'primalps_voteus...', '(JqPK0=n[Hk&', Array)
+#1 /home2/primalps/public_html/vote/app/plugins/vendor/lukafurlan/php-query-builder/database/DMLQuery/DMLQueryManager.php(23): lukafurlan\database\connector\MySQLConnector->connect()
+#2 /home2/primalps/public_html/vote/app/core/Model.php(13): lukafurlan\database\DMLQuery\DMLQueryManager->__construct('lukafurlan\\data...')
+#3 /home2/primalps/public_html/vote/app/models/Votes.php(322): Model::getDb()
+#4 /home2/primalps/public_html/vote/app/controllers/IndexController.php(24): Votes::topVoters()
+#5 /home2/primalps/public_html/vote/app/core/App.php(6 in /home2/primalps/public_html/vote/app/plugins/vendor/lukafurlan/php-query-builder/database/connector/MySQLConnector.php on line 18

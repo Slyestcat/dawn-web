@@ -1,0 +1,88 @@
+{%  extends 'layout.twig' %}
+
+{% block content %}
+{% embed "index/navbar.twig" %}
+    
+{% endembed %}
+
+    <div class="container body-wrapper" style="margin-top:50px;">
+        <div class="row vote-container">
+            <div class="col-sm-12">
+               <div class="top-voter">
+                    <h3 class="text-primary vote-center">Top voters of {{ month |capitalize }}</h3>
+                    <hr style="background-color: rgba(255,255,255, 0.1) !important;">
+                    <div class="container" style="padding-top:20px !important;">
+                        <div class="flex-row">
+                            <div class="box">
+                                <div class="place first">1st Place</div>
+                                <span><h3 class="text-primary">{{ top_1_user|capitalize }}</h3></span>
+                                <hr>
+                                <div><h3>Total votes:<span class="text-primary"> {{ top_1_votes |capitalize }}</span></h3></div>
+                            </div>
+                            <div class="box">
+                                <div class="place second">2nd Place</div>
+                                <span><h3 class="text-primary">{{ top_2_user|capitalize }}</h3></span>
+                                <hr />
+                                <div><h3>Total votes:<span class="text-primary"> {{ top_2_votes |capitalize }}</span></h3></div>
+                            </div>
+                            <div class="box">
+                                <div class="place third">3rd Place</div>
+                                <span><h3 class="text-primary">{{ top_3_user|capitalize }}</h3></span>
+                                <hr>
+                                <div><h3>Total votes:<span class="text-primary"> {{ top_3_votes |capitalize }}</span></h3></div>
+                            </div>
+                        </div>
+                        <p class="box_">
+                            Top voters for every month will receive a special prize at the end of the month. Be sure to vote!
+                        </p>
+                    </div>
+                </div>
+                <div class="vote">
+                    <div class="card-body">
+                        <h3>Vote for <span class="text-primary">{{  constant('site_title') }}</span></h3>
+                        <p>
+                            Vote here for rewards within our server. To redeem votes, use the command ::claimvote.
+                            Each vote is 1 reward. Each vote helps our server reach the top of each toplist, giving
+                            us more visibility and inevitably more players.
+                        </p>
+
+                        {%  if error is defined %}
+                            <div class="alert alert-danger">
+                                {{ error }}
+                            </div>
+                        {% endif %}
+
+                        <p>
+                            Voting as: 
+                            <strong class="text-primary">
+                            {{ vote_user|capitalize }}
+                            </strong>
+                        </p>
+
+                        <hr>
+                        
+                        <div id="buttons">Loading...</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let buttons = $('#buttons');
+
+        setTimeout(function() {
+            $.post('{{ url('buttons') }}', function(data) {
+                buttons.html(data);
+            });
+
+            setInterval(function() {
+                $.post('{{ url('buttons') }}', function(data) {
+                    buttons.html(data);
+                });
+            }, 15000);
+
+        }, 1000);
+
+    </script>
+{%  endblock %}

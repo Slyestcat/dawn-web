@@ -1,0 +1,130 @@
+[18-Aug-2022 15:16:51 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home2/primalps/public_html/resources/recent_news.php on line 3
+[18-Aug-2022 15:17:30 America/Chicago] PHP Fatal error:  Uncaught Error: Cannot use object of type stdClass as array in /home2/primalps/public_html/resources/recent_news.php:4
+Stack trace:
+#0 {main}
+  thrown in /home2/primalps/public_html/resources/recent_news.php on line 4
+[18-Aug-2022 15:17:59 America/Chicago] PHP Fatal error:  Uncaught Error: Object of class stdClass could not be converted to string in /home2/primalps/public_html/resources/recent_news.php:4
+Stack trace:
+#0 {main}
+  thrown in /home2/primalps/public_html/resources/recent_news.php on line 4
+[18-Aug-2022 15:18:15 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home2/primalps/public_html/resources/recent_news.php on line 3
+[18-Aug-2022 15:22:32 America/Chicago] PHP Fatal error:  Uncaught Error: Call to undefined function custom_echo() in /home2/primalps/public_html/resources/recent_news.php:10
+Stack trace:
+#0 {main}
+  thrown in /home2/primalps/public_html/resources/recent_news.php on line 10
+[18-Aug-2022 18:24:20 America/Chicago] PHP Warning:  file_get_contents(resources/news.json): failed to open stream: No such file or directory in /home2/primalps/public_html/resources/add.php on line 37
+[18-Aug-2022 18:24:23 America/Chicago] PHP Warning:  file_get_contents(resources/news.json): failed to open stream: No such file or directory in /home2/primalps/public_html/resources/add.php on line 37
+[18-Aug-2022 18:26:48 America/Chicago] PHP Warning:  file_get_contents(resources/news.json): failed to open stream: No such file or directory in /home2/primalps/public_html/resources/add.php on line 37
+[18-Aug-2022 18:26:53 America/Chicago] PHP Warning:  file_get_contents(resources/news.json): failed to open stream: No such file or directory in /home2/primalps/public_html/resources/add.php on line 37
+[18-Aug-2022 18:26:56 America/Chicago] PHP Warning:  file_get_contents(resources/news.json): failed to open stream: No such file or directory in /home2/primalps/public_html/resources/add.php on line 37
+[18-Aug-2022 18:30:07 America/Chicago] PHP Warning:  file_get_contents(resources/news.json): failed to open stream: No such file or directory in /home2/primalps/public_html/resources/add.php on line 37
+[18-Aug-2022 18:30:14 America/Chicago] PHP Warning:  file_get_contents(resources/news.json): failed to open stream: No such file or directory in /home2/primalps/public_html/resources/add.php on line 37
+[18-Aug-2022 18:30:14 America/Chicago] PHP Warning:  array_push() expects parameter 1 to be array, null given in /home2/primalps/public_html/resources/add.php on line 53
+[18-Aug-2022 18:30:41 America/Chicago] PHP Warning:  file_get_contents(resources/news.json): failed to open stream: No such file or directory in /home2/primalps/public_html/resources/add.php on line 37
+[18-Aug-2022 18:30:41 America/Chicago] PHP Warning:  array_push() expects parameter 1 to be array, null given in /home2/primalps/public_html/resources/add.php on line 53
+[18-Aug-2022 18:31:57 America/Chicago] PHP Warning:  Use of undefined constant length - assumed 'length' (this will throw an Error in a future version of PHP) in /home2/primalps/public_html/resources/add.php on line 60
+[18-Aug-2022 18:33:33 America/Chicago] PHP Warning:  Use of undefined constant length - assumed 'length' (this will throw an Error in a future version of PHP) in /home2/primalps/public_html/resources/add.php on line 60
+[18-Aug-2022 18:34:07 America/Chicago] PHP Warning:  Use of undefined constant length - assumed 'length' (this will throw an Error in a future version of PHP) in /home2/primalps/public_html/resources/add.php on line 60
+[18-Aug-2022 18:35:36 America/Chicago] PHP Warning:  Use of undefined constant length - assumed 'length' (this will throw an Error in a future version of PHP) in /home2/primalps/public_html/resources/add.php on line 53
+[18-Aug-2022 18:36:38 America/Chicago] PHP Warning:  Use of undefined constant length - assumed 'length' (this will throw an Error in a future version of PHP) in /home2/primalps/public_html/resources/add.php on line 53
+[18-Aug-2022 18:37:20 America/Chicago] PHP Warning:  Use of undefined constant length - assumed 'length' (this will throw an Error in a future version of PHP) in /home2/primalps/public_html/resources/add.php on line 53
+[18-Aug-2022 18:39:29 America/Chicago] PHP Warning:  Use of undefined constant length - assumed 'length' (this will throw an Error in a future version of PHP) in /home2/primalps/public_html/resources/add.php on line 53
+[18-Aug-2022 18:39:37 America/Chicago] PHP Warning:  array_unshift() expects parameter 1 to be array, null given in /home2/primalps/public_html/resources/add.php on line 51
+[18-Aug-2022 18:39:37 America/Chicago] PHP Warning:  Use of undefined constant length - assumed 'length' (this will throw an Error in a future version of PHP) in /home2/primalps/public_html/resources/add.php on line 53
+[18-Aug-2022 18:41:19 America/Chicago] PHP Warning:  Use of undefined constant length - assumed 'length' (this will throw an Error in a future version of PHP) in /home2/primalps/public_html/resources/add.php on line 53
+[18-Aug-2022 18:41:57 America/Chicago] PHP Warning:  Use of undefined constant length - assumed 'length' (this will throw an Error in a future version of PHP) in /home2/primalps/public_html/resources/add.php on line 53
+[18-Aug-2022 18:44:27 America/Chicago] PHP Warning:  Use of undefined constant length - assumed 'length' (this will throw an Error in a future version of PHP) in /home2/primalps/public_html/resources/add.php on line 53
+[18-Aug-2022 18:45:46 America/Chicago] PHP Warning:  Use of undefined constant length - assumed 'length' (this will throw an Error in a future version of PHP) in /home2/primalps/public_html/resources/add.php on line 53
+[18-Aug-2022 18:46:40 America/Chicago] PHP Warning:  Use of undefined constant length - assumed 'length' (this will throw an Error in a future version of PHP) in /home2/primalps/public_html/resources/add.php on line 53
+[18-Aug-2022 19:35:39 America/Chicago] PHP Warning:  Use of undefined constant length - assumed 'length' (this will throw an Error in a future version of PHP) in /home2/primalps/public_html/resources/add.php on line 53
+[18-Aug-2022 19:39:13 America/Chicago] PHP Warning:  Use of undefined constant length - assumed 'length' (this will throw an Error in a future version of PHP) in /home2/primalps/public_html/resources/add.php on line 53
+[18-Aug-2022 19:40:54 America/Chicago] PHP Warning:  Use of undefined constant length - assumed 'length' (this will throw an Error in a future version of PHP) in /home2/primalps/public_html/resources/add.php on line 53
+[18-Aug-2022 19:42:17 America/Chicago] PHP Warning:  Use of undefined constant length - assumed 'length' (this will throw an Error in a future version of PHP) in /home2/primalps/public_html/resources/add.php on line 53
+[18-Aug-2022 19:42:25 America/Chicago] PHP Warning:  Use of undefined constant length - assumed 'length' (this will throw an Error in a future version of PHP) in /home2/primalps/public_html/resources/add.php on line 53
+[18-Aug-2022 19:42:46 America/Chicago] PHP Warning:  Use of undefined constant length - assumed 'length' (this will throw an Error in a future version of PHP) in /home2/primalps/public_html/resources/add.php on line 53
+[18-Aug-2022 19:42:57 America/Chicago] PHP Warning:  Use of undefined constant length - assumed 'length' (this will throw an Error in a future version of PHP) in /home2/primalps/public_html/resources/add.php on line 53
+[18-Aug-2022 19:44:56 America/Chicago] PHP Warning:  Use of undefined constant length - assumed 'length' (this will throw an Error in a future version of PHP) in /home2/primalps/public_html/resources/add.php on line 53
+[18-Aug-2022 19:48:08 America/Chicago] PHP Warning:  Use of undefined constant length - assumed 'length' (this will throw an Error in a future version of PHP) in /home2/primalps/public_html/resources/add.php on line 53
+[18-Aug-2022 19:50:58 America/Chicago] PHP Warning:  Use of undefined constant length - assumed 'length' (this will throw an Error in a future version of PHP) in /home2/primalps/public_html/resources/add.php on line 53
+[18-Aug-2022 19:53:08 America/Chicago] PHP Warning:  Use of undefined constant length - assumed 'length' (this will throw an Error in a future version of PHP) in /home2/primalps/public_html/resources/add.php on line 53
+[18-Aug-2022 19:54:14 America/Chicago] PHP Warning:  Use of undefined constant length - assumed 'length' (this will throw an Error in a future version of PHP) in /home2/primalps/public_html/resources/add.php on line 53
+[29-Aug-2022 22:04:45 America/Chicago] PHP Warning:  Use of undefined constant length - assumed 'length' (this will throw an Error in a future version of PHP) in /home2/primalps/public_html/resources/add.php on line 53
+[30-Aug-2022 10:33:44 America/Chicago] PHP Warning:  fread(): Length parameter must be greater than 0 in /home2/primalps/public_html/resources/players_online.php on line 5
+[30-Aug-2022 10:33:51 America/Chicago] PHP Warning:  fread(): Length parameter must be greater than 0 in /home2/primalps/public_html/resources/players_online.php on line 5
+[30-Aug-2022 10:33:54 America/Chicago] PHP Warning:  fread(): Length parameter must be greater than 0 in /home2/primalps/public_html/resources/players_online.php on line 5
+[30-Aug-2022 10:33:56 America/Chicago] PHP Warning:  fread(): Length parameter must be greater than 0 in /home2/primalps/public_html/resources/players_online.php on line 5
+[30-Aug-2022 10:36:02 America/Chicago] PHP Warning:  fread(): Length parameter must be greater than 0 in /home2/primalps/public_html/resources/players_online.php on line 5
+[30-Aug-2022 10:36:05 America/Chicago] PHP Warning:  fread(): Length parameter must be greater than 0 in /home2/primalps/public_html/resources/players_online.php on line 5
+[30-Aug-2022 10:36:07 America/Chicago] PHP Warning:  fread(): Length parameter must be greater than 0 in /home2/primalps/public_html/resources/players_online.php on line 5
+[30-Aug-2022 10:36:08 America/Chicago] PHP Warning:  fread(): Length parameter must be greater than 0 in /home2/primalps/public_html/resources/players_online.php on line 5
+[30-Aug-2022 10:36:19 America/Chicago] PHP Warning:  fread(): Length parameter must be greater than 0 in /home2/primalps/public_html/resources/players_online.php on line 5
+[30-Aug-2022 10:36:22 America/Chicago] PHP Warning:  fread(): Length parameter must be greater than 0 in /home2/primalps/public_html/resources/players_online.php on line 5
+[30-Aug-2022 10:36:56 America/Chicago] PHP Warning:  fread(): Length parameter must be greater than 0 in /home2/primalps/public_html/resources/players_online.php on line 4
+[30-Aug-2022 10:36:58 America/Chicago] PHP Warning:  fread(): Length parameter must be greater than 0 in /home2/primalps/public_html/resources/players_online.php on line 4
+[30-Aug-2022 10:36:59 America/Chicago] PHP Warning:  fread(): Length parameter must be greater than 0 in /home2/primalps/public_html/resources/players_online.php on line 4
+[30-Aug-2022 10:37:00 America/Chicago] PHP Warning:  fread(): Length parameter must be greater than 0 in /home2/primalps/public_html/resources/players_online.php on line 4
+[30-Aug-2022 10:37:00 America/Chicago] PHP Warning:  fread(): Length parameter must be greater than 0 in /home2/primalps/public_html/resources/players_online.php on line 4
+[30-Aug-2022 10:37:01 America/Chicago] PHP Warning:  fread(): Length parameter must be greater than 0 in /home2/primalps/public_html/resources/players_online.php on line 4
+[30-Aug-2022 10:40:26 America/Chicago] PHP Warning:  A non-numeric value encountered in /home2/primalps/public_html/resources/players_online.php on line 9
+[30-Aug-2022 19:53:04 America/Chicago] PHP Warning:  file_get_contents(resources/players.txt): failed to open stream: No such file or directory in /home2/primalps/public_html/resources/navigation.php on line 4
+[30-Aug-2022 19:54:49 America/Chicago] PHP Warning:  file_get_contents(/home2/primalps/public_htmlresources/players.txt): failed to open stream: No such file or directory in /home2/primalps/public_html/resources/navigation.php on line 4
+[31-Aug-2022 22:46:33 America/Chicago] PHP Warning:  fread(): Length parameter must be greater than 0 in /home2/primalps/public_html/resources/players_online.php on line 4
+[21-Sep-2022 21:37:02 America/Chicago] PHP Warning:  fread(): Length parameter must be greater than 0 in /home2/primalps/public_html/resources/players_online.php on line 4
+[23-Sep-2022 16:56:43 America/Chicago] PHP Warning:  fread(): Length parameter must be greater than 0 in /home2/primalps/public_html/resources/players_online.php on line 4
+[27-Sep-2022 19:40:17 America/Chicago] PHP Warning:  fread(): Length parameter must be greater than 0 in /home2/primalps/public_html/resources/players_online.php on line 4
+[04-Dec-2022 05:02:27 America/Chicago] PHP Warning:  fread(): Length parameter must be greater than 0 in /home2/primalps/public_html/resources/players_online.php on line 4
+[04-Dec-2022 05:12:24 America/Chicago] PHP Warning:  fread(): Length parameter must be greater than 0 in /home2/primalps/public_html/resources/players_online.php on line 4
+[04-Dec-2022 05:12:24 America/Chicago] PHP Warning:  fread(): Length parameter must be greater than 0 in /home2/primalps/public_html/resources/players_online.php on line 4
+[04-Dec-2022 05:22:39 America/Chicago] PHP Warning:  fread(): Length parameter must be greater than 0 in /home2/primalps/public_html/resources/players_online.php on line 4
+[04-Dec-2022 14:33:18 America/Chicago] PHP Warning:  fread(): Length parameter must be greater than 0 in /home2/primalps/public_html/resources/players_online.php on line 4
+[04-Dec-2022 14:33:18 America/Chicago] PHP Warning:  fread(): Length parameter must be greater than 0 in /home2/primalps/public_html/resources/players_online.php on line 4
+[04-Dec-2022 14:59:44 America/Chicago] PHP Warning:  fread(): Length parameter must be greater than 0 in /home2/primalps/public_html/resources/players_online.php on line 4
+[04-Dec-2022 18:06:36 America/Chicago] PHP Warning:  fread(): Length parameter must be greater than 0 in /home2/primalps/public_html/resources/players_online.php on line 4
+[16-Jan-2023 18:49:37 America/Chicago] PHP Warning:  fread(): Length parameter must be greater than 0 in /home2/primalps/public_html/resources/players_online.php on line 4
+[28-May-2023 23:04:39 America/Chicago] PHP Warning:  fread(): Length parameter must be greater than 0 in /home2/primalps/public_html/resources/players_online.php on line 4
+[29-May-2023 23:50:28 America/Chicago] PHP Warning:  fread(): Length parameter must be greater than 0 in /home2/primalps/public_html/resources/players_online.php on line 4
+[30-May-2023 11:41:00 America/Chicago] PHP Warning:  fread(): Length parameter must be greater than 0 in /home2/primalps/public_html/resources/players_online.php on line 4
+[30-May-2023 18:47:33 America/Chicago] PHP Warning:  fread(): Length parameter must be greater than 0 in /home2/primalps/public_html/resources/players_online.php on line 4
+[30-May-2023 18:47:48 America/Chicago] PHP Warning:  fread(): Length parameter must be greater than 0 in /home2/primalps/public_html/resources/players_online.php on line 4
+[30-May-2023 19:04:55 America/Chicago] PHP Warning:  fread(): Length parameter must be greater than 0 in /home2/primalps/public_html/resources/players_online.php on line 4
+[30-May-2023 19:14:48 America/Chicago] PHP Warning:  fread(): Length parameter must be greater than 0 in /home2/primalps/public_html/resources/players_online.php on line 4
+[30-May-2023 19:57:04 America/Chicago] PHP Warning:  fread(): Length parameter must be greater than 0 in /home2/primalps/public_html/resources/players_online.php on line 4
+[01-Jun-2023 09:20:53 America/Chicago] PHP Warning:  fread(): Length parameter must be greater than 0 in /home2/primalps/public_html/resources/players_online.php on line 4
+[01-Jun-2023 18:36:59 America/Chicago] PHP Warning:  fread(): Length parameter must be greater than 0 in /home2/primalps/public_html/resources/players_online.php on line 4
+[02-Jun-2023 16:05:14 America/Chicago] PHP Warning:  fread(): Length parameter must be greater than 0 in /home2/primalps/public_html/resources/players_online.php on line 4
+[02-Jun-2023 16:26:30 America/Chicago] PHP Warning:  fread(): Length parameter must be greater than 0 in /home2/primalps/public_html/resources/players_online.php on line 4
+[02-Jun-2023 16:53:52 America/Chicago] PHP Warning:  fread(): Length parameter must be greater than 0 in /home2/primalps/public_html/resources/players_online.php on line 4
+[02-Jun-2023 17:12:46 America/Chicago] PHP Warning:  fread(): Length parameter must be greater than 0 in /home2/primalps/public_html/resources/players_online.php on line 4
+[02-Jun-2023 17:58:17 America/Chicago] PHP Warning:  fread(): Length parameter must be greater than 0 in /home2/primalps/public_html/resources/players_online.php on line 4
+[02-Jun-2023 18:45:32 America/Chicago] PHP Warning:  fread(): Length parameter must be greater than 0 in /home2/primalps/public_html/resources/players_online.php on line 4
+[02-Jun-2023 18:52:17 America/Chicago] PHP Warning:  fread(): Length parameter must be greater than 0 in /home2/primalps/public_html/resources/players_online.php on line 4
+[02-Jun-2023 22:37:54 America/Chicago] PHP Warning:  fread(): Length parameter must be greater than 0 in /home2/primalps/public_html/resources/players_online.php on line 4
+[03-Jun-2023 00:27:30 America/Chicago] PHP Warning:  fread(): Length parameter must be greater than 0 in /home2/primalps/public_html/resources/players_online.php on line 4
+[03-Jun-2023 00:57:01 America/Chicago] PHP Warning:  fread(): Length parameter must be greater than 0 in /home2/primalps/public_html/resources/players_online.php on line 4
+[03-Jun-2023 05:04:52 America/Chicago] PHP Warning:  fread(): Length parameter must be greater than 0 in /home2/primalps/public_html/resources/players_online.php on line 4
+[03-Jun-2023 13:50:48 America/Chicago] PHP Warning:  fread(): Length parameter must be greater than 0 in /home2/primalps/public_html/resources/players_online.php on line 4
+[03-Jun-2023 16:24:50 America/Chicago] PHP Warning:  fread(): Length parameter must be greater than 0 in /home2/primalps/public_html/resources/players_online.php on line 4
+[03-Jun-2023 16:35:33 America/Chicago] PHP Warning:  fread(): Length parameter must be greater than 0 in /home2/primalps/public_html/resources/players_online.php on line 4
+[03-Jun-2023 16:44:48 America/Chicago] PHP Warning:  fread(): Length parameter must be greater than 0 in /home2/primalps/public_html/resources/players_online.php on line 4
+[03-Jun-2023 16:54:33 America/Chicago] PHP Warning:  fread(): Length parameter must be greater than 0 in /home2/primalps/public_html/resources/players_online.php on line 4
+[03-Jun-2023 18:40:57 America/Chicago] PHP Warning:  fread(): Length parameter must be greater than 0 in /home2/primalps/public_html/resources/players_online.php on line 4
+[03-Jun-2023 19:19:36 America/Chicago] PHP Warning:  fread(): Length parameter must be greater than 0 in /home2/primalps/public_html/resources/players_online.php on line 4
+[03-Jun-2023 20:04:29 America/Chicago] PHP Warning:  fread(): Length parameter must be greater than 0 in /home2/primalps/public_html/resources/players_online.php on line 4
+[03-Jun-2023 23:33:56 America/Chicago] PHP Warning:  fread(): Length parameter must be greater than 0 in /home2/primalps/public_html/resources/players_online.php on line 4
+[04-Jun-2023 00:15:26 America/Chicago] PHP Warning:  fread(): Length parameter must be greater than 0 in /home2/primalps/public_html/resources/players_online.php on line 4
+[04-Jun-2023 14:39:09 America/Chicago] PHP Warning:  fread(): Length parameter must be greater than 0 in /home2/primalps/public_html/resources/players_online.php on line 4
+[04-Jun-2023 14:48:33 America/Chicago] PHP Warning:  fread(): Length parameter must be greater than 0 in /home2/primalps/public_html/resources/players_online.php on line 4
+[04-Jun-2023 15:03:33 America/Chicago] PHP Warning:  fread(): Length parameter must be greater than 0 in /home2/primalps/public_html/resources/players_online.php on line 4
+[04-Jun-2023 15:11:18 America/Chicago] PHP Warning:  fread(): Length parameter must be greater than 0 in /home2/primalps/public_html/resources/players_online.php on line 4
+[04-Jun-2023 15:28:18 America/Chicago] PHP Warning:  fread(): Length parameter must be greater than 0 in /home2/primalps/public_html/resources/players_online.php on line 4
+[04-Jun-2023 15:32:10 America/Chicago] PHP Warning:  fread(): Length parameter must be greater than 0 in /home2/primalps/public_html/resources/players_online.php on line 4
+[04-Jun-2023 19:28:41 America/Chicago] PHP Warning:  fread(): Length parameter must be greater than 0 in /home2/primalps/public_html/resources/players_online.php on line 4
+[04-Jun-2023 21:47:40 America/Chicago] PHP Warning:  fread(): Length parameter must be greater than 0 in /home2/primalps/public_html/resources/players_online.php on line 4
+[05-Jun-2023 16:47:41 America/Chicago] PHP Warning:  fread(): Length parameter must be greater than 0 in /home2/primalps/public_html/resources/players_online.php on line 4
+[05-Jun-2023 19:09:29 America/Chicago] PHP Warning:  fread(): Length parameter must be greater than 0 in /home2/primalps/public_html/resources/players_online.php on line 4
+[05-Jun-2023 19:22:14 America/Chicago] PHP Warning:  fread(): Length parameter must be greater than 0 in /home2/primalps/public_html/resources/players_online.php on line 4
+[05-Jun-2023 21:28:01 America/Chicago] PHP Warning:  fread(): Length parameter must be greater than 0 in /home2/primalps/public_html/resources/players_online.php on line 4
+[05-Jun-2023 22:19:24 America/Chicago] PHP Warning:  fread(): Length parameter must be greater than 0 in /home2/primalps/public_html/resources/players_online.php on line 4
+[05-Jun-2023 23:25:18 America/Chicago] PHP Warning:  fread(): Length parameter must be greater than 0 in /home2/primalps/public_html/resources/players_online.php on line 4
+[06-Jun-2023 00:10:34 America/Chicago] PHP Warning:  fread(): Length parameter must be greater than 0 in /home2/primalps/public_html/resources/players_online.php on line 4
+[13-Jun-2023 12:11:08 America/Chicago] PHP Warning:  mysqli::__construct(): (HY000/1045): Access denied for user 'primalps_website'@'localhost' (using password: YES) in /home2/primalps/public_html/resources/top_ten.php on line 2

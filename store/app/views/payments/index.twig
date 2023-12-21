@@ -1,0 +1,120 @@
+{%  extends 'admin_layout.twig' %}
+
+{% block content %}
+{% include "admin/sidebar.twig" %}
+
+<div class="main-content" id="panel">
+    {% include 'admin/header.twig' %}
+
+    <div class="container-fluid pt-6">
+        <div class="row">
+            <div class="col-xl-12">
+                
+                <div class="card border-0 shadow-sm mb-3">
+                    <div class="card-header bg-transparent">
+                        <div class="row align-items-center">
+                            <div class="col">
+                                <h6 class="text-uppercase text-muted ls-1 mb-1">Performance</h6>
+                                <h2 class="mb-0">Payment History</h2>
+                            </div>
+                            <div class="col">
+                                <form method="post" action="{{ url('admin/payments') }}" 
+                                    class="form-inline float-right">
+                                    <div class="form-group my-0">
+                                        <input class="form-control form-control-sm border-0" 
+                                            name="username" 
+                                            placeholder="Search username..."
+                                            value="{{ username is defined ? username : "" }}">
+                                    </div>
+                                    <div class="form-group my-0">
+                                        <button class="btn btn-link btn-sm text-white" type="submit">
+                                            <i class="fal fa-search fa-fw"></i>
+                                        </button>
+                                    </div>
+                                    <input type="hidden" name="_token" value="{{ csrf_token }}">
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                    {% if error is defined %}
+                    <div class="alert alert-danger rounded-0 mb-0">{{ error }}</div>
+                    {% endif %}
+
+                    {% if success is defined %}
+                    <div class="alert alert-success rounded-0 mb-0">{{ success }}</div>
+                    {% endif %}
+
+                    <table class="table table-striped" style="line-height:1em;">
+                        {% for payment in payments['items'] %}
+                        <tr>
+                            <td>{{ payment['id'] }}</td>
+                            
+                            <td>
+                                {{ payment['player_name'] }}<br>
+                                <small class="text-muted">{{ payment['buyer'] }}</small>
+                            </td>
+
+                            <td>
+                                {{ payment['item_name'] }}<br>
+                                <small class="text-muted">
+                                    ${{ payment['paid']|number_format(2) }} | 
+                                    Quantity: {{ payment['quantity'] }}
+                                </small>
+                            </td>
+
+                            <td>
+                                {% if payment['status']|lower == 'complete' %}
+                                    <span class="text-success">{{ payment['status']|capitalize }}</span>
+                                {% else %}
+                                    <span class="text-danger">{{ payment['status']|capitalize }}</span>
+                                {% endif %}
+                            </td>
+
+                            <td>{{ payment['dateline']|date("m-d-y") }}</td>
+
+                            <td>
+                                {% if payment['claimed'] == 0 %}
+                                    <i class="fal fa-times fa-fw text-danger" 
+                                        data-toggle="tooltip" title="Unclaimed"></i>
+                                {% else %}
+                                    <i class="fal fa-check fa-fw text-success" 
+                                        data-toggle="tooltip" title="Claimed"></i>
+                                {% endif %}
+                            </td>
+
+                        </tr>
+                        {% endfor %}
+                    </table>
+                </div>
+
+                <div class="m-auto text-center">
+                    {% set base_path = "admin/payments/"~(username is defined ? username~"/" : "")~"" %}
+                    <a href="{{ url(base_path~payments['first']) }}" class="btn btn-link text-white">
+                        <i class="fal fa-angle-double-left fa-fw"></i>
+                    </a>
+                    <a href="{{ url(base_path~payments['before']) }}" class="btn btn-link text-white">
+                        <i class="fal fa-angle-left fa-fw"></i>
+                    </a>
+                    
+                    Page {{ payments['current'] }} of {{ payments['total_pages'] }}
+
+                    <a href="{{ url(base_path~payments['next']) }}" class="btn btn-link text-white ml-2">
+                        <i class="fal fa-angle-right fa-fw"></i>
+                    </a>
+                    <a href="{{ url(base_path~payments['last']) }}" class="btn btn-link text-white">
+                        <i class="fal fa-angle-double-right fa-fw"></i>
+                    </a>
+
+                </div>
+
+                {{ content|raw }}
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    
+</script>
+{% endblock %}

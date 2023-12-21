@@ -1,0 +1,317 @@
+{%  extends 'layout.twig' %}
+
+{% block content %}
+
+
+<div class="modal custom-modal fade fullscreen" id="donorModal" tabindex="-1" role="dialog" aria-labelledby="donorModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="donorModalLabel">Donator Benefits</h5>
+                <button type="button" class="closeModal" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true"><i class="fa fa-window-close"></i></span>
+                    </button>
+            </div>
+      
+          <div class="modal-body">
+               	<table style="width: 100%;">
+               		<thead>
+               			<tr class="box" style="height:75px;">
+               				<th style="text-align:left;color: #e2ca96 !important">Features</th>
+               				<th style="color:red;text-align:center;"><img src="https://primalps.net/highscores/assets/img/5.png" width="20" height="20"/>Donator</th>
+               				<th style="color:#4c8aeb;text-align:center;"><img src="https://primalps.net/highscores/assets/img/6.png" width="20" height="20"/>Super Donator</th>
+               				<th style="color:#8be49e;text-align:center;"><img src="https://primalps.net/highscores/assets/img/7.png" width="20" height="20"/>Extreme Donator</th>
+               				<th style="color:#6ce3fc;text-align:center;"><img src="https://primalps.net/highscores/assets/img/8.png" width="20" height="20"/>Legendary Donator</th>
+               				<th style="color:#b63198;text-align:center;"><img src="https://primalps.net/highscores/assets/img/9.png" width="20" height="20"/>Ultimate Donator</th>
+               			</tr>
+               		</thead>
+               		<tbody>
+               		    <tr style="height:75px;">
+               				<td style="text-align:left;color: #e2ca96 !important">Global drop rate increase </th>
+               				<td style="color:red;text-align:center;">2%</td>
+               				<td style="color:#4c8aeb;text-align:center;">3%</td>
+               				<td style="color:#8be49e;text-align:center;">4%</td>
+               				<td style="color:#6ce3fc;text-align:center;">5%</td>
+               				<td style="color:#b63198;text-align:center;">10%</td>
+               			</tr>
+               		    <tr style="height:75px;">
+               				<td style="text-align:left;color: #e2ca96 !important">Charm drop rate increase </th>
+               				<td style="color:red;text-align:center;">20%</td>
+               				<td style="color:#4c8aeb;text-align:center;">30%</td>
+               				<td style="color:#8be49e;text-align:center;">40%</td>
+               				<td style="color:#6ce3fc;text-align:center;">50%</td>
+               				<td style="color:#b63198;text-align:center;">75%</td>
+               			</tr>
+               			<tr style="height:75px;">
+               			    <td style="color: #e2ca96 !important">Chance to get double noted resource</td>
+               				<td style="color:red;text-align:center;">10%</td>
+               				<td style="color:#4c8aeb;text-align:center;">20%</td>
+               				<td style="color:#8be49e;text-align:center;">25%</td>
+               				<td style="color:#6ce3fc;text-align:center;">35%</td>
+               				<td style="color:#b63198;text-align:center;">45%</td>
+               			</tr>
+               			<tr style="height:75px;">
+               			    <td style="color: #e2ca96 !important">Slayer point task increase of</td>
+               				<td style="color:red;text-align:center;">20 points</td>
+               				<td style="color:#4c8aeb;text-align:center;">30 points</td>
+               				<td style="color:#8be49e;text-align:center;">40 points</td>
+               				<td style="color:#6ce3fc;text-align:center;">50 points</td>
+               				<td style="color:#b63198;text-align:center;">100 points</td>
+               			</tr>
+               			<tr style="height:75px;">
+               			    <td style="color: #e2ca96 !important">Bonus blood money of</td>
+               				<td style="color:red;text-align:center;">30%</td>
+               				<td style="color:#4c8aeb;text-align:center;">50%</td>
+               				<td style="color:#8be49e;text-align:center;">70%</td>
+               				<td style="color:#6ce3fc;text-align:center;">100%</td>
+               				<td style="color:#b63198;text-align:center;">130%</td>
+               			</tr>
+               			<tr style="height:75px;">
+               			    <td style="color: #e2ca96 !important">Dungeoneering point increase of</td>
+               				<td style="color:red;text-align:center;">10%</td>
+               				<td style="color:#4c8aeb;text-align:center;">20%</td>
+               				<td style="color:#8be49e;text-align:center;">30%</td>
+               				<td style="color:#6ce3fc;text-align:center;">50%</td>
+               				<td style="color:#b63198;text-align:center;">75%</td>
+               			</tr>
+               			<tr style="height:75px;">
+               			    <td style="color: #e2ca96 !important">Reduces slayer point cost of task cancel to</td>
+               				<td style="color:red;text-align:center;">175</td>
+               				<td style="color:#4c8aeb;text-align:center;">150</td>
+               				<td style="color:#8be49e;text-align:center;">100</td>
+               				<td style="color:#6ce3fc;text-align:center;">50</td>
+               				<td style="color:#b63198;text-align:center;">25</td>
+               			</tr>
+               			<tr style="height:75px;">
+               			    <td style="color: #e2ca96 !important">Reduces slayer point cost of blocking task to</td>
+               				<td style="color:red;text-align:center;">700</td>
+               				<td style="color:#4c8aeb;text-align:center;">600</td>
+               				<td style="color:#8be49e;text-align:center;">500</td>
+               				<td style="color:#6ce3fc;text-align:center;">250</td>
+               				<td style="color:#b63198;text-align:center;">100</td>
+               			</tr>
+               			<tr style="height:75px;">
+               			    <td style="color: #e2ca96 !important">Increases diary bonuses by</td>
+               				<td style="color:red;text-align:center;">30%</td>
+               				<td style="color:#4c8aeb;text-align:center;">50%</td>
+               				<td style="color:#8be49e;text-align:center;">70%</td>
+               				<td style="color:#6ce3fc;text-align:center;">100%</td>
+               				<td style="color:#b63198;text-align:center;">150%</td>
+               			</tr>
+               			<tr style="height:75px;">
+               			    <td style="color: #e2ca96 !important">Increased pest control points by</td>
+               				<td style="color:red;text-align:center;">1.4%</i></td>
+               				<td style="color:#4c8aeb;text-align:center;">1.6%</td>
+               				<td style="color:#8be49e;text-align:center;">1.8%</td>
+               				<td style="color:#6ce3fc;text-align:center;">2.0%</td>
+               				<td style="color:#b63198;text-align:center;">2.5%</td>
+               			</tr>
+               			<tr style="height:75px;">
+               			    <td style="color: #e2ca96 !important">Increased chance of finding marks of Grace by</td>
+               				<td style="color:red;text-align:center;">16.6%</td>
+               				<td style="color:#4c8aeb;text-align:center;">20%</td>
+               				<td style="color:#8be49e;text-align:center;">25%</td>
+               				<td style="color:#6ce3fc;text-align:center;">33.3%</td>
+               				<td style="color:#b63198;text-align:center;">50%</td>
+               			</tr>
+               			<tr style="height:75px;">
+               			    <td style="color: #e2ca96 !important">Decreased decanting cost to </td>
+               				<td style="color:red;text-align:center;">4500 GP</td>
+               				<td style="color:#4c8aeb;text-align:center;">4000 GP</td>
+               				<td style="color:#8be49e;text-align:center;">3500 GP</td>
+               				<td style="color:#6ce3fc;text-align:center;">3000 GP</td>
+               				<td style="color:#b63198;text-align:center;">2500 GP</td>
+               			</tr>
+               			<tr style="height:75px;">
+               			    <td style="color: #e2ca96 !important">Reduces GWD kill count to</td>
+               				<td style="color:red;text-align:center;">16</td>
+               				<td style="color:#4c8aeb;text-align:center;">12</td>
+               				<td style="color:#8be49e;text-align:center;">8</td>
+               				<td style="color:#6ce3fc;text-align:center;">4</td>
+               				<td style="color:#b63198;text-align:center;">0</td>
+               			</tr>
+               		</tbody>
+               	</table>
+               	<div class="images">
+                   	<div class="flex-column">
+                       	<div class="flex-row">
+                       	    <span class="box"><img src="http://primalps.net/store/public/img/d_store.png" /></span>
+                       	    <span class="box"><img src="http://primalps.net/store/public/img/d_store2.png" /></span>
+                       	    <span class="box"><img src="http://primalps.net/store/public/img/d_store2_1.png" /></span>
+                       	</div>
+                       	<div class="flex-row">
+                       	    <span class="box"><img src="http://primalps.net/store/public/img/d_store2_2.png" /></span>
+                       	    <span class="box"><img src="http://primalps.net/store/public/img/d_store3.png" /></span>
+                       	    <span class="box" style="visibility:hidden;"></span>
+                       	</div>
+                       	<div class="flex-row">
+                       	    <span class="box"><img src="http://primalps.net/store/public/img/d_zone_1.jpg" /></span>
+                       	    <span class="box"><img src="http://primalps.net/store/public/img/d_zone_2.jpg" /></span>
+                       	    <span class="box"><img src="http://primalps.net/store/public/img/d_zone_3.jpg" /></span>
+                       	</div>
+                   	</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-sm-12 col-lg-9 col-md-8 pr-md-0">
+             <div class="top-donor">
+                <h3 class="text-primary donor-center">Top Donators of {{ month |capitalize }}</h3>
+                <hr style="background-color: rgba(255,255,255, 0.1) !important;">
+                    <div class="container" style="padding-top: 50px;">
+                        <div class="flex-row">
+                        <div class="box">
+                            <div class="place first">1st Place</div>
+                            <hr>
+                            <span><h3 class="text-primary"><img src="{{ top_donor_1_rank }}" width="20" height="20"/>{{ top_donor_1|capitalize }}</h3></span>
+                        </div>
+                        <div class="box">
+                            <div class="place second">2nd Place</div>
+                            <hr />
+                            <span><h3 class="text-primary"><img src="{{ top_donor_2_rank }}" width="20" height="20"/>{{ top_donor_2|capitalize }}</h3></span>
+                        </div>
+                        <div class="box">
+                            <div class="place third">3rd Place</div>
+                            <hr>
+                            <span><h3 class="text-primary"><img src="{{ top_donor_3_rank }}" width="20" height="20"/>{{ top_donor_3|capitalize }}</h3></span>
+                        </div>
+                    </div>
+                    <button class="btn game-btn" style="width: 100%;" data-toggle="modal" data-target="#donorModal">Donator Benefits</button>
+                    <p class="box_">
+                        Donating helps keep the server alive and bring in new and exciting features, online and ingame
+                    </p>
+                </div>
+            </div>  
+            <div class="card-box">
+                <div class="card-body">
+                    <div class="dropdown">
+                        <button class="btn btn-link dropdown-toggle btn-sm text-primary" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            {{ cur_cat is defined ? cur_cat[0]['title'] : 'All Items'}}
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-left dropdown-box" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item"
+                               href="{{ url('') }}">
+                                All Items
+                            </a>
+
+                            <div class="dropdown-divider"></div>
+
+                            {% for category in categories %}
+                            <a class="dropdown-item"
+                                href="{{ url(category['id']~'-'~friendlyTitle(category['title'])) }}">
+                                {{ category['title'] }}
+                            </a>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            {% if error is defined %}
+            <div class="card-box error alert alert-dismissible">
+                {{ error }}
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true"><i class="fa fa-window-close" style="color: #000;"></i></span>
+                  </button>
+            </div>
+            {% endif %}
+
+            {% if products is null or products is empty %}
+            <div class="card-box error">
+                There are no items in this category.
+            </div>
+            {% else %}
+                {% include 'index/products.twig' %}
+            {% endif %}
+
+            {{ content|raw }}
+        </div>
+
+        <div class="col-sm-12 col-lg-3 col-md-4">
+            <div class="sticky-top" style="top:30px;"></div>
+                <div class="card-box" style="margin-top: unset !important;">
+                    {% if store_name is not defined or store_name is null %}
+                    <div class="card-header">
+                        Enter your Username
+                    </div>
+                    <div class="card-body">
+                        <form method="post" action="{{ url('') }}" autocomplete="off">
+                            <div class="form-group">
+                                <input type="text" class="form-control" name="store_name">
+                            </div>
+                            <input type="hidden" name="_token" value="{{ csrf_token }}" id="_token">
+                            <div class="form-group mb-0">
+                                <button class="btn game-btn btn-block">
+                                    Continue
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                    {% else %}
+                    <div class="card-body text-center">
+                        <small class="text-muted text-uppercase">
+                            username
+                        </small>
+                        <h3 class="mb-0">{{ store_name|capitalize }}</h3>
+                    </div>
+                    <a href="{{ url('?reset') }}" class="card-footer text-center small py-2" style="color: #e2ca96 !important;">
+                        Reset Name
+                    </a>
+                    {% endif %}
+                </div>
+
+                <div class="card-box">
+                    {% if discount is defined %}
+                    <div class="card-body text-center">
+                        You have a {{ discount['percentage'] }}% discount!
+                    </div>
+                    <a href="{{ url('?removeDiscount') }}" class="card-footer text-center small py-2">
+                        Remove Discount
+                    </a>
+                    {% else %}
+                    <div class="card-body text-center">
+                        <form method="post" action="{{ url('') }}" autocomplete="off" class="form-inline">
+                            <div class="input-group w-100">
+
+                                <input type="text" 
+                                    class="form-control form-control-sm" 
+                                    name="code"
+                                    pattern="[A-Za-z0-9+]{3,20}" 
+                                    placeholder="Coupon Code"
+                                    style="height: 40px;">
+
+                                <input type="hidden" name="_token" value="{{ csrf_token }}" id="_token">
+
+                                <div class="input-group-append">
+                                    <button class="btn game-btn btn-sm">
+                                        apply
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    {% endif %}
+                </div>
+
+                <div class="card-box overflow-hidden">
+                    <div class="card-header" style="line-height:1em;">
+                       <h3 class="mb-0">My Cart</h3>
+                    </div>
+                    <div  id="cart-items">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+{% if store_name is not null %}
+    {% include 'index/cartjs.twig' %}
+    {% endif %}
+{%  endblock %}

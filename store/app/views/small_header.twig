@@ -1,0 +1,81 @@
+{% block small_header %}
+<div class="header">
+    <div class="custom-topbar bg-dark">
+        <div class="container">
+            <div class="topbar-left">
+                <div class="topbar-link">
+                    <a href="" class="text-primary">About</a>
+                </div>
+                <div class="topbar-link">
+                    <a href="" class="text-primary">Support</a>
+                </div>
+                <div class="topbar-link">
+                    <a href="" class="text-primary">Contact</a>
+                </div>
+            </div>
+
+            <div class="topbar-right">
+                {% if constant('show_admin_link') %}
+                <div class="topbar-link">
+                    <a href="{{ url('admin') }}" class="text-danger">Admin CP</a>
+                </div>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+
+    <div class="custom-nav">
+        <div class="container">
+
+            <div class="nav-link expand">
+                <a href="" class="text-left text-white">
+                    <i class="fal fa-bars"></i> 
+                    MENU
+                </a>
+            </div>
+
+            <div class="nav-logo">
+                <h3 class="mb-0 text-white text-uppercase">
+                    {{ constant('site_title') }}
+                </h3>
+            </div>
+
+            <div class="nav-link">
+                <a href="{{ url('') }}" class="text-white">Home</a>
+            </div>
+
+            <div class="nav-link">
+                <a href="{{ constant("FORUM_URL") }}" class="text-white">Forums</a>
+            </div>
+
+            <div class="nav-link">
+                <a href="" class="text-white">Market</a>
+            </div>
+
+            <div class="nav-link">
+                <a href="{{ url('store') }}" class="text-white">Store</a>
+            </div>
+
+            <div class="nav-link">
+                <a href="{{ url('vote') }}" class="text-white">Vote</a>
+            </div>
+
+            <div class="nav-link">
+                <a href="{{ url('hiscores') }}" class="text-white">Hiscores</a>
+            </div>
+        </div>
+    </div>
+
+    <header>
+        <div class="container">
+            <div class="header-body">
+                <h2 class="mb-0 text-uppercase">{{ constant('site_title') }} | Store</h2>
+                <p class="mb-0">
+                    Welcome to our store! After you've made a purchase, return in-game and use the 
+                    command ::claim to receive your items.
+                </p>
+            </div>
+        </div>
+    </header>
+</div>
+{% endblock %}

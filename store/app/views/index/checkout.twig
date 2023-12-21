@@ -1,0 +1,85 @@
+{%  extends 'layout.twig' %}
+
+{% block content %}
+<div class="container my-5">
+    <div class="row">
+        <div class="col-sm-12">
+            {% if redirect is defined and redirect == true %}
+
+            <div class="text-center">
+                <i class="fab fa-paypal fa-5x mt-5"></i>
+                <h1 class="mb-0">Redirecting to PayPal...</h1>
+                <p class="mb-5">Please wait while we redirect you to PayPal.</p>
+            </div>
+            
+            {% else %}
+            <h1 class="mb-0">Terms of Service</h1>
+            <p>Before you can continue, please review the terms of service and agree at the bottom.</p>
+
+            <hr>
+
+            <p>
+                These terms and conditions set out the terms and conditions between you, the customer, and
+                {{ constant('site_title') }} (“us”, “we”), governing the use of our website and our
+                content therein (the “products”). Your use of our website, 
+                and purchase, download and use of our products, constitutes your full acceptance of these 
+                terms and conditions. If you do not agree with these terms and conditions, you should not 
+                use our website or purchase, download or use any of our products.
+            </p>
+
+            <h2>Disclaimer</h2>
+            <p>
+                All products sold on this website are strictly digital and are provided in-game. If you are
+                having issues receiving your items, you may contact a moderator via discord, our forums, or 
+                in-game. all items are provided as-is and functionality of any item may change at any time
+                to fit market needs.
+            </p>
+            
+            <h2>Warranty</h2>
+            <p>
+                We make every effort to ensure that our products are accurate, authoritaive and fit for the 
+                use of our customers. However, we take no responsibility whatsoever for the suitability of 
+                the product, and we provide no warranties as to the function or use of the product, whether 
+                express, implied or statutory, including without limitation any warranties of merchantability
+                or fitness for particular purpose. You agree to indemnify us against all liabilities, 
+                claims, demands, expenses, actions, costs, damages, or loss arising out of your breach 
+                of these terms and conditions. Furthermore, we shall not be liable to you or any party 
+                for consequential, indirect, special or exemplary damages including but not limited to 
+                damages for loss of profits, business or anticipated benefits whether arising under tort, 
+                contract, negligence or otherwise whether or not foreseen, reasonably foreseeable or 
+                advised of the possibility of such damages.
+            </p>
+
+            <h2>Revisions and Errata</h2>
+            <p>
+                The materials appearing on {{ constant('site_title') }}'s web site could include technical, typographical, 
+                or photographic errors. {{ constant('site_title') }} does not warrant that any of the materials on its 
+                web site are accurate, complete, or current. {{ constant('site_title') }} may make changes to the materials
+                contained on its web site at any time without notice. {{ constant('site_title') }} does not, however, 
+                make any commitment to update the materials.
+            </p>
+
+            <h2>Refund Policy</h2>
+            <p class="mb-5">
+                Once a product has been purchased by you, no right of cancellation or refund exists under the 
+                Consumer Protection (Distance Selling) Regulations 2000 due to the electronic nature of our products. 
+                Any refunds shall be at our sole and absolute discretion. You agree that under no circumstances 
+                whatsoever shall you initiate any chargebacks via your payment provider. You agree that any payments
+                made by you for any of our products are final and may not be charged back. We reserve the right 
+                to alter any of our prices from time to time.
+            </p>
+
+            <p>By clicking agree below, you have read, understood, and agreed these terms.</p>
+            
+            <form action="{{ url('checkout') }}" method="post" class="w-100">
+                <div class="form-group">
+                    <button type="submit" class="btn btn-success">I agree, continue</button>
+                    <a href="{{ url('') }}" class="btn btn-link text-white-50">Abort Mission</a>
+                    <input type="hidden" name="_token" value="{{ csrf_token }}" id="_token">
+                </div>
+            </form>
+            {% endif %}
+        </div>
+    </div>
+</div>
+{%  endblock %}

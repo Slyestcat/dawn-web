@@ -1,0 +1,129 @@
+<script>
+    $(document).ready(function() {
+        getCart();
+
+        $(document).on('click', '#subtractQty', function(e) {
+            e.preventDefault();
+    
+            let parent   = $(this).parent(".amount");
+            let field    = parent.find("#quantity");
+            let price    = parent.find('#price');
+            let priceVal = price.data("price");
+            let quantity = parseInt(field.val());
+    
+            quantity--;
+    
+            if (quantity < 1)
+                quantity = 1;
+    
+            price.html("$"+(priceVal * quantity).toFixed(2));
+            field.val(quantity);
+        });
+    
+        $(document).on('click', '#addQty', function(e) {
+            e.preventDefault();
+    
+            let parent   = $(this).parent(".amount");
+            let field    = parent.find("#quantity");
+            let quantity = parseInt(field.val());
+            let price    = parent.find('#price');
+            let priceVal = price.data("price");
+    
+            quantity++;
+    
+            if (quantity > 2147483647)
+                quantity = 2147483647;
+            
+            price.html("$"+(priceVal * quantity).toFixed(2));
+            field.val(quantity);
+        });
+
+        $(document).on("click", "#removeCart", function(event) {
+            event.preventDefault();
+
+            if ($.ajaxq.isRunning('StoreQueue')) {
+                return;
+            }
+
+            let product = $(this).data("id");
+
+            $.ajaxq('StoreQueue', {
+                url: '{{ url("cart/delete") }}',
+                data: {
+                    product: product
+                },
+                type: 'POST',
+                complete: function (data) {
+                    console.log(data);
+                    getCart();
+                }
+            });
+        });
+
+        $(document).on("click", "#addCart", function(event) {
+            event.preventDefault();
+
+            let product  = $(this).data("id");
+            let button   = $(this);
+            let orig_txt = button.html();
+            let parent   = $(this).parent(".card-body");
+            let price    = parent.find('#price');
+            let priceVal = parseFloat(price.data("price"));
+            let qtyField = parent.find("#quantity");
+            let quantity = qtyField.val();
+
+            if ($.ajaxq.isRunning('StoreQueue') || button.attr("disabled")) {
+                console.log("disabled");
+                return;
+            }
+
+            button
+                .addClass("disabled")
+                .html("<i class='fal fa-check'></i>");
+            
+            qtyField.val(1);
+            price.html("$"+priceVal.toFixed(2));
+
+            $.ajaxq('StoreQueue', {
+                url: '{{ url("cart/add") }}',
+                data: {
+                    product: product,
+                    quantity: quantity
+                },
+                type: 'POST',
+                complete: function (data) {
+                    setTimeout(function() {
+                        button.removeClass("disabled");
+                        button.html(orig_txt);
+                    }, 1000);
+                },
+                success: function (json) {
+                    getCart();
+                },
+                error: function(data) {
+                    console.log(data);
+                }
+            });
+        });
+
+        function getCart() {
+            $.ajaxq('StoreQueue', {
+                url: '{{ url("cart") }}',
+                type: 'POST',
+                complete: function (data) {
+                    $('#cart-items').html(data.responseText);
+                }
+            });
+        }
+
+        function formatCurrency(total) {
+            var neg = false;
+            if(total < 0) {
+                neg = true;
+                total = Math.abs(total);
+            }
+            return (neg ? "-$" : '$') + parseFloat(total, 10).toFixed(2).replace(/(\d)(?=(\d{3})+\.)/g, "$1,").toString();
+        }
+
+    });
+</script>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    {% block head %}
+        <title>{{  constant('site_title') }}</title>
+    {% endblock %}
+
+    <link rel="stylesheet" type="text/css" href="{{ stylesheet('argon-dashboard.min.css') }}" />
+    <link href="https://primalps.net/resources/css/normalize.css" rel="stylesheet" type="text/css">
+    <link href="https://primalps.net/resources/css/components.css" rel="stylesheet" type="text/css">
+    <link href="https://primalps.net/resources/css/styles.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="{{ stylesheet('all.min.css') }}" />
+    <link rel="stylesheet" type="text/css" href="{{ stylesheet('custom_.css') }}" />
+
+    <script type="text/javascript" src="{{ javascript('jquery-3.3.1.min.js') }}"></script>
+    <script type="text/javascript" src="{{ javascript('js.cookie-2.2.1.min.js') }}"></script>
+    <script type="text/javascript" src="{{ javascript('queue.js') }}"></script>
+    <script type="text/javascript" src="{{ javascript('custom.js') }}"></script>
+</head>
+<body>
+
+    {% include 'navbar.twig' %}
+
+    {% block content %}
+    {% endblock %}
+
+    {% include 'footer.twig' %}
+
+    <script type="text/javascript" src="{{ javascript('bootstrap.bundle.min.js') }}"></script>
+</body>
+</html>

@@ -1,0 +1,112 @@
+
+
+<div class="d-flex flex-wrap product-container">
+    {% for product in products['items'] %}
+
+    <div class="flex-fill item-card px-2">
+        
+        <div class="items-box">
+            <div class="card-body">
+
+                <div class="item-box item-box-center">
+                    <img src="{{ img(product['image_url']) }}" alt="" class="img-fluid">
+                </div>
+
+                <div class="text-truncate text-primary m-auto" style="width:120px;">
+                    {{ product['item_name'] }}
+                </div>
+                
+                {% set state = store_name is null ? 'disabled' : '' %}
+
+                <div class="amount">
+                    <p class="card-sub small">
+                        {% set price =  product['price']|number_format(2) %}
+                        <span id="price" data-price="{{ product['price'] }}">
+                            ${{  product['price']|number_format(2) }}
+                        </span>
+                    </p>
+
+                    <a href="#" id="subtractQty" class="text-muted">
+                        <i class="fal fa-minus-circle" ></i>
+                    </a>
+                    
+                    <input type="text" value="1" id="quantity" disabled>
+
+                    <a href="#" id="addQty" class="text-muted">
+                        <i class="fal fa-plus-circle"></i>
+                    </a>
+                </div>
+            
+                <a href="#"
+                    id="addCart"
+                    data-id="{{ product['id'] }}" 
+                    class="btn game-btn btn-sm btn-block {{ state }}">
+                    Add to Cart
+                </a>
+
+                <a href="#"
+                    data-toggle="modal"
+                    data-target="#product-{{ product['id'] }}"
+                    data-id="{{ product['id'] }}" class="small text-muted">
+                    Info
+                </a>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+
+<!-- Pagination -->
+<div class="text-center mb-3">
+    {% set link = cur_cat is defined ? cur_cat['id']~'-'~friendlyTitle(cur_cat['title'])~'/' : '' %}
+
+    <a href="{{ url(link~products['first']) }}" 
+        class="btn btn-link px-1 text-white {{ cur_page == products['first'] ? "disabled" : "" }}">
+        <i class="fal fa-angle-double-left fa-lg fa-fw"></i>
+    </a>
+
+    <a href="{{ url(link~products['before']) }}" 
+        class="btn btn-link px-1 text-white  {{ cur_page == products['first'] ? "disabled" : "" }}">
+        <i class="fal fa-angle-left fa-lg fa-fw"></i>
+    </a>
+
+    <div class="btn btn-link disabled text-white">
+       Page {{ products['current'] }} of {{ products['total_pages']}}
+    </div>
+    
+
+    <a href="{{ url(link~products['next']) }}" 
+        class="btn btn-link px-1 text-white {{ cur_page == products['last'] ? "disabled" : "" }}">
+        <i class="fal fa-angle-right fa-lg fa-fw"></i>
+    </a>
+
+    <a href="{{ url(link~products['last']) }}" 
+        class="btn btn-link px-1 text-white {{ cur_page == products['last'] ? "disabled" : "" }}">
+        <i class="fal fa-angle-double-right fa-lg fa-fw"></i>
+    </a>
+</div>
+
+<!-- Modals for product info -->
+{% for product in products['items'] %}
+<div class="modal fade" id="product-{{ product['id'] }}" tabindex="-1" role="dialog" 
+    aria-labelledby="product-{{ product['id'] }}-label" aria-hidden="true">
+    
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-body text-center">
+                <div class="item-box item-box-center">
+                    <img src="{{ img(product['image_url']) }}" alt="" class="img-fluid">
+                </div>
+
+                <h3 class="mb-0">{{ product['item_name'] }}</h3>
+
+                {% if product['max_qty'] > 0 %}
+                    <small class="text-muted">Limit: {{ product['max_qty'] }} per cart</small>
+                {% endif %}
+
+                {{ product['description']|raw }}
+            </div>
+        </div>
+    </div>
+</div>
+{% endfor %}

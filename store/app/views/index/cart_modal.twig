@@ -1,0 +1,39 @@
+<div class="modal fade" id="cartModal" tabindex="-1" role="dialog" aria-labelledby="cartLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="cartLabel">
+                    My Cart
+                </h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+
+            <div class="modal-body p-0" id="cart-items">
+                ...
+            </div>
+            
+            <div class="modal-footer">
+                <form action="{{ url('store/checkout') }}" method="post" class="w-100">
+                    <div class="form-group">
+                        <div class="custom-control custom-checkbox mb-0" id="check">
+                            <input type="checkbox" class="custom-control-input" id="customCheck1" required>
+                            <label class="custom-control-label" for="customCheck1">
+                                <div class="terms-agree">
+                                    I agree with the <a href="{{ url('terms') }}" class="text-primary" target="_blank">Terms & Conditions</a>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-group text-center  mb-0" style="line-height:1em;">
+                        <button type="submit" class="btn btn-primary btn-block mb-3">
+                            <i class="fab fa-paypal fa-fw"></i> Checkout 33333333
+                        </button>
+                    </div>
+                </form>
+                
+            </div>
+        </div>
+    </div>
+</div>

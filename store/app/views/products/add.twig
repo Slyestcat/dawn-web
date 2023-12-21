@@ -1,0 +1,117 @@
+{%  extends 'admin_layout.twig' %}
+
+{% block content %}
+{% include "admin/sidebar.twig" %}
+<div class="main-content" id="panel">
+    {% include "admin/header.twig" %}
+
+    <div class="container-fluid pt-6">
+        <div class="row">
+            <div class="col-xl-12">
+                {%  if error is defined %}
+                    <div class="alert alert-danger">
+                        {{ error }}
+                    </div>
+                {% endif %}
+
+                {{ content|raw }}
+                <div class="card border-0 shadow-sm">
+                    <div class="card-header bg-transparent">
+                        <div class="row align-items-center">
+                            <div class="col">
+                                <h6 class="text-uppercase text-muted ls-1 mb-1">Store</h6>
+                                <h2 class="mb-0">Add Product</h2>
+                            </div>
+                            <div class="col text-right">
+                                <a href="{{ url('admin/products/add') }}" 
+                                        class="btn btn-primary shadow-none">
+                                    <i class="fal fa-plus fa-fw"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-body">
+                        <form action="{{ url('admin/products/add') }}" method="post">
+                            <div class="form-group">
+                                <label for="item_name" class="text-uppercase text-muted mb-1 small">
+                                    Item Name
+                                </label>
+                                <input type="text" class="form-control" name="item_name" id="item_name">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="item_id" class="text-uppercase text-muted mb-1 small">
+                                    Item ID
+                                </label>
+                                <input class="form-control" name="item_id" id="item_id"
+                                        type="number" min="0" step="1">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="price" class="text-uppercase text-muted mb-1 small">
+                                    Price (USD)
+                                </label>
+                                <input class="form-control" name="price" id="price"
+                                        type="number" min="1" step="0.01">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="max_qty" class="text-uppercase text-muted mb-1 small">
+                                    Max Quantity
+                                </label>
+                                <input class="form-control" name="max_qty" id="max_qty"
+                                        type="number" min="0" step="1">
+
+                                <small class="text-muted">
+                                    The maximum quantity a user can put in their cart at a time.
+                                </small>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="category" class="text-uppercase text-muted mb-1 small">
+                                    Category
+                                </label>
+                                <select class="form-control" name="category" id="category">
+                                    {% for category in categories %}
+                                    <option value="{{ category['id'] }}">{{ category['title'] }}</option>
+                                    {% endfor %}
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="image_url" class="text-uppercase text-muted mb-1 small">
+                                    Image URL
+                                </label>
+                                <input type="text" class="form-control" name="image_url" id="image_url">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="description" class="text-uppercase text-muted mb-1 small">
+                                    Information
+                                </label>
+
+                                <textarea name="description" class="form-control" id="description" 
+                                    style="min-height:200px;"></textarea>
+
+                                <span class="small text-muted">
+                                    HTML allowed.
+                                </span>
+                            </div>
+
+                            <input type="hidden" name="_token" value="{{ csrf_token }}">
+
+                            <div class="form-group mb-0">
+                                <button type="submit" class="btn btn-success">Save Changes</button>
+                                <a href="{{ url('admin/products') }}">
+                                    Cancel
+                                </a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
