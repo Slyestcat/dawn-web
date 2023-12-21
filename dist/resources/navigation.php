@@ -25,7 +25,7 @@
       <nav role="navigation" class="navigation-menu w-nav-menu">
           <a href="https://playdawn.net/" class="nav-link w-nav-link">Home</a>
           <a href="https://playdawn.net/play" class="nav-link w-nav-link">Play</a>
-          <a href="https://discord.gg/SwgNcAbRCj" target="_blank" class="nav-link w-nav-link">Discord</a>
+          <a href="https://discord.gg/59bDxrPA9a" target="_blank" class="nav-link w-nav-link">Discord</a>
           <a href="#" class="nav-link w-nav-link">vote</a>
           <a href="#" class="nav-link w-nav-link">store</a>
           <a href="https://playdawn.net/hiscores" class="nav-link w-nav-link">hiscores</a>

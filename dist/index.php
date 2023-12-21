@@ -26,7 +26,7 @@
    <script type="text/javascript" src="https://cdn.jsdelivr.net/discord-widget/1.0/discord-widget.min.js"></script>
   <script type="text/javascript">
     discordWidget.init({
-        serverId: '1174538450385510420',
+        serverId: '708014459792392222',
         join: false,    //allow the user to join with a button. Can be true of false
         alphabetical: true,    //sort the channels in alphabetical order. Can be true or false as well?
         hideChannels: ['Channel Name 1', 'Channel Name 2'],    //Select channels to hide, write the channel names in the brackets
@@ -47,7 +47,7 @@
         <h1 class="banner-heading">DAWN RSPS</h1>
         <h3 class="banner-heading sub-text">Join <?php include 'resources/players_online.php';?> other players online now!</h3>
         <p class="banner-paragraph-text">Dawn is the best Runescape Private Server fusion between Oldschool and Runescape 3. Slay every boss from all generations, like Tekton and Zulrah, and earn rewards for daily bossing tasks. As well as the best OSRS and RS3 PVP items for flawless and consistently entertaining PVP. Get lost in skilling with our awesome skilling and prestige systems. Test yourself and your friends with group ironman. With countless activities, don't delay, start playing Dawn today!</p>
-        <div class="banner-buttons"><a href="#" class="button w-button">DOWNLOAD CLIENT</a><a href="https://discord.gg/SwgNcAbRCj" target="_blank" class="button discord w-button">join discord</a></div>
+        <div class="banner-buttons"><a href="#" class="button w-button">DOWNLOAD CLIENT</a><a href="https://discord.gg/59bDxrPA9a" target="_blank" class="button discord w-button">join discord</a></div>
       </div>
     </div>
   </div>
@@ -77,7 +77,7 @@
             <div class="content-block-title sidebar">
               <h3 class="title-text">Discord Server</h3>
             </div>
-              <div class="content-block-info"><a href="https://discord.gg/SwgNcAbRCj" target="_blank" class="discord-widget w-inline-block"></a><a href="https://discord.gg/SwgNcAbRCj" target="_blank" class="button discord full-width w-button">join discord</a></div>          </div>
+              <div class="content-block-info"><a href="https://discord.gg/59bDxrPA9a" target="_blank" class="discord-widget w-inline-block"></a><a href="https://discord.gg/59bDxrPA9a" target="_blank" class="button discord full-width w-button">join discord</a></div>          </div>
           <div class="main-content-box">
             <div class="content-block-title sidebar">
               <h3 class="title-text">Top Players</h3>

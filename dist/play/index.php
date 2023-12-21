@@ -76,7 +76,7 @@
             </a>
           </div>
         </div>
-        <a href="https://discord.gg/Z5Z3zbRFAF" class="download-bottom-bar update w-inline-block">
+        <a href="https://discord.gg/y5nAxXBFDu" class="download-bottom-bar update w-inline-block">
           <div>Read the latest game update</div>
         </a>
         <a href="#" class="beta-content-block-info w-inline-block">
@@ -109,7 +109,7 @@
             <div class="troubleshooting-text">
               <h3 class="troubleshooting-title">still experiencing issues?</h3>
               <p>Read our helpful information on Discord and chat with a member of support </p>
-              <a href="https://discord.gg/Pc5mMQB936" class="download-button troubleshooting w-inline-block">
+              <a href="https://discord.gg/XErNbQY4zw" class="download-button troubleshooting w-inline-block">
                 <div>VISIT DISCORD SUPPORT</div>
               </a>
             </div>
