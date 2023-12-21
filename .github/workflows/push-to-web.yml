@@ -1,16 +1,21 @@
-name: Deploy via ftp
+name: Publish Website
+
 on: push
+
 jobs:
-  deploy:
-    name: Deploy
+  Fast-FTP-Action:
+    name: Fast FTP Action
     runs-on: ubuntu-latest
+
     steps:
     - uses: actions/checkout@v2
-    - name: Upload ftp
-      uses: sebastianpopp/ftp-action@releases/v2
+
+    - name: Fast FTP Action
+      uses: anvil-solutions/Fast-FTP-Action@2.1.0
       with:
-        host: ${{ secrets.FTP_SERVER }}
-        user: ${{ secrets.FTP_USERNAME }}
+        server: ${{ secrets.FTP_SERVER }}
+        port: 21
+        username: ${{ secrets.FTP_USERNAME }}
         password: ${{ secrets.FTP_PASSWORD }}
         localDir: "dist"
         remoteDir: "/public_html/playdawn.net"
