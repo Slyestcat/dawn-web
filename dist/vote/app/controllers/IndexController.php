@@ -21,7 +21,7 @@ class IndexController extends Controller {
                 exit;
             }
         }
-        //$top  = Votes::topVoters();
+        $top  = Votes::topVoters();
         
         /*
          * Setting the usernames for the top 3 voters
@@ -105,7 +105,7 @@ class IndexController extends Controller {
             $this->delayedRedirect($siteUrl, 1);
             return;
         }
-        //$top  = Votes::topVoters();
+        $top  = Votes::topVoters();
         
         /*
          * Setting the usernames for the top 3 voters
