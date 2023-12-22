@@ -35,11 +35,11 @@ body {
 .game-btn {
     padding: 10px;
     color: #e2ca96;
-    border-bottom: 1px solid #1f4769;
-    border-top: 1px solid #1f4769;
-    background-color: #1b2f3f;
+    border-bottom: 1px solid #501f69;
+    border-top: 1px solid #501f69;
+    background-color: #321b3f;
     background-image: -webkit-gradient(linear, left top, left bottom, from(#13212c), to(#1b2f3f));
-    background-image: linear-gradient(180deg, #13212c, #1b2f3f);
+    background-image: linear-gradient(180deg, #29132c, #361b3f);
     box-shadow: inset 0 -1px 2px -1px #000;
     margin-bottom: 10px;
 }
@@ -47,11 +47,11 @@ body {
     padding: 10px;
     cursor: pointer;
     color: #e2ca96;
-    border-bottom: 1px solid #1f4769;
-    border-top: 1px solid #1f4769;
-    background-color: #1b2f3f;
+    border-bottom: 1px solid #501f69;
+    border-top: 1px solid #501f69;
+    background-color: #321b3f;
     background-image: -webkit-gradient(linear, left top, left bottom, from(#13212c), to(#1b2f3f));
-    background-image: linear-gradient(180deg, #13212c, #1b2f3f);
+    background-image: linear-gradient(180deg, #29132c, #361b3f);
     box-shadow: inset 0 -1px 2px -1px #000;
     margin-bottom: 10px;
     box-shadow: 0 0 0 1px rgba(255,255,255,0.01) inset,0 0 10px rgba(0,0,0,0.3),0 1px 2px rgba(0,0,0,0.5),0 0 3px rgba(70,82,82,0.2) inset,0 0 65px rgba(70,82,82,0.2) inset;
@@ -445,8 +445,8 @@ input.form-control {
     padding: 10px;
     border-style: solid;
     border-width: 1px;
-    border-color: #19344b;
-    background-color: #13212c;
+    border-color: #501f69;
+    background-color: #23132c;
     box-shadow: inset 0 0 7px rgb(0 0 0 / 35%);
      -webkit-transition: background-color 2s ease-out;
       -moz-transition: background-color 2s ease-out;
@@ -459,8 +459,8 @@ input.form-control {
     padding: 10px;
     border-style: solid;
     border-width: 1px;
-    border-color: #19344b;
-    background-color: #13212c;
+    border-color: #501f69;
+    background-color: #23132c;
     box-shadow: inset 0 0 7px rgb(0 0 0 / 35%);
 }
 .card-box {
@@ -490,7 +490,7 @@ input.form-control {
     background:rgba(11, 19, 26, 0.5);
 }
 .box hr {
-    background: #19344b;
+    background: #501f69;
     box-shadow: inset 0 0 7px rgb(0 0 0 / 35%);
 }
 .vote-center {
@@ -511,9 +511,9 @@ input.form-control {
     margin-left:auto;
     border-style: solid;
     border-width: 1px;
-    border-color: #1b2f3f;
+    border-color: #501f69;
     border-radius: 5px;
-    background-color: rgba(11, 19, 26, 0.5);
+    background-color: rgba(22,11,26,0.5);
     box-shadow: inset 0 0 7px rgb(0 0 0 / 35%);
     /*box-shadow: 1px 1px 16px -8px #000;*/
 }
