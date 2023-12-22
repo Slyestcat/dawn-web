@@ -25,7 +25,7 @@ $src = 'data: '.mime_content_type($image).';base64,'.$imageData;
             <li><a href="https://playdawn.net/play" class="footer-link">Download</a></li>
             <li><a href="#" class="footer-link">Guides</a></li>
             <li><a href="#" class="footer-link">Rules</a></li>
-            <li><a href="#" class="footer-link">Store</a></li>
+            <li><a href="https://playdawn.net/store" class="footer-link">Store</a></li>
           </ul>
         </div>
         <div>

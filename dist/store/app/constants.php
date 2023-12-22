@@ -39,8 +39,8 @@ define("show_admin_link", true);
  * Pretty imperative that you do NOT share this with anyone or ninjas will attack you.
  * DO NOT LEAVE THIS DEFAULT!!!!!!!!!
  */
-define("admin_username", "primal_admin");
-define("admin_password", "p_admin000000001asdas!~");
+define("admin_username", "dawn_admin");
+define("admin_password", "d_admin000000001asdas!~");
 
 /**
  * Paypal Options. Setting DEBUG to 0 will disable the log file. good
@@ -52,21 +52,21 @@ define("LOG_FILE", "paypal.log");
 /**
  * Enables or disables the use of sandbox. Should be 0 for live use.
  */
-define("USE_SANDBOX", 1);
+define("USE_SANDBOX", 0);
 
 /**
  * Edit business, return, cancel_return, and notify_url
  */
 const pp_config = array(
-    'business' 			=> "primalosps@gmail.com",
+    'business' 			=> "jarredgoddard@gmail.com",
     'no_note' 			=> 1,
     'cmd'				=> "_cart",
     'upload'			=> 1,
     'address_override' 	=> 1,
-    'return' 			=> "https://primalps.net/store/",
-    'cancel_return' 	=> "https://primalps.net/store/",
-    'notify_url' 		=> "https://primalps.net/store/ipn",
-    'cpp_header_image' 	=> "https://primalps.net/resources/images/Logo.png"
+    'return' 			=> "https://playdawn.net/store/",
+    'cancel_return' 	=> "https://playdawn.nett/store/",
+    'notify_url' 		=> "https://playdawn.net/store/ipn",
+    'cpp_header_image' 	=> "https://playdawn.net/resources/images/Logo.png"
 );
 
 /**
@@ -87,4 +87,4 @@ DEFINE('ENDPOINT_KEY', 'whsec_6FdfrUCl8sF5XZf1ZNHLjL8Tk7aiTFDK');
  * 1 for testing purposes
  */
 
-DEFINE('STRIPE_DEV', 1);
+DEFINE('STRIPE_DEV', 0);
