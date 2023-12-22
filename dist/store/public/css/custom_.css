@@ -215,7 +215,7 @@ header {
 ::-webkit-scrollbar-thumb {
      border-style: solid;
     border-width: 1px;
-    border-color: #19344b;
+    border-color: #501f69;
     background-color: #e2ca96;
     box-shadow: inset 0 0 7px rgb(0 0 0 / 35%);
     background-clip: padding-box;
@@ -425,8 +425,8 @@ table {
     padding: 10px;
     border-style: solid;
     border-width: 1px;
-    border-color: #19344b;
-    background-color: #13212c;
+    border-color: #501f69;
+    background-color: #23132c;
     color:#e2ca96 !important;
     box-shadow: inset 0 0 7px rgb(0 0 0 / 35%);
 }
@@ -467,8 +467,8 @@ table {
     padding: 10px;
     border-style: solid;
     border-width: 1px;
-    border-color: #19344b;
-    background-color: #13212c;
+    border-color: #501f69;
+    background-color: #23132c;
     box-shadow: inset 0 0 7px rgb(0 0 0 / 35%);
 }
 .remove {
@@ -510,7 +510,7 @@ table {
     border-bottom: 1px solid #501f69;
     border-top: 1px solid #501f69;
     background-color: #321b3f;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#13212c), to(#1b2f3f));
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#23132c), to(#1b2f3f));
     background-image: linear-gradient(180deg, #29132c, #361b3f);
     box-shadow: inset 0 -1px 2px -1px #000;
     margin-bottom: 10px;
@@ -522,7 +522,7 @@ table {
     border-bottom: 1px solid #501f69;
     border-top: 1px solid #501f69;
     background-color: #321b3f;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#13212c), to(#1b2f3f));
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#23132c), to(#1b2f3f));
     background-image: linear-gradient(180deg, #29132c, #361b3f);
     box-shadow: inset 0 -1px 2px -1px #000;
     margin-bottom: 10px;
@@ -939,8 +939,8 @@ input.form-control {
     padding: 10px;
     border-style: solid;
     border-width: 1px;
-    border-color: #19344b;
-    background-color: #13212c;
+    border-color: #501f69;
+    background-color: #23132c;
     box-shadow: inset 0 0 7px rgb(0 0 0 / 35%);
      -webkit-transition: background-color 2s ease-out;
       -moz-transition: background-color 2s ease-out;
@@ -952,8 +952,8 @@ input.form-control {
     margin-bottom: 20px;
     border-style: solid;
     border-width: 1px;
-    border-color: #19344b;
-    background-color: #13212c;
+    border-color: #501f69;
+    background-color: #23132c;
     box-shadow: inset 0 0 7px rgb(0 0 0 / 35%);
      -webkit-transition: background-color 2s ease-out;
       -moz-transition: background-color 2s ease-out;
@@ -966,8 +966,8 @@ input.form-control {
     padding: 10px;
     border-style: solid;
     border-width: 1px;
-    border-color: #19344b;
-    background-color: #13212c;
+    border-color: #501f69;
+    background-color: #23132c;
     box-shadow: inset 0 0 7px rgb(0 0 0 / 35%);
     
 }
@@ -977,12 +977,12 @@ input.form-control {
     padding: 10px;
     border-style: solid;
     border-width: 1px;
-    border-color: #19344b;
-    background-color: #13212c;
+    border-color: #501f69;
+    background-color: #23132c;
     box-shadow: inset 0 0 7px rgb(0 0 0 / 35%);
 }
 .dropdown-divider {
-    border-top: 1px solid #19344b !important;
+    border-top: 1px solid #501f69 !important;
     box-shadow: inset 0 0 7px rgb(0 0 0 / 35%) !important;
 }
 .dropdown-item {
@@ -990,7 +990,7 @@ input.form-control {
 }
 .dropdown-item:hover {
     color: #e2ca96 !important;
-    background-color: #19344b !important;
+    background-color: #501f69 !important;
     box-shadow: inset 0 0 7px rgb(0 0 0 / 35%) !important;
 }
 .card-box {
@@ -1006,7 +1006,7 @@ input.form-control {
     background:rgba(11, 19, 26, 0.5);
 }
 .box hr {
-    background: #19344b;
+    background: #501f69;
     box-shadow: inset 0 0 7px rgb(0 0 0 / 35%);
 }
 .donor-center {
