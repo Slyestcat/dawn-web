@@ -5,7 +5,7 @@ define('site_title', 'Dawn');
 
 // the folder where this script is located. if in root, should just be / 
 // most likely will be /vote/
-define('web_root', 'vote/');
+define('web_root', '/vote/');
 
 // SQL Information. use the information provided in step 1.
 define('MYSQL_HOST', '68.178.222.132'); # usually localhost
