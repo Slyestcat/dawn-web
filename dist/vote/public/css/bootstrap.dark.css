@@ -11,7 +11,8 @@
     color: #FFF
 }
 a:hover, a:active, a:focus {
-    color: #0bc2dd !important;
+    color: #a53dd0;
+    text-shadow: 1px 1px 16px #501f69;
 }
 .card{
     background-color: transparent;
