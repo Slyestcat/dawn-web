@@ -55,7 +55,7 @@
 				break;	        
 	        }
 	    
-			echo "<li class='hiscores-list-item'><a href='https://primalps.net/highscores/?" . $row["username"] . "' class='hiscores-username'>".$mode." ".$rank." " . $row["username"] . "</a> <div>" . number_format($row["overall_xp"]) . "</div></li>";
+			echo "<li class='hiscores-list-item'><a href='https://playdawn.net/highscores/?" . $row["username"] . "' class='hiscores-username'>".$mode." ".$rank." " . $row["username"] . "</a> <div>" . number_format($row["overall_xp"]) . "</div></li>";
 		}
 	} else {
 		echo "<li class='hiscores-list-item'><a href='#' '>Calum</a><div>1234567891011</div></li>";
