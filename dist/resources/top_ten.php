@@ -4,14 +4,19 @@
 	$pass = 'AVNS_421qGWb-v-0CLhqNzzs';
 	$data = 'dawn_web';
 	$port = 25060;
-	$ssl_cert = '/secure/ca-certificate.crt';
-	
+	$ssl_cert = __DIR__ . '/secure/ca-certificate.crt';
+
 	// Create connection
-	$conn = new mysqli($host, $user, $pass, $data, $port, null, [
-		MYSQLI_CLIENT_SSL => MYSQLI_CLIENT_SSL_DONT_VERIFY_SERVER_CERT,
-		MYSQLI_CLIENT_SSL_CA_FILE => $ssl_cert,
-	]);
-	
+	$conn = mysqli_init();
+
+	// Set SSL options
+	mysqli_ssl_set($conn, null, null, $ssl_cert, null, null);
+
+	// Check connection
+	if (!$conn->real_connect($host, $user, $pass, $data, $port)) {
+		die("Connection failed: " . $conn->connect_error);
+	}
+
 	// Check connection
 	if ($conn->connect_error) {
 		die("Connection failed: " . $conn->connect_error);
