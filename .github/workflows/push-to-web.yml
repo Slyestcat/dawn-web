@@ -3,19 +3,22 @@ name: Upload to Production
 on: [push]
 
 jobs:
-  upload_files:
+  sftp_transfer_job:
     runs-on: ubuntu-latest
-    name: Upload a builded file.
+    name: SFTP Transfer Test
     steps:
-    - name: Checkout
-      uses: actions/checkout@v2.3.4
-    - name: Upload Files
-      id: upload
-      uses: Creepios/sftp-action@v1.0.5
+    - uses: actions/checkout@v2
+   
+    - name: Connect
+      id: connect
+      uses: danhendrickson/sftp-transfer-action@v2023.51.2
       with:
-        host: ${{ secrets.FTP_SERVER }}
+        server: ${{ secrets.FTP_SERVER }}
+        user: ${{ secrets.FTP_USERNAME }}
+        pass: ${{ secrets.FTP_PASSWORD }}
         port: 22
-        username: ${{ secrets.FTP_USERNAME }}
-        password: ${{ secrets.FTP_PASSWORD }}
-        localPath: './dist'
-        remotePath: '/var/www/dawnps.com/public_html/'
+        local-path: './dist/'
+        remote-path: '/var/www/dawnps.com/public_html/'
+
+    - name: Transfer Status
+      run: echo "Transfer Status - ${{ steps.connect.outputs.transferStatus }}"
