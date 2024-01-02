@@ -317,35 +317,10 @@ class Votes extends Model {
             ])->execute();
     }
 
-    public function topVoters() {
+    public static function topVoters() {
         $month = date('n');
         $result = self::getDb()->select(false)->columns(['votes.username', 'COUNT(*) as total'])->from("votes")->where(['MONTH(FROM_UNIXTIME(votes.voted_on)) = :month'])->group('username')->order("total DESC, voted_on ASC")->limit(3)->bind([':month' => $month])->execute();
-        
-        
-        // $count = self::getDb()->select(false)->columns(['COUNT(*) as total'])->from('top_voters')->where(['month = :month'])->limit(1)->bind([':month' => $month])->execute();
-        
-        // $users = json_encode($result);
-        
-        // if ($count[0]['total'] < 1) {
-        //     self::getDb()->insert()
-        //     ->into("top_voters")
-        //     ->columns(["users", "month"])
-        //     ->values([
-        //         [$users, $month]
-        //     ])->execute();
-            
-        // } else {
-        //  self::getDb()->update()->table("top_voters")
-        //     ->columns([
-        //         'users' => ':users',
-        //     ])
-        //     ->where([
-        //         'month = :month',
-        //     ])->bind([
-        //         ':users'  => $users,
-        //         ':month'  => $month,
-        //     ])->execute();   
-        // }
+    
         return $result;
     }
 }

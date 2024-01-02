@@ -8,10 +8,12 @@ define('site_title', 'Dawn');
 define('web_root', '/vote/');
 
 // SQL Information. use the information provided in step 1.
-define('MYSQL_HOST', '68.178.222.132'); # usually localhost
+define('MYSQL_HOST', 'localhost'); # usually localhost
 define('MYSQL_DATABASE', 'dawn_vote');
 define('MYSQL_USERNAME', 'dawn_reader');
-define('MYSQL_PASSWORD', '+y6$h81T5R[[');
+define('MYSQL_PASSWORD', '*7FjA5Ao4-uEmC7P');
+//define('MYSQL_PORT', '25060');
+//define('MYSQL_CERT', __DIR__ . '/secure/ca-certificate.crt');
 
 // enable or disable the user above. Should only
 // be used as a last resort.
