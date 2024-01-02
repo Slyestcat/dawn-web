@@ -18,4 +18,4 @@ jobs:
         username: ${{ secrets.FTP_USERNAME }}
         password: ${{ secrets.FTP_PASSWORD }}
         localPath: './dist'
-        remotePath: '/var/www/dawnps.com/public_html'
+        remotePath: '/var/www/dawnps.com/public_html/'
