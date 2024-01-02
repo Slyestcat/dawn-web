@@ -63,34 +63,34 @@
 		$baseY += 28;
 	};
 	
-	list($width, $height) = getimagesize('https://playdawn.net/hiscores/assets/img/5.png');
+	list($width, $height) = getimagesize('https://dawnps.com/hiscores/assets/img/5.png');
   
     $new_width = $width * 1.4;
     $new_height = $height * 1.4;
    
     switch ($result['rights']) {
          case 1:
-			$image1 = imagecreatefromgif('https://playdawn.net/hiscores/assets/img/mod.png');
+			$image1 = imagecreatefromgif('https://dawnps.com/hiscores/assets/img/mod.png');
             imagecopyresampled($image, $image1, 420, 20, 0, 0, $new_width, $new_height, $width, $height);
 			break;
 		case 5:
-			$image1 = imagecreatefrompng('https://playdawn.net/hiscores/assets/img/5.png');
+			$image1 = imagecreatefrompng('https://dawnps.com/hiscores/assets/img/5.png');
             imagecopyresampled($image, $image1, 420, 20, 0, 0, $new_width, $new_height, $width, $height);
 			break;
 		case 6:
-			$image1 = imagecreatefrompng('https://playdawn.net/hiscores/assets/img/6.png');
+			$image1 = imagecreatefrompng('https://dawnps.com/hiscores/assets/img/6.png');
             imagecopyresampled($image, $image1, 420, 20, 0, 0, $new_width, $new_height, $width, $height);
 			break;
 		case 7:
-			$image1 = imagecreatefrompng('https://playdawn.net/hiscores/assets/img/7.png');
+			$image1 = imagecreatefrompng('https://dawnps.com/hiscores/assets/img/7.png');
             imagecopyresampled($image, $image1, 420, 20, 0, 0, $new_width, $new_height, $width, $height);
 			break;
 		case 8:
-		    $image1 = imagecreatefrompng('https://playdawn.net/hiscores/assets/img/8.png');
+		    $image1 = imagecreatefrompng('https://dawnps.com/hiscores/assets/img/8.png');
             imagecopyresampled($image, $image1, 420, 20, 0, 0, $new_width, $new_height, $width, $height);
 			break;
 		case 9:
-			$image1 = imagecreatefrompng('https://playdawn.net/hiscores/assets/img/9.png');
+			$image1 = imagecreatefrompng('https://dawnps.com/hiscores/assets/img/9.png');
             imagecopyresampled($image, $image1, 420, 20, 0, 0, $new_width, $new_height, $width, $height);
             break;
 		default: 
@@ -99,17 +99,17 @@
     if (!in_array($result['rights'], $rights)) {
         switch($result['mode']) {
             case 3: 
-                $image1 = imagecreatefrompng('https://playdawn.net/hiscores/assets/img/classic.png');
+                $image1 = imagecreatefrompng('https://dawnps.com/hiscores/assets/img/classic.png');
                 imagecopyresampled($image, $image1, 420, 20, 0, 0, $new_width, $new_height, $width, $height);
                 break;
             case 1:
                 case 4:
-		    	$image1 = imagecreatefrompng('https://playdawn.net/hiscores/assets/img/ironman.png');
+		    	$image1 = imagecreatefrompng('https://dawnps.com/hiscores/assets/img/ironman.png');
                 imagecopyresampled($image, $image1, 420, 20, 0, 0, $new_width, $new_height, $width, $height);                
                 break;
             case 2:
                 case 5:
-                $image1 = imagecreatefrompng('https://playdawn.net/hiscores/assets/img/hardcore.png');
+                $image1 = imagecreatefrompng('https://dawnps.com/hiscores/assets/img/hardcore.png');
                 imagecopyresampled($image, $image1, 420, 20, 0, 0, $new_width, $new_height, $width, $height);
                 break;
             default:

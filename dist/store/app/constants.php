@@ -63,10 +63,10 @@ const pp_config = array(
     'cmd'				=> "_cart",
     'upload'			=> 1,
     'address_override' 	=> 1,
-    'return' 			=> "https://playdawn.net/store/",
-    'cancel_return' 	=> "https://playdawn.nett/store/",
-    'notify_url' 		=> "https://playdawn.net/store/ipn",
-    'cpp_header_image' 	=> "https://playdawn.net/resources/images/Logo.png"
+    'return' 			=> "https://dawnps.com/store/",
+    'cancel_return' 	=> "https://dawnps.comt/store/",
+    'notify_url' 		=> "https://dawnps.com/store/ipn",
+    'cpp_header_image' 	=> "https://dawnps.com/resources/images/Logo.png"
 );
 
 /**

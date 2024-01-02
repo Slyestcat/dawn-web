@@ -14,7 +14,7 @@ $src = 'data: '.mime_content_type($image).';base64,'.$imageData;
           <h2 class="footer-heading">Quick Links</h2>
           <ul role="list" class="footer-list w-list-unstyled">
             <li><a href="#" class="footer-link">Register</a></li>
-            <li><a href="https://playdawn.net/play" class="footer-link">Download</a></li>
+            <li><a href="https://dawnps.com/play" class="footer-link">Download</a></li>
             <li><a href="#" class="footer-link">Vote</a></li>
             <li><a href="https://discord.gg/59bDxrPA9a" target="_blank" class="footer-link">Discord</a></li>
           </ul>
@@ -22,10 +22,10 @@ $src = 'data: '.mime_content_type($image).';base64,'.$imageData;
         <div>
           <h2 class="footer-heading">Game</h2>
           <ul role="list" class="footer-list w-list-unstyled">
-            <li><a href="https://playdawn.net/play" class="footer-link">Download</a></li>
+            <li><a href="https://dawnps.com/play" class="footer-link">Download</a></li>
             <li><a href="#" class="footer-link">Guides</a></li>
             <li><a href="#" class="footer-link">Rules</a></li>
-            <li><a href="https://playdawn.net/store" class="footer-link">Store</a></li>
+            <li><a href="https://dawnps.com/store" class="footer-link">Store</a></li>
           </ul>
         </div>
         <div>
@@ -34,7 +34,7 @@ $src = 'data: '.mime_content_type($image).';base64,'.$imageData;
             <li><a href="#" class="footer-link">Forums</a></li>
             <li><a href="https://discord.gg/59bDxrPA9a" target="_blank" class="footer-link">Discord</a></li>
             <li><a href="#" class="footer-link">Introductions</a></li>
-            <li><a href="https://playdawn.net/hiscores" class="footer-link">Hiscores</a></li>
+            <li><a href="https://dawnps.com/hiscores" class="footer-link">Hiscores</a></li>
           </ul>
         </div>
       </div>
