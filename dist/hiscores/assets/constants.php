@@ -1,8 +1,8 @@
 <?php
-	$sql_host = "68.178.222.132";
-	$sql_user = "dawn_reader";
-	$sql_pass = '+y6$h81T5R[[';
-	$sql_data = "dawn_website";
+	$sql_host = "dawn-db-do-user-1648532-0.c.db.ondigitalocean.com";
+	$sql_user = "dawn_web";
+	$sql_pass = 'AVNS_421qGWb-v-0CLhqNzzs';
+	$sql_data = "dawn_web";
 
 	$table = "hs_users";
 
