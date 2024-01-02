@@ -20,30 +20,35 @@ class Database {
 		$this->cert = $cert;
 	}
 
-	// Connect to the database with SSL using only .crt file
-	public function connectWithSSL()
-	{
-		$this->host = $host;
-		$this->user = $user;
-		$this->pass = $pass;
-		$this->data = $data;
-		$this->port = $port;
-		$this->cert = $cert;
-
-		$dsn = "mysql:host={$this->host};dbname={$this->data};charset=utf8;port={$this->$port};";
-		$options = [
-			PDO::ATTR_ERRMODE            => PDO::ERRMODE_EXCEPTION,
-			PDO::ATTR_EMULATE_PREPARES   => false,
-			PDO::MYSQL_ATTR_SSL_CERT     => $this->$cert,
-		];
-
-		try {
-			$this->conn = new PDO($dsn, $this->user, $this->pass, $options);
-			return true;
-		} catch (PDOException $e) {
+	public function connectWithSSL() {
+		$this->conn = new mysqli(
+			$this->host,
+			$this->user,
+			$this->pass,
+			$this->data,
+			$this->port
+		);
+	
+		if ($this->conn->connect_error) {
+			// Log the connection error
+			error_log("Connection Error: " . $this->conn->connect_error);
 			return false;
 		}
+	
+		// Set SSL options
+		mysqli_ssl_set(
+			$this->conn,
+			null,   // SSL key file (not needed)
+			$this->cert, // Path to your SSL certificate file
+			null,   // SSL certificate authority file (not needed)
+			null,   // SSL key passphrase (not needed)
+			null    // SSL cipher list (not needed)
+		);
+	
+		return true;
 	}
+	
+	
 	
 	public function connect() {
 		try {
@@ -63,44 +68,78 @@ class Database {
 	public function countUsers() {
 		$stmt = $this->conn->prepare("SELECT * FROM $this->table LIMIT 500");
 		$stmt->execute();
-		return count($stmt->fetchAll(PDO::FETCH_ASSOC));
+	
+		$result = $stmt->get_result(); // Get the result set
+	
+		// Fetch all rows as an associative array
+		$rows = [];
+		while ($row = $result->fetch_assoc()) {
+			$rows[] = $row;
+		}
+	
+		// Return the count of rows
+		return count($rows);
 	}
 	
 	public function getUser($name) {
-		$stmt = $this->conn->prepare("SELECT * FROM $this->table WHERE username=:name");
-		$stmt->bindParam(":name", $name);
+		$stmt = $this->conn->prepare("SELECT * FROM $this->table WHERE username = ?");
+		$stmt->bind_param("s", $name); // "s" represents a string, adjust if needed
+	
 		$stmt->execute();
-		return $stmt->fetch(PDO::FETCH_ASSOC);
+		$result = $stmt->get_result();
+	
+		if ($result->num_rows > 0) {
+			$row = $result->fetch_assoc();
+			return $row;
+		} else {
+			return false;
+		}
 	}
 	
     public function getAllUsers($skill, $min, $mode = null, $rate = null) {
-       $skill = $skill == "overall_xp" ? "total_level" : $skill;
+		$skill = $skill == "overall_xp" ? "total_level" : $skill;
+	
 		if ($mode != null && $rate != null) {
-			$stmt = $this->conn->prepare("SELECT * FROM $this->table WHERE mode=:mode AND combatrate=:rate ORDER BY $skill DESC LIMIT $min, 25");
-			$stmt->bindParam(":mode", $mode);
-			$stmt->bindParam(":rate", $rate);
+			$stmt = $this->conn->prepare("SELECT * FROM $this->table WHERE mode = ? AND combatrate = ? ORDER BY $skill DESC LIMIT ?, 25");
+			$stmt->bind_param("sii", $mode, $rate, $min);
 		} else if ($mode != null && $rate == null) {
-			$stmt = $this->conn->prepare("SELECT * FROM $this->table WHERE mode=:mode ORDER BY $skill DESC LIMIT $min, 25");
-			$stmt->bindParam(":mode", $mode);
+			$stmt = $this->conn->prepare("SELECT * FROM $this->table WHERE mode = ? ORDER BY $skill DESC LIMIT ?, 25");
+			$stmt->bind_param("si", $mode, $min);
 		} else if ($mode == null && $rate != null) {
-			$stmt = $this->conn->prepare("SELECT * FROM $this->table WHERE combatrate=:rate ORDER BY $skill DESC LIMIT $min, 25");
-			$stmt->bindParam(":rate", $rate);
+			$stmt = $this->conn->prepare("SELECT * FROM $this->table WHERE combatrate = ? ORDER BY $skill DESC LIMIT ?, 25");
+			$stmt->bind_param("ii", $rate, $min);
 		} else {
-			$stmt = $this->conn->prepare("SELECT * FROM $this->table ORDER BY $skill DESC LIMIT $min, 25");
+			$stmt = $this->conn->prepare("SELECT * FROM $this->table ORDER BY $skill DESC LIMIT ?, 25");
+			$stmt->bind_param("i", $min);
 		}
+	
 		$stmt->execute();
-		return $stmt->fetchAll(PDO::FETCH_ASSOC);
+		$result = $stmt->get_result();
+	
+		$rows = [];
+		while ($row = $result->fetch_assoc()) {
+			$rows[] = $row;
+		}
+	
+		return $rows;
 	}
+	
 
 	public function getRank($user, $skill, $mode) {
-		$skill = strtolower($skill)."_xp";
-		$stmt = $this->conn->prepare("SELECT (SELECT COUNT(*) FROM hs_users WHERE mode = :mode AND ($skill) >= (u.$skill)) AS rank FROM hs_users u WHERE username = :user AND mode = :mode2 LIMIT 1");
-        $stmt->bindParam(":user", $user);
-		$stmt->bindParam(":mode", $mode);
-		$stmt->bindParam(":mode2", $mode);
+		$skill = strtolower($skill) . "_xp";
+	
+		$query = "SELECT (SELECT COUNT(*) FROM " . $this->table . " WHERE mode = ? AND ($skill) >= (u.$skill)) AS `rank` FROM " . $this->table . " u WHERE username = ? AND mode = ? LIMIT 1";
+	
+		$stmt = $this->conn->prepare($query);
+		$stmt->bind_param("sss", $mode, $user, $mode);
 		$stmt->execute();
-		return $stmt->fetchColumn();
+		$stmt->bind_result($rank);
+		$stmt->fetch();
+		$stmt->close();
+	
+		return $rank;
 	}
+	
 	
 	function getImage($mode = NULL, $rank = NULL) {
 	    switch($mode) {
