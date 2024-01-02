@@ -1,8 +1,20 @@
 <?php
-	$conn = new mysqli('68.178.222.132', 'dawn_reader', '+y6$h81T5R[[', 'dawn_website'); //The Blank string is the password
+	$host = 'dawn-db-do-user-1648532-0.c.db.ondigitalocean.com';
+	$user = 'dawn_web';
+	$pass = 'AVNS_421qGWb-v-0CLhqNzzs';
+	$data = 'dawn_web';
+	$port = 25060;
+	$ssl_cert = '/secure/ca-certificate.crt';
 	
+	// Create connection
+	$conn = new mysqli($host, $user, $pass, $data, $port, null, [
+		MYSQLI_CLIENT_SSL => MYSQLI_CLIENT_SSL_DONT_VERIFY_SERVER_CERT,
+		MYSQLI_CLIENT_SSL_CA_FILE => $ssl_cert,
+	]);
+	
+	// Check connection
 	if ($conn->connect_error) {
-	  die("Connection failed: " . $conn->connect_error);
+		die("Connection failed: " . $conn->connect_error);
 	}
 
 	$query = "SELECT * FROM hs_users ORDER BY overall_xp DESC LIMIT 10 "; //You don't need a ; like you do in SQL
