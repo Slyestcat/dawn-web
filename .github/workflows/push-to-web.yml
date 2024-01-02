@@ -15,4 +15,4 @@ jobs:
           user: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
           local_dir: "./dist"
-          remote_dir: "/public_html/playdawn.net"
+          remote_dir: "/var/www/dawnps.com/public_html"
