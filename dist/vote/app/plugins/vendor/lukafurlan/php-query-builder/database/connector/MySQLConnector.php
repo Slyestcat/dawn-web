@@ -10,27 +10,16 @@ use PDO;
 class MySQLConnector extends Connector {
 
     public function connect() {
-        try {
-            $dsn = "mysql:host=".MYSQL_HOST.";port=".MYSQL_PORT.";dbname=".MYSQL_DATABASE;
-            $options = [
+        $this->connection = new PDO("mysql:host=".MYSQL_HOST.";dbname=".MYSQL_DATABASE,
+            MYSQL_USERNAME,
+            MYSQL_PASSWORD, [
                 PDO::ATTR_PERSISTENT => true,
                 PDO::MYSQL_ATTR_USE_BUFFERED_QUERY => true,
                 PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8"
-            ];
-    
-            $this->connection = new PDO($dsn, MYSQL_USERNAME, MYSQL_PASSWORD, $options);
-    
-            // Optional: Set charset (if needed)
-            $this->connection->exec("SET NAMES utf8");
-    
-            // Optional: Enable SSL (if needed)
-            $this->connection->setAttribute(PDO::MYSQL_ATTR_SSL_CERT, MYSQL_CERT);
-    
-            return $this->connection;
-        } catch (PDOException $e) {
-            die("Connection failed: " . $e->getMessage() . " Code: " . $e->getCode());
-        }
+        ]);
+
+        $this->connection->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+        $this->connection->setAttribute(PDO::ATTR_EMULATE_PREPARES, false);
     }
-    
 
 }
