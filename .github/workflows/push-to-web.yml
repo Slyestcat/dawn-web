@@ -13,6 +13,6 @@ jobs:
               username: ${{ secrets.FTP_USERNAME }}
               server: ${{ secrets.FTP_SERVER }}
               password: ${{ secrets.FTP_PASSWORD }}
-              local_path: '/dist'
+              local_path: './dist'
               remote_path: '/var/www/dawnps.com/public_html'
               sftpArgs: '-o ConnectTimeout=5'
