@@ -1,18 +1,22 @@
-name: CI -> Deploy Production
-on:
-  push:
-    branches: [ master ]
+name: Upload to Production
+
+on: [push]
+
 jobs:
-  build:
+  Upload-to-SFTP:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      # Here is the deployment action
-      - name: Upload from public_html via FTP
-        uses: airvzxf/ftp-deployment-action@latest
+      - name: 🚚 Get latest code                     # Checkout the latest code
+        uses: actions/checkout@v2
+
+      - name: 📂 SFTP uploader                       # Upload to SFTP 
+        uses: wangyucode/sftp-upload-action@v2.0.2
         with:
-          server: ${{ secrets.FTP_SERVER }}
-          user: ${{ secrets.FTP_USERNAME }}
+          host: ${{ secrets.FTP_SERVER }}                 # Recommended to put the credentials in github secrets.
+          username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          local_dir: "./dist"
-          remote_dir: "/var/www/dawnps.com/public_html"
+          compress: true                             # Compression
+          forceUpload: true                          # Optional, Force uploading all files, Default to false(upload only newer files).
+          localDir: './dist'                              # Required, Absolute or relative to cwd.
+          remoteDir: '/var/www/dawnps.com/public_html'                             # Required, Absolute path only.
+          exclude: '.git*,.DS_Store'                 # Optional. exclude patterns (glob) like .gitignore, use ',' to split, Default to ''.
