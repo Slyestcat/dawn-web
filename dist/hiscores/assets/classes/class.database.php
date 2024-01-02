@@ -6,6 +6,8 @@ class Database {
 	private $user;
 	private $pass;
 	private $data;
+	private $port;
+	private $cert;
 	
 	private $table;
 
