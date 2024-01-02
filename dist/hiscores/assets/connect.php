@@ -3,7 +3,8 @@
 		exit;
 	}
 	
-	$db = new Database($sql_host, $sql_user, $sql_pass, $sql_data);
+	$db = new Database($sql_host, $sql_user, $sql_pass, $sql_data, $sql_port, $sql_cert);
 	$db->setTable($table);
-	$db->connect();
+	$db->connectWithSSL();
+
 ?>

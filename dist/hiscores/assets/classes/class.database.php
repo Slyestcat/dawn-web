@@ -9,11 +9,38 @@ class Database {
 	
 	private $table;
 
-	public function __construct($host, $user, $pass, $data) {
+	public function __construct($host, $user, $pass, $data, $port, $cert) {
 		$this->host = $host;
 		$this->user = $user;
 		$this->pass = $pass;
 		$this->data = $data;
+		$this->port = $port;
+		$this->cert = $cert;
+	}
+
+	// Connect to the database with SSL using only .crt file
+	public function connectWithSSL()
+	{
+		$this->host = $host;
+		$this->user = $user;
+		$this->pass = $pass;
+		$this->data = $data;
+		$this->port = $port;
+		$this->cert = $cert;
+
+		$dsn = "mysql:host={$this->host};dbname={$this->data};charset=utf8;port={$this->$port};";
+		$options = [
+			PDO::ATTR_ERRMODE            => PDO::ERRMODE_EXCEPTION,
+			PDO::ATTR_EMULATE_PREPARES   => false,
+			PDO::MYSQL_ATTR_SSL_CERT     => $this->$cert,
+		];
+
+		try {
+			$this->conn = new PDO($dsn, $this->user, $this->pass, $options);
+			return true;
+		} catch (PDOException $e) {
+			return false;
+		}
 	}
 	
 	public function connect() {

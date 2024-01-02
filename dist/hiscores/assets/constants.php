@@ -3,6 +3,8 @@
 	$sql_user = "dawn_web";
 	$sql_pass = 'AVNS_421qGWb-v-0CLhqNzzs';
 	$sql_data = "dawn_web";
+	$sql_port = "25060";
+	$sql_cert = "/secure/ca-certificate.crt"
 
 	$table = "hs_users";
 
