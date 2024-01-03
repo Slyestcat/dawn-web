@@ -1,7 +1,7 @@
 <?php
 	$sql_host = 'dawn-db-do-user-1648532-0.c.db.ondigitalocean.com';
 	$sql_user = 'dawn_web';
-	$sql_pass = 'AVNS_421qGWb-v-0CLhqNzzs';
+	$sql_pass = 'AVNS_i6EjdrHsvluB9k5W1WA';
 	$sql_data = 'dawn_web';
 	$sql_port = 25060;
 	$sql_cert = __DIR__ . '/secure/ca-certificate.crt';
