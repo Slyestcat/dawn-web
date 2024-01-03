@@ -8,10 +8,12 @@ namespace lukafurlan\database\DMLQuery\segment;
 
 class OrderSegment implements Segment {
 
-    public static function build($param) {
-
-        return "ORDER BY " . $param . " ";
-
+    public static function build($columns) {
+        if (!is_array($columns)) {
+            return "";
+        }
+    
+        return "ORDER BY " . implode(', ', $columns) . " ";
     }
 
     public static function validate($param) {

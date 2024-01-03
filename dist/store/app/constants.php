@@ -23,13 +23,10 @@ define('FORUM_URL', '/forum/');
 /**
  * Database details.
  */
-// SQL Information. use the information provided in step 1.
-define('MYSQL_HOST', 'localhost'); # usually localhost
+define('MYSQL_HOST', 'localhost');
 define('MYSQL_DATABASE', 'dawn_store');
 define('MYSQL_USERNAME', 'dawn_reader');
 define('MYSQL_PASSWORD', '*7FjA5Ao4-uEmC7P');
-//define('MYSQL_PORT', '25060');
-//define('MYSQL_CERT', __DIR__ . '/secure/ca-certificate.crt');
 
 /**
  * Shows or hides the button to the admin panel in the top-right.
