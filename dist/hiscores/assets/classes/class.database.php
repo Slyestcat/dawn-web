@@ -67,13 +67,8 @@ class Database {
 		$stmt = $this->conn->prepare("SELECT * FROM $this->table LIMIT 500");
 		$stmt->execute();
 	
-		$result = $stmt->get_result(); // Get the result set
-	
 		// Fetch all rows as an associative array
-		$rows = [];
-		while ($row = $result->fetch_assoc()) {
-			$rows[] = $row;
-		}
+		$rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
 	
 		// Return the count of rows
 		return count($rows);
@@ -81,58 +76,52 @@ class Database {
 	
 	public function getUser($name) {
 		$stmt = $this->conn->prepare("SELECT * FROM $this->table WHERE username = ?");
-		$stmt->bind_param("s", $name); // "s" represents a string, adjust if needed
-	
+		$stmt->bindParam(1, $name, PDO::PARAM_STR);
+		
 		$stmt->execute();
-		$result = $stmt->get_result();
+		$row = $stmt->fetch(PDO::FETCH_ASSOC);
 	
-		if ($result->num_rows > 0) {
-			$row = $result->fetch_assoc();
-			return $row;
-		} else {
-			return false;
-		}
+		return ($row !== false) ? $row : false;
 	}
 	
-    public function getAllUsers($skill, $min, $mode = null, $rate = null) {
-		$skill = $skill == "overall_xp" ? "total_level" : $skill;
+	public function getAllUsers($skill, $min, $mode = null, $rate = null) {
+		$skill = ($skill == "overall_xp") ? "total_level" : $skill;
 	
 		if ($mode != null && $rate != null) {
 			$stmt = $this->conn->prepare("SELECT * FROM $this->table WHERE mode = ? AND combatrate = ? ORDER BY $skill DESC LIMIT ?, 25");
-			$stmt->bind_param("sii", $mode, $rate, $min);
+			$stmt->bindParam(1, $mode, PDO::PARAM_STR);
+			$stmt->bindParam(2, $rate, PDO::PARAM_INT);
+			$stmt->bindParam(3, $min, PDO::PARAM_INT);
 		} else if ($mode != null && $rate == null) {
 			$stmt = $this->conn->prepare("SELECT * FROM $this->table WHERE mode = ? ORDER BY $skill DESC LIMIT ?, 25");
-			$stmt->bind_param("si", $mode, $min);
+			$stmt->bindParam(1, $mode, PDO::PARAM_STR);
+			$stmt->bindParam(2, $min, PDO::PARAM_INT);
 		} else if ($mode == null && $rate != null) {
 			$stmt = $this->conn->prepare("SELECT * FROM $this->table WHERE combatrate = ? ORDER BY $skill DESC LIMIT ?, 25");
-			$stmt->bind_param("ii", $rate, $min);
+			$stmt->bindParam(1, $rate, PDO::PARAM_INT);
+			$stmt->bindParam(2, $min, PDO::PARAM_INT);
 		} else {
 			$stmt = $this->conn->prepare("SELECT * FROM $this->table ORDER BY $skill DESC LIMIT ?, 25");
-			$stmt->bind_param("i", $min);
+			$stmt->bindParam(1, $min, PDO::PARAM_INT);
 		}
 	
 		$stmt->execute();
-		$result = $stmt->get_result();
-	
-		$rows = [];
-		while ($row = $result->fetch_assoc()) {
-			$rows[] = $row;
-		}
+		$rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
 	
 		return $rows;
 	}
 	
-
 	public function getRank($user, $skill, $mode) {
 		$skill = strtolower($skill) . "_xp";
 	
 		$query = "SELECT (SELECT COUNT(*) FROM " . $this->table . " WHERE mode = ? AND ($skill) >= (u.$skill)) AS `rank` FROM " . $this->table . " u WHERE username = ? AND mode = ? LIMIT 1";
 	
 		$stmt = $this->conn->prepare($query);
-		$stmt->bind_param("sss", $mode, $user, $mode);
+		$stmt->bindParam(1, $mode, PDO::PARAM_STR);
+		$stmt->bindParam(2, $user, PDO::PARAM_STR);
+		$stmt->bindParam(3, $mode, PDO::PARAM_STR);
 		$stmt->execute();
-		$stmt->bind_result($rank);
-		$stmt->fetch();
+		$rank = $stmt->fetchColumn();
 		$stmt->close();
 	
 		return $rank;
