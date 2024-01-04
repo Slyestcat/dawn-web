@@ -11,13 +11,11 @@ class Database {
 	
 	private $table;
 
-	public function __construct($host, $user, $pass, $data, $port, $cert) {
+	public function __construct($host, $user, $pass, $data){
 		$this->host = $host;
 		$this->user = $user;
 		$this->pass = $pass;
 		$this->data = $data;
-		$this->port = $port;
-		$this->cert = $cert;
 	}
 
 	public function connectWithSSL() {
