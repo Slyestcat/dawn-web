@@ -6,47 +6,15 @@ class Database {
 	private $user;
 	private $pass;
 	private $data;
-	private $port;
-	private $cert;
 	
 	private $table;
 
-	public function __construct($host, $user, $pass, $data){
+	public function __construct($host, $user, $pass, $data) {
 		$this->host = $host;
 		$this->user = $user;
 		$this->pass = $pass;
 		$this->data = $data;
 	}
-
-	public function connectWithSSL() {
-		$this->conn = new mysqli(
-			$this->host,
-			$this->user,
-			$this->pass,
-			$this->data,
-			$this->port
-		);
-	
-		if ($this->conn->connect_error) {
-			// Log the connection error
-			error_log("Connection Error: " . $this->conn->connect_error);
-			return false;
-		}
-	
-		// Set SSL options
-		mysqli_ssl_set(
-			$this->conn,
-			null,   // SSL key file (not needed)
-			$this->cert, // Path to your SSL certificate file
-			null,   // SSL certificate authority file (not needed)
-			null,   // SSL key passphrase (not needed)
-			null    // SSL cipher list (not needed)
-		);
-	
-		return true;
-	}
-	
-	
 	
 	public function connect() {
 		try {
@@ -66,67 +34,44 @@ class Database {
 	public function countUsers() {
 		$stmt = $this->conn->prepare("SELECT * FROM $this->table LIMIT 500");
 		$stmt->execute();
-	
-		// Fetch all rows as an associative array
-		$rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
-	
-		// Return the count of rows
-		return count($rows);
+		return count($stmt->fetchAll(PDO::FETCH_ASSOC));
 	}
 	
 	public function getUser($name) {
-		$stmt = $this->conn->prepare("SELECT * FROM $this->table WHERE username = ?");
-		$stmt->bindParam(1, $name, PDO::PARAM_STR);
-		
+		$stmt = $this->conn->prepare("SELECT * FROM $this->table WHERE username=:name");
+		$stmt->bindParam(":name", $name);
 		$stmt->execute();
-		$row = $stmt->fetch(PDO::FETCH_ASSOC);
-	
-		return ($row !== false) ? $row : false;
+		return $stmt->fetch(PDO::FETCH_ASSOC);
 	}
 	
-	public function getAllUsers($skill, $min, $mode = null, $rate = null) {
-		$skill = ($skill == "overall_xp") ? "total_level" : $skill;
-	
+    public function getAllUsers($skill, $min, $mode = null, $rate = null) {
+       $skill = $skill == "overall_xp" ? "total_level" : $skill;
 		if ($mode != null && $rate != null) {
-			$stmt = $this->conn->prepare("SELECT * FROM $this->table WHERE mode = ? AND combatrate = ? ORDER BY $skill DESC LIMIT ?, 25");
-			$stmt->bindParam(1, $mode, PDO::PARAM_STR);
-			$stmt->bindParam(2, $rate, PDO::PARAM_INT);
-			$stmt->bindParam(3, $min, PDO::PARAM_INT);
+			$stmt = $this->conn->prepare("SELECT * FROM $this->table WHERE mode=:mode AND combatrate=:rate ORDER BY $skill DESC LIMIT $min, 25");
+			$stmt->bindParam(":mode", $mode);
+			$stmt->bindParam(":rate", $rate);
 		} else if ($mode != null && $rate == null) {
-			$stmt = $this->conn->prepare("SELECT * FROM $this->table WHERE mode = ? ORDER BY $skill DESC LIMIT ?, 25");
-			$stmt->bindParam(1, $mode, PDO::PARAM_STR);
-			$stmt->bindParam(2, $min, PDO::PARAM_INT);
+			$stmt = $this->conn->prepare("SELECT * FROM $this->table WHERE mode=:mode ORDER BY $skill DESC LIMIT $min, 25");
+			$stmt->bindParam(":mode", $mode);
 		} else if ($mode == null && $rate != null) {
-			$stmt = $this->conn->prepare("SELECT * FROM $this->table WHERE combatrate = ? ORDER BY $skill DESC LIMIT ?, 25");
-			$stmt->bindParam(1, $rate, PDO::PARAM_INT);
-			$stmt->bindParam(2, $min, PDO::PARAM_INT);
+			$stmt = $this->conn->prepare("SELECT * FROM $this->table WHERE combatrate=:rate ORDER BY $skill DESC LIMIT $min, 25");
+			$stmt->bindParam(":rate", $rate);
 		} else {
-			$stmt = $this->conn->prepare("SELECT * FROM $this->table ORDER BY $skill DESC LIMIT ?, 25");
-			$stmt->bindParam(1, $min, PDO::PARAM_INT);
+			$stmt = $this->conn->prepare("SELECT * FROM $this->table ORDER BY $skill DESC LIMIT $min, 25");
 		}
-	
 		$stmt->execute();
-		$rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
-	
-		return $rows;
+		return $stmt->fetchAll(PDO::FETCH_ASSOC);
 	}
-	
+
 	public function getRank($user, $skill, $mode) {
-		$skill = strtolower($skill) . "_xp";
-	
-		$query = "SELECT (SELECT COUNT(*) FROM " . $this->table . " WHERE mode = ? AND ($skill) >= (u.$skill)) AS `rank` FROM " . $this->table . " u WHERE username = ? AND mode = ? LIMIT 1";
-	
-		$stmt = $this->conn->prepare($query);
-		$stmt->bindParam(1, $mode, PDO::PARAM_STR);
-		$stmt->bindParam(2, $user, PDO::PARAM_STR);
-		$stmt->bindParam(3, $mode, PDO::PARAM_STR);
+		$skill = strtolower($skill)."_xp";
+		$stmt = $this->conn->prepare("SELECT (SELECT COUNT(*) FROM hs_users WHERE mode = :mode AND ($skill) >= (u.$skill)) AS rank FROM hs_users u WHERE username = :user AND mode = :mode2 LIMIT 1");
+        $stmt->bindParam(":user", $user);
+		$stmt->bindParam(":mode", $mode);
+		$stmt->bindParam(":mode2", $mode);
 		$stmt->execute();
-		$rank = $stmt->fetchColumn();
-		$stmt->close();
-	
-		return $rank;
+		return $stmt->fetchColumn();
 	}
-	
 	
 	function getImage($mode = NULL, $rank = NULL) {
 	    switch($mode) {
