@@ -1,30 +1,24 @@
 <?php
-	$host = 'dawn-db-do-user-1648532-0.c.db.ondigitalocean.com';
-	$user = 'dawn_web';
-	$pass = 'AVNS_i6EjdrHsvluB9k5W1WA';
+	$host = 'localhost';
+	$user = 'dawn_reader';
+	$pass = '*7FjA5Ao4-uEmC7P';
 	$data = 'dawn_web';
-	$port = 25060;
-	$ssl_cert = __DIR__ . '/secure/ca-certificate.crt';
 
-	// Create connection
-	$conn = mysqli_init();
+// Create connection
+$conn = mysqli_init();
 
-	// Set SSL options
-	mysqli_ssl_set($conn, null, null, $ssl_cert, null, null);
+// Check connection
+if (!$conn->real_connect($host, $user, $pass, $data)) {
+	die("Connection failed: " . $conn->connect_error);
+}
 
-	// Check connection
-	if (!$conn->real_connect($host, $user, $pass, $data, $port)) {
-		die("Connection failed: " . $conn->connect_error);
-	}
+// Check connection
+if ($conn->connect_error) {
+	die("Connection failed: " . $conn->connect_error);
+}
 
-	// Check connection
-	if ($conn->connect_error) {
-		die("Connection failed: " . $conn->connect_error);
-	}
-
-	$query = "SELECT * FROM hs_users ORDER BY overall_xp DESC LIMIT 10 "; //You don't need a ; like you do in SQL
-	$result = $conn->query($query);
-
+$query = "SELECT * FROM hs_users ORDER BY overall_xp DESC LIMIT 10 ";
+$result = $conn->query($query);
 	if ($result->num_rows > 0) {
   // output data of each row
 		while($row = $result->fetch_assoc()) {
