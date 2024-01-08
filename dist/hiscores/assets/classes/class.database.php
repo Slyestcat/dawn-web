@@ -64,14 +64,21 @@ class Database {
 	}
 
 	public function getRank($user, $skill, $mode) {
-		$skill = strtolower($skill)."_xp";
-		$stmt = $this->conn->prepare("SELECT (SELECT COUNT(*) FROM hs_users WHERE mode = :mode AND ($skill) >= (u.$skill)) AS rank FROM hs_users u WHERE username = :user AND mode = :mode2 LIMIT 1");
-        $stmt->bindParam(":user", $user);
+		$skill = strtolower($skill) . "_xp";
+		$stmt = $this->conn->prepare("SELECT (SELECT COUNT(*) FROM hs_users WHERE mode = :mode AND ($skill) >= (u.$skill)) AS rank FROM hs_users u WHERE username = :user AND mode = :mode LIMIT 1");
+	
+		if ($stmt === false) {
+			die('Error in prepare statement: ' . $this->conn->errorInfo()[2]);
+		}
+	
+		$stmt->bindParam(":user", $user);
 		$stmt->bindParam(":mode", $mode);
-		$stmt->bindParam(":mode2", $mode);
+	
 		$stmt->execute();
+	
 		return $stmt->fetchColumn();
 	}
+	
 	
 	function getImage($mode = NULL, $rank = NULL) {
 	    switch($mode) {
