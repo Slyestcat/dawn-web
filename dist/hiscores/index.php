@@ -39,7 +39,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title><?php echo $skill; ?> Hiscores - PrimalPS</title>
+		<title><?php echo $skill; ?>Dawn - Hiscores</title>
 		<meta charset="utf-8" />
 		<link rel="stylesheet" href="assets/css/bootstrap.min.css" />
 		<link rel="stylesheet" href="assets/css/font-awesome.css" />

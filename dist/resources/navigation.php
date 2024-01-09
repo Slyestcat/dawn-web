@@ -3,10 +3,10 @@
       <div class="players-online-group">
         <div>Start playing with <?php include dirname( __FILE__ ) . '/players_online.php';?> others. <a href="https://dawnps.com/play" class="link">Play now!</a></div>
       </div>
-	  <!--<div class="user-group-block">
-	      <a href="#" target="_blank" class="login-link">Login to Forums</a>
-	      <a href="#" target="_blank" class="register-link">Create an account</a>
-	      </div>-->
+	  <div class="user-group-block">
+	      <a href="https://dawnps.com/community/login" target="_blank" class="login-link">Login to Forums</a>
+	      <a href="https://dawnps.com/community/register" target="_blank" class="register-link">Create an account</a>
+	      </div>
 	
       <!--<div class="social-links">
         <div>Follow us on:</div><a href="#" class="social-icon twitter w-inline-block"></a><a href="#" class="social-icon youtube w-inline-block"></a><a href="#" class="social-icon facebook w-inline-block"></a><a href="https://discord.gg/primalps" target="_blank" class="social-icon discord w-inline-block"></a></div>-->
@@ -25,10 +25,12 @@
       <nav role="navigation" class="navigation-menu w-nav-menu">
           <a href="https://dawnps.com/" class="nav-link w-nav-link">Home</a>
           <a href="https://dawnps.com/play" class="nav-link w-nav-link">Play</a>
+          <a href="https://dawnps.com/community" class="nav-link w-nav-link">Forums</a>
           <a href="https://discord.gg/59bDxrPA9a" target="_blank" class="nav-link w-nav-link">Discord</a>
           <a href="https://dawnps.com/vote" class="nav-link w-nav-link">vote</a>
           <a href="https://dawnps.com/store" class="nav-link w-nav-link">store</a>
           <a href="https://dawnps.com/hiscores" class="nav-link w-nav-link">hiscores</a>
+          <a href="https://dawnps.com/wiki" class="nav-link w-nav-link">Wiki</a>
           </nav>
       <div class="menu-button w-nav-button">
         <div class="w-icon-nav-menu"></div>
